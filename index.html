@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="5 guides and printable workbooks to turn your dreams into a daily plan. Instant PDF download in Hindi, Gujarati or English. Only ₹299.">
+<meta property="og:title" content="Dream Life Bundle">
+<meta property="og:description" content="5 guides and workbooks. Instant PDF download in Hindi, Gujarati or English. Only ₹299.">
+<meta property="og:image" content="img/planner.jpg">
+<!-- Paste your Meta Pixel code here -->
+<title>Dream Life Bundle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@600;700&family=Noto+Sans+Gujarati:wght@600;700&display=swap">
+<style>
+/* Layout: navy hero band with fanned covers and three language buttons, then light sections that repeat the same buy action. */
+:root {
+  --bg: #F4F5FA;
+  --surface: #FFFFFF;
+  --ink: #151A3C;
+  --muted: #565C7D;
+  --line: #DFE2EE;
+  --accent: #F2A60F;
+  --accent-hover: #FFB92E;
+  --accent-ink: #2B1C00;
+  --deep: #141938;
+  --on-deep: #F2F3FB;
+  --on-deep-muted: #AEB4D6;
+  --good: #1E7F55;
+  --good-soft: #E3F3EB;
+  --warn-soft: #FBEFD6;
+  --font-display: "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-hi: "Noto Sans Devanagari", "Hanken Grotesk", system-ui, sans-serif;
+  --font-gu: "Noto Sans Gujarati", "Hanken Grotesk", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0D1026; --surface: #171B39; --ink: #EEF0FA; --muted: #A6ACCB; --line: #292E58;
+    --accent: #F5B02A; --accent-hover: #FFC54D; --accent-ink: #2B1C00; --deep: #080B1D;
+    --on-deep: #F2F3FB; --on-deep-muted: #A6ACCB; --good: #59C796; --good-soft: #14352A; --warn-soft: #3A2D10;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0D1026; --surface: #171B39; --ink: #EEF0FA; --muted: #A6ACCB; --line: #292E58;
+  --accent: #F5B02A; --accent-hover: #FFC54D; --accent-ink: #2B1C00; --deep: #080B1D;
+  --on-deep: #F2F3FB; --on-deep-muted: #A6ACCB; --good: #59C796; --good-soft: #14352A; --warn-soft: #3A2D10;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.55;
+  padding-bottom: 92px; -webkit-text-size-adjust: 100%;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; letter-spacing: -0.015em; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+.band {
+  padding-block: 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.in { max-width: 1040px; margin: 0 auto; }
+.label {
+  font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+h2 { font-size: clamp(1.7rem, 5.2vw, 2.5rem); line-height: 1.1; font-weight: 800; }
+.lede { color: var(--muted); max-width: 60ch; margin-top: 12px; }
+
+/* ---------- Hero ---------- */
+.hero { background: var(--deep); color: var(--on-deep); padding-block: 28px 48px; }
+.brandbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 30px; font-size: 14px; color: var(--on-deep-muted); }
+.brandbar b { color: var(--on-deep); font-family: var(--font-display); font-size: 17px; letter-spacing: 0; }
+.hero-grid { display: grid; gap: 34px; align-items: center; }
+.hero .label { color: var(--accent); }
+.hero h1 { font-size: clamp(2.15rem, 8.4vw, 3.7rem); line-height: 1.02; font-weight: 800; margin-top: 12px; }
+.hero .sub { margin-top: 16px; color: var(--on-deep-muted); font-size: 18px; max-width: 46ch; }
+.hero .sub b { color: var(--on-deep); font-weight: 600; }
+
+.price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; margin-top: 24px; }
+.price .now { font-family: var(--font-display); font-weight: 800; font-size: 3rem; line-height: 1; color: var(--on-deep); }
+.price .was { font-size: 1.25rem; color: var(--on-deep-muted); text-decoration: line-through; text-decoration-thickness: 2px; }
+.price .save { font-size: 13px; font-weight: 700; background: var(--accent); color: var(--accent-ink); padding: 3px 10px; border-radius: 999px; }
+
+.pick { margin-top: 22px; }
+.pick-title { font-size: 14px; font-weight: 600; color: var(--on-deep); margin-bottom: 10px; }
+.langs { display: grid; gap: 10px; }
+.lang {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px;
+  background: var(--accent); color: var(--accent-ink); text-decoration: none;
+  border-radius: 14px; padding: 13px 18px; min-height: 64px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.28); transition: transform .12s, box-shadow .12s, background .12s;
+}
+.lang:hover { background: var(--accent-hover); }
+.lang:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0,0,0,0.28); }
+.lang .nm { font-size: 1.35rem; font-weight: 700; line-height: 1.2; }
+.lang .nm.hi { font-family: var(--font-hi); }
+.lang .nm.gu { font-family: var(--font-gu); }
+.lang .nm.en { font-family: var(--font-display); font-weight: 800; }
+.lang .ed { display: block; font-size: 13px; font-weight: 500; opacity: 0.8; }
+.lang .go { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 1.05rem; white-space: nowrap; }
+.lang svg { width: 20px; height: 20px; }
+.assure { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13.5px; color: var(--on-deep-muted); }
+.assure span { display: inline-flex; align-items: center; gap: 6px; }
+.assure svg { width: 15px; height: 15px; color: var(--accent); flex: none; }
+
+.fan { display: flex; justify-content: center; align-items: center; padding: 8px 10px 14px; }
+.fan img {
+  width: 25%; aspect-ratio: 520 / 745; object-fit: cover; border-radius: 6px;
+  margin-left: -6%; box-shadow: 0 14px 30px rgba(0,0,0,0.45);
+  transform: translateY(var(--y, 0)) rotate(var(--r, 0deg));
+}
+.fan img:first-child { margin-left: 0; }
+.fan .mid { width: 33%; z-index: 3; --y: -10px; --r: 0deg; }
+.fan .a { --r: -9deg; --y: 18px; z-index: 1; }
+.fan .b { --r: -4deg; --y: 6px; z-index: 2; }
+.fan .c { --r: 4deg; --y: 6px; z-index: 2; }
+.fan .d { --r: 9deg; --y: 18px; z-index: 1; }
+
+/* ---------- Proof strip ---------- */
+.strip { background: var(--surface); border-bottom: 1px solid var(--line); padding-block: 20px; }
+.facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 12px; }
+.fact { display: flex; flex-direction: column; gap: 2px; }
+.fact b { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1.1; }
+.fact span { font-size: 13.5px; color: var(--muted); }
+
+/* ---------- Problem ---------- */
+.pains { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
+.pains li {
+  display: flex; gap: 14px; align-items: flex-start; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+}
+.pains svg { width: 22px; height: 22px; color: var(--muted); flex: none; margin-top: 2px; }
+.turn { margin-top: 26px; padding: 20px 22px; border-radius: 14px; background: var(--ink); color: var(--bg); }
+.turn p { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.2rem, 4vw, 1.6rem); line-height: 1.25; text-wrap: balance; }
+
+/* ---------- Guides ---------- */
+.guides { margin-top: 28px; display: grid; gap: 16px; }
+.guide {
+  display: grid; grid-template-columns: 104px 1fr; gap: 14px 16px; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px;
+}
+.guide img { grid-row: 1; width: 104px; aspect-ratio: 520 / 745; object-fit: cover; border-radius: 6px; box-shadow: 0 8px 18px rgba(20,25,56,0.22); }
+.guide .head { min-width: 0; }
+.guide .tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; margin-bottom: 8px; }
+.guide h3 { font-size: 1.28rem; line-height: 1.15; font-weight: 800; }
+.guide .one { margin-top: 6px; color: var(--muted); font-size: 15.5px; }
+.guide ul { grid-column: 1 / -1; list-style: none; margin: 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: grid; gap: 7px 18px; font-size: 15px; }
+.guide li { display: flex; gap: 9px; align-items: flex-start; min-width: 0; }
+.guide li svg { width: 16px; height: 16px; color: var(--good); flex: none; margin-top: 4px; }
+
+.bonus { margin-top: 20px; background: var(--warn-soft); border-radius: 16px; padding: 20px; }
+.bonus h3 { font-size: 1.2rem; font-weight: 800; }
+.bonus ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.bonus li { display: flex; gap: 10px; align-items: flex-start; }
+.bonus li svg { width: 17px; height: 17px; color: var(--good); flex: none; margin-top: 4px; }
+.bonus li b { font-weight: 700; }
+
+/* ---------- Buy ---------- */
+.buy { background: var(--deep); color: var(--on-deep); }
+.buy .label { color: var(--accent); }
+.buy h2 { margin-top: 10px; }
+.buy .lede { color: var(--on-deep-muted); }
+.stack { margin-top: 26px; display: grid; gap: 22px; }
+.ledger { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px; padding: 20px; }
+.ledger table { width: 100%; border-collapse: collapse; font-size: 16px; }
+.ledger td { padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+.ledger td:last-child { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ledger tr:last-child td { border-bottom: 0; }
+.ledger .strike td:last-child { color: var(--on-deep-muted); text-decoration: line-through; }
+.ledger .today td { padding-top: 14px; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--accent); }
+.ledger .per { margin-top: 10px; font-size: 14px; color: var(--on-deep-muted); }
+
+/* ---------- Steps ---------- */
+.steps { margin: 26px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; counter-reset: step; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+.steps li::before {
+  content: counter(step); width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--ink); color: var(--bg); font-family: var(--font-display); font-weight: 800; font-size: 1.15rem;
+}
+.steps b { display: block; font-size: 1.08rem; }
+.steps span { color: var(--muted); font-size: 15.5px; }
+
+/* ---------- Fit ---------- */
+.fit { margin-top: 26px; display: grid; gap: 14px; }
+.fit > div { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+.fit h3 { font-size: 1.15rem; font-weight: 800; margin-bottom: 10px; }
+.fit ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.fit li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; }
+.fit li svg { width: 17px; height: 17px; flex: none; margin-top: 4px; }
+.fit .yes svg { color: var(--good); }
+.fit .no svg { color: var(--muted); }
+
+/* ---------- FAQ ---------- */
+.faq { margin-top: 24px; display: grid; gap: 10px; }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.faq summary { cursor: pointer; list-style: none; padding: 16px 48px 16px 18px; font-weight: 700; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: ""; position: absolute; right: 18px; top: 50%; width: 9px; height: 9px; margin-top: -7px;
+  border-right: 2.5px solid var(--muted); border-bottom: 2.5px solid var(--muted); transform: rotate(45deg); transition: transform .15s;
+}
+.faq details[open] summary::after { transform: rotate(-135deg); margin-top: -2px; }
+.faq .ans { padding: 0 18px 16px; color: var(--muted); font-size: 16px; }
+
+/* ---------- Footer ---------- */
+.foot { background: var(--surface); border-top: 1px solid var(--line); padding-block: 36px; font-size: 14.5px; color: var(--muted); }
+.foot h3 { color: var(--ink); font-size: 1.1rem; font-weight: 800; }
+.contact { margin-top: 12px; display: grid; gap: 8px; }
+.contact div { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.contact code { font-family: var(--font-body); font-weight: 600; color: var(--ink); user-select: all; overflow-wrap: anywhere; }
+.copy { font: inherit; font-size: 12.5px; font-weight: 700; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; cursor: pointer; }
+.copy:hover { border-color: var(--ink); }
+.fine { margin-top: 18px; font-size: 13px; line-height: 1.5; }
+
+/* ---------- Sticky bar ---------- */
+.bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line);
+  box-shadow: 0 -8px 24px rgba(10,14,40,0.12);
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  transition: transform .2s;
+}
+.bar[data-hidden="true"] { transform: translateY(110%); }
+.bar .row { max-width: 1040px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.bar .p { display: flex; align-items: baseline; gap: 8px; }
+.bar .p b { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1; }
+.bar .p s { color: var(--muted); font-size: 14px; }
+.bar a.cta {
+  background: var(--accent); color: var(--accent-ink); font-weight: 700; text-decoration: none; text-align: center;
+  padding: 13px 20px; border-radius: 12px; white-space: nowrap;
+}
+.bar a.cta:hover { background: var(--accent-hover); }
+
+@media (min-width: 560px) {
+  .langs { grid-template-columns: repeat(3, 1fr); }
+  .lang { grid-template-columns: 1fr; gap: 6px; padding: 14px 16px 16px; }
+  .lang .go { justify-content: space-between; }
+  .facts { grid-template-columns: repeat(4, 1fr); }
+  .guide ul { grid-template-columns: 1fr 1fr; }
+  .fit { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 860px) {
+  body { padding-bottom: 84px; }
+  .band { padding-block: 80px; }
+  .hero { padding-block: 32px 72px; }
+  .hero-grid { grid-template-columns: 1.08fr 0.92fr; gap: 56px; }
+  .fan { padding: 24px 10px 30px; }
+  .guide { grid-template-columns: 168px 1fr; gap: 14px 28px; padding: 22px; }
+  .guide img { width: 168px; grid-row: 1 / span 2; }
+  .guide ul { grid-column: 2; padding-top: 14px; }
+  .guide h3 { font-size: 1.5rem; }
+  .stack { grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: start; }
+  .steps { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .steps li { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .lang, .bar, .faq summary::after { transition: none; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ck" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ar" viewBox="0 0 20 20"><path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="x" viewBox="0 0 20 20"><path d="M5 5l10 10M15 5L5 15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.2" fill="currentColor"/></symbol>
+</svg>
+
+<header class="band hero" id="top">
+  <div class="in">
+    <div class="brandbar"><b>Business Gyan</b><span>Instant PDF download</span></div>
+    <div class="hero-grid">
+      <div>
+        <div class="label">The Dream Life &amp; Manifestation Bundle</div>
+        <h1>Turn your dreams into a plan you follow every day.</h1>
+        <p class="sub"><b>5 guides and printable workbooks</b> that take you from a vague wish to a clear vision, real goals and a daily routine. Download in Hindi, Gujarati or English.</p>
+        <div class="price" aria-label="Price">
+          <span class="now">₹299</span>
+          <span class="was">₹999</span>
+          <span class="save">Save ₹700</span>
+        </div>
+        <div class="pick">
+          <div class="pick-title">Choose your language to get instant access</div>
+          <div class="langs">
+            <a class="lang" href="https://superprofile.bio/vp/dream_life?checkout=true" target="_blank" rel="noopener">
+              <span><span class="nm hi">हिन्दी</span><span class="ed">Hindi edition</span></span>
+              <span class="go">₹299 <svg><use href="#ar"/></svg></span>
+            </a>
+            <a class="lang" href="https://superprofile.bio/vp/the-dream-life-guj?checkout=true" target="_blank" rel="noopener">
+              <span><span class="nm gu">ગુજરાતી</span><span class="ed">Gujarati edition</span></span>
+              <span class="go">₹299 <svg><use href="#ar"/></svg></span>
+            </a>
+            <a class="lang" href="https://superprofile.bio/vp/the-dream-life-english?checkout=true" target="_blank" rel="noopener">
+              <span><span class="nm en">English</span><span class="ed">English edition</span></span>
+              <span class="go">₹299 <svg><use href="#ar"/></svg></span>
+            </a>
+          </div>
+          <div class="assure">
+            <span><svg><use href="#ck"/></svg>UPI, cards, net banking</span>
+            <span><svg><use href="#ck"/></svg>Download right after payment</span>
+            <span><svg><use href="#ck"/></svg>Phone, tablet or print</span>
+          </div>
+        </div>
+      </div>
+      <div class="fan" aria-label="The five guides in the bundle">
+        <img class="a" src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="745">
+        <img class="b" src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745">
+        <img class="mid" src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745">
+        <img class="c" src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745">
+        <img class="d" src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="band strip" style="padding-block:20px">
+  <div class="in facts">
+    <div class="fact"><b>5</b><span>PDF guides and workbooks</span></div>
+    <div class="fact"><b>90 days</b><span>Dream Life plan inside</span></div>
+    <div class="fact"><b>100</b><span>gratitude journal prompts</span></div>
+    <div class="fact"><b>3</b><span>languages to choose from</span></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="in">
+    <div class="label">Why plans fall apart</div>
+    <h2>You set goals. Then a few days later, nothing has moved.</h2>
+    <ul class="pains">
+      <li><svg><use href="#dot"/></svg><span>You write goals down and forget them within the week.</span></li>
+      <li><svg><use href="#dot"/></svg><span>You start manifesting, then the habit breaks.</span></li>
+      <li><svg><use href="#dot"/></svg><span>You are never sure what exactly to do next.</span></li>
+      <li><svg><use href="#dot"/></svg><span>You have plenty of dreams but no clear direction.</span></li>
+      <li><svg><use href="#dot"/></svg><span>Your motivation runs out after a few days.</span></li>
+    </ul>
+    <div class="turn"><p>The dream is rarely the problem. What is missing is a clear direction, a simple plan and a small action every day. This bundle gives you all three in one place.</p></div>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0">
+  <div class="in">
+    <div class="label">What you get</div>
+    <h2>Five guides that work together.</h2>
+    <p class="lede">Plan the life, practise the mindset, picture it, give thanks for it and commit to 30 days. Use one guide or all five.</p>
+
+    <div class="guides">
+      <article class="guide">
+        <img src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745" loading="lazy">
+        <div class="head">
+          <span class="tag">Value ₹299</span>
+          <h3>Dream Life Planner</h3>
+          <p class="one">Turn your dreams into goals, plans and daily action.</p>
+        </div>
+        <ul>
+          <li><svg><use href="#ck"/></svg>Dream life vision, values and strengths</li>
+          <li><svg><use href="#ck"/></svg>Goal planning worksheets</li>
+          <li><svg><use href="#ck"/></svg>Money, career, health, family and travel sections</li>
+          <li><svg><use href="#ck"/></svg>Monthly and weekly planning pages</li>
+          <li><svg><use href="#ck"/></svg>30-day action plan and 90-day dream life plan</li>
+          <li><svg><use href="#ck"/></svg>Dream life scorecard, habit tracker, life reset worksheet</li>
+        </ul>
+      </article>
+
+      <article class="guide">
+        <img src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745" loading="lazy">
+        <div class="head">
+          <span class="tag">Value ₹299</span>
+          <h3>15 Powerful Manifestation Techniques</h3>
+          <p class="one">A practical guide to manifestation, goal setting and positive thinking.</p>
+        </div>
+        <ul>
+          <li><svg><use href="#ck"/></svg>369 method and scripting method</li>
+          <li><svg><use href="#ck"/></svg>Visualization and future self visualization</li>
+          <li><svg><use href="#ck"/></svg>Affirmations, 55×5 method, whisper method</li>
+          <li><svg><use href="#ck"/></svg>Gratitude practice and vision board</li>
+          <li><svg><use href="#ck"/></svg>7-day routine and 30-day challenge</li>
+          <li><svg><use href="#ck"/></svg>Journal prompts and a printable tracker</li>
+        </ul>
+      </article>
+
+      <article class="guide">
+        <img src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745" loading="lazy">
+        <div class="head">
+          <span class="tag">Value ₹299</span>
+          <h3>Digital Vision Board Guide</h3>
+          <p class="one">Create a visual plan for the life you want, on screen or on paper.</p>
+        </div>
+        <ul>
+          <li><svg><use href="#ck"/></svg>How to define your dream life</li>
+          <li><svg><use href="#ck"/></svg>What to put on a board, by life category</li>
+          <li><svg><use href="#ck"/></svg>Physical and digital boards compared</li>
+          <li><svg><use href="#ck"/></svg>Step-by-step board creation in Canva</li>
+          <li><svg><use href="#ck"/></svg>Board images with AI and ready-to-use prompts</li>
+          <li><svg><use href="#ck"/></svg>Daily routine and a 30-day vision board challenge</li>
+        </ul>
+      </article>
+
+      <article class="guide">
+        <img src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745" loading="lazy">
+        <div class="head">
+          <span class="tag">Value ₹299</span>
+          <h3>The Gratitude Power Guide</h3>
+          <p class="one">Build a positive mindset through one simple daily practice.</p>
+        </div>
+        <ul>
+          <li><svg><use href="#ck"/></svg>Morning and night gratitude routines</li>
+          <li><svg><use href="#ck"/></svg>Gratitude journal and exercises</li>
+          <li><svg><use href="#ck"/></svg>Money, health, family and relationship gratitude</li>
+          <li><svg><use href="#ck"/></svg>21-day challenge and 30-day tracker</li>
+          <li><svg><use href="#ck"/></svg>100 gratitude journal prompts</li>
+          <li><svg><use href="#ck"/></svg>Printable gratitude worksheets</li>
+        </ul>
+      </article>
+
+      <article class="guide">
+        <img src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="765" loading="lazy">
+        <div class="head">
+          <span class="tag">Value ₹299</span>
+          <h3>30-Day Manifestation Challenge</h3>
+          <p class="one">30 days, one goal, consistent action.</p>
+        </div>
+        <ul>
+          <li><svg><use href="#ck"/></svg>A daily practice for every one of the 30 days</li>
+          <li><svg><use href="#ck"/></svg>Journal prompts and visualization exercises</li>
+          <li><svg><use href="#ck"/></svg>Gratitude activities and manifestation techniques</li>
+          <li><svg><use href="#ck"/></svg>Daily tracking pages</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="bonus">
+      <h3>Four bonuses included</h3>
+      <ul>
+        <li><svg><use href="#ck"/></svg><span><b>Ready-to-use journal prompts</b> for reflection and planning</span></li>
+        <li><svg><use href="#ck"/></svg><span><b>Daily gratitude worksheets</b> you can print</span></li>
+        <li><svg><use href="#ck"/></svg><span><b>Manifestation and vision trackers</b> to stay consistent</span></li>
+        <li><svg><use href="#ck"/></svg><span><b>Printable worksheets</b> to use digitally or on paper</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band buy" id="buy">
+  <div class="in">
+    <div class="label">Get the bundle</div>
+    <h2>Pick your language and start today.</h2>
+    <p class="lede">All five guides and the four bonuses come in the language you choose. Payment is on a secure page, and your files are ready as soon as it goes through.</p>
+    <div class="stack">
+      <div class="ledger">
+        <table>
+          <tr><td>5 guides, priced separately</td><td>₹1,495</td></tr>
+          <tr class="strike"><td>Bundle list price</td><td>₹999</td></tr>
+          <tr class="today"><td>Your price today</td><td>₹299</td></tr>
+        </table>
+        <p class="per">That works out to about ₹60 per guide, bonuses included.</p>
+      </div>
+      <div>
+        <div class="langs">
+          <a class="lang" href="https://superprofile.bio/vp/dream_life?checkout=true" target="_blank" rel="noopener">
+            <span><span class="nm hi">हिन्दी</span><span class="ed">Hindi edition</span></span>
+            <span class="go">₹299 <svg><use href="#ar"/></svg></span>
+          </a>
+          <a class="lang" href="https://superprofile.bio/vp/the-dream-life-guj?checkout=true" target="_blank" rel="noopener">
+            <span><span class="nm gu">ગુજરાતી</span><span class="ed">Gujarati edition</span></span>
+            <span class="go">₹299 <svg><use href="#ar"/></svg></span>
+          </a>
+          <a class="lang" href="https://superprofile.bio/vp/the-dream-life-english?checkout=true" target="_blank" rel="noopener">
+            <span><span class="nm en">English</span><span class="ed">English edition</span></span>
+            <span class="go">₹299 <svg><use href="#ar"/></svg></span>
+          </a>
+        </div>
+        <div class="assure">
+          <span><svg><use href="#ck"/></svg>UPI, cards, net banking</span>
+          <span><svg><use href="#ck"/></svg>Instant digital access</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="in">
+    <div class="label">How it works</div>
+    <h2>From payment to Day 1 in a few minutes.</h2>
+    <ol class="steps">
+      <li><div><b>Choose a language and pay</b><span>Use UPI, a card or net banking on the secure checkout page.</span></div></li>
+      <li><div><b>Download your PDFs</b><span>The guides and worksheets are available right after payment, on any device.</span></div></li>
+      <li><div><b>Start the 30-day challenge</b><span>Fill in the planner, pick one technique and begin Day 1 today.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0">
+  <div class="in">
+    <div class="label">Is it for you</div>
+    <h2>Be sure before you buy.</h2>
+    <div class="fit">
+      <div class="yes">
+        <h3>A good fit if you</h3>
+        <ul>
+          <li><svg><use href="#ck"/></svg>want a simple, structured way to practise manifestation</li>
+          <li><svg><use href="#ck"/></svg>set goals but struggle to follow through</li>
+          <li><svg><use href="#ck"/></svg>like writing, journaling and printable worksheets</li>
+          <li><svg><use href="#ck"/></svg>want to read in Hindi, Gujarati or English</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Not what you are after if you</h3>
+        <ul>
+          <li><svg><use href="#x"/></svg>expect coaching, live classes or one-to-one support</li>
+          <li><svg><use href="#x"/></svg>want guaranteed results without doing the work</li>
+          <li><svg><use href="#x"/></svg>need a printed book delivered to your home</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0">
+  <div class="in">
+    <div class="label">Questions</div>
+    <h2>Quick answers.</h2>
+    <div class="faq">
+      <details>
+        <summary>How do I receive the files?</summary>
+        <div class="ans">After payment you get instant access on the same page. The guides are PDFs you can download. If you come back later, sign in on the page with your payment details to see them again.</div>
+      </details>
+      <details>
+        <summary>Which language should I choose?</summary>
+        <div class="ans">Pick the one you read most comfortably. Hindi, Gujarati and English each have their own page and the same ₹299 price. Tap the language button and you go straight to that edition.</div>
+      </details>
+      <details>
+        <summary>Can I print the worksheets?</summary>
+        <div class="ans">Yes. The worksheets and trackers can be filled in on your phone or computer, or printed at home for your own use.</div>
+      </details>
+      <details>
+        <summary>Do I need Canva or an AI tool?</summary>
+        <div class="ans">No. The Vision Board Guide shows how to build a board in Canva and with AI images, and also covers physical boards if you prefer paper.</div>
+      </details>
+      <details>
+        <summary>Will this change my life?</summary>
+        <div class="ans">These are self-paced guides. They give you structure, prompts and a plan. What you get out of them depends on how consistently you use them, and no result is promised.</div>
+      </details>
+      <details>
+        <summary>I have a problem with my order. Who do I contact?</summary>
+        <div class="ans">Email or call the numbers at the bottom of this page and include the email you paid with.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="band foot">
+  <div class="in">
+    <h3>Business Gyan</h3>
+    <div class="contact">
+      <div><span>Email</span><code id="mail">businessgyangujarat@gmail.com</code><button class="copy" type="button" data-copy="mail">Copy</button></div>
+      
+    </div>
+    <p class="fine">Digital PDF products for personal use. This content is for education and self-development and is not financial, medical or professional advice. Results vary from person to person.</p>
+  </div>
+</footer>
+
+<div class="bar" id="bar" role="region" aria-label="Buy the bundle">
+  <div class="row">
+    <div class="p"><b>₹299</b><s>₹999</s></div>
+    <a class="cta" href="#buy">Choose language &amp; buy</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var bar = document.getElementById('bar');
+  var hide = { top: false, buy: false };
+  function sync() { bar.setAttribute('data-hidden', (hide.top || hide.buy) ? 'true' : 'false'); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { hide[e.target.id === 'buy' ? 'buy' : 'top'] = e.isIntersecting; });
+      sync();
+    }, { threshold: 0.35 });
+    var t = document.querySelector('.hero .pick'); if (t) { t.id = t.id || 'pick'; io.observe(t); }
+    var b = document.getElementById('buy'); if (b) io.observe(b);
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.getAttribute('data-copy'));
+      var txt = el.textContent;
+      function sel() { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+      function done() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); }
+      try {
+        navigator.clipboard.writeText(txt).then(done, function () { sel(); });
+      } catch (e) { sel(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
