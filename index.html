@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
 <!-- Meta Pixel Code -->
 <script>
@@ -24,18 +24,17 @@ src="https://www.facebook.com/tr?id=1061712936650219&ev=PageView&noscript=1"
 <meta property="og:title" content="The Dream Life & Manifestation Bundle">
 <meta property="og:description" content="Dream → Plan → Action. 5 guides, printable workbooks and a 30-day challenge for ₹299.">
 <meta property="og:image" content="img/planner.jpg">
-<!-- Meta Pixel: no tracking code was present in the supplied source file. -->
 <title>The Dream Life & Manifestation Bundle — ₹299</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@600;700;800&family=Noto+Sans+Gujarati:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap">
 <style>
 :root{
   --bg:#f7f8fc; --surface:#fff; --ink:#11152f; --muted:#606680; --line:#e5e7f0;
   --deep:#101533; --deep2:#171d48; --gold:#ffb21a; --gold2:#ffd15a; --goldInk:#2a1a00;
   --green:#168653; --greenSoft:#e8f7ef; --rose:#fff0eb; --shadow:0 18px 55px rgba(17,21,47,.10);
-  --display:"Bricolage Grotesque","Hanken Grotesk",system-ui,sans-serif;
-  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:"Bricolage Grotesque","Hanken Grotesk","Noto Sans Devanagari","Noto Sans Gujarati",system-ui,sans-serif;
+  --body:"Hanken Grotesk","Noto Sans Devanagari","Noto Sans Gujarati",system-ui,-apple-system,"Segoe UI",sans-serif;
   --hi:"Noto Sans Devanagari","Hanken Grotesk",sans-serif;
   --gu:"Noto Sans Gujarati","Hanken Grotesk",sans-serif;
 }
@@ -53,9 +52,18 @@ button,a{touch-action:manipulation}
 .in{width:min(1100px,calc(100% - 32px));margin:auto}
 .section{padding:70px 0}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#b87900}
-.eyebrow:before{content:"";width:22px;height:2px;background:currentColor;border-radius:3px}
+.eyebrow:before{content:"";width:22px;height:2px;background:currentColor;border-radius:3px;flex:none}
 .lede{color:var(--muted);max-width:64ch;margin-top:14px}
 .center{text-align:center}.center .lede{margin-left:auto;margin-right:auto}
+
+/* Hindi / Gujarati typography tweaks (taller line-height, no negative tracking) */
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] h3,
+html[lang="gu"] h1,html[lang="gu"] h2,html[lang="gu"] h3{letter-spacing:0}
+html[lang="hi"] h1,html[lang="gu"] h1{line-height:1.22}
+html[lang="hi"] h2,html[lang="gu"] h2{line-height:1.25}
+html[lang="hi"] h3,html[lang="gu"] h3{line-height:1.3}
+html[lang="hi"] .eyebrow,html[lang="gu"] .eyebrow{letter-spacing:.04em;text-transform:none;font-size:13px}
+html[lang="hi"] body,html[lang="gu"] body{line-height:1.65}
 
 /* HERO */
 .hero{position:relative;overflow:hidden;color:#fff;background:
@@ -66,9 +74,17 @@ button,a{touch-action:manipulation}
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:0 0 28px;color:#b8bfdd;font-size:13px}
 .topbar strong{font-family:var(--display);font-size:17px;color:#fff}
 .topbar .secure{display:inline-flex;align-items:center;gap:7px}
+.top-right{display:flex;align-items:center;gap:14px}
+
+/* LANGUAGE SWITCHER */
+.lang-sw{display:inline-flex;padding:3px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18)}
+.lang-sw button{appearance:none;border:0;background:transparent;color:#d6dbf1;font:700 13px/1 var(--body);padding:9px 13px;border-radius:999px;cursor:pointer;min-height:34px;transition:.15s background,.15s color}
+.lang-sw button:hover{color:#fff}
+.lang-sw button[aria-pressed="true"]{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--goldInk)}
+
 .hero-grid{position:relative;z-index:2;display:grid;gap:42px;align-items:center}
 .hero-copy .eyebrow{color:var(--gold2)}
-.hero h1{font-size:clamp(2.55rem,8.5vw,4.7rem);line-height:.98;margin-top:14px;max-width:720px}
+.hero h1{font-size:clamp(2.35rem,8vw,4.5rem);line-height:.98;margin-top:14px;max-width:720px}
 .hero h1 em{font-style:normal;color:var(--gold2)}
 .hero-sub{margin-top:19px;color:#c2c7df;font-size:18px;max-width:650px}
 .hero-sub strong{color:#fff}
@@ -78,7 +94,7 @@ button,a{touch-action:manipulation}
 .offer .now{font:800 3.35rem/1 var(--display);color:#fff}
 .offer s{color:#aeb4d1;font-size:18px}
 .save{background:var(--gold);color:var(--goldInk);font-size:12px;font-weight:800;border-radius:999px;padding:5px 10px;margin-bottom:6px}
-.cta-main{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--goldInk);text-decoration:none;font-weight:800;border-radius:14px;padding:16px 22px;min-height:54px;box-shadow:0 12px 30px rgba(255,178,26,.24);transition:.18s transform,.18s box-shadow}
+.cta-main{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--goldInk);text-decoration:none;font-weight:800;border-radius:14px;padding:16px 22px;min-height:54px;box-shadow:0 12px 30px rgba(255,178,26,.24);transition:.18s transform,.18s box-shadow;text-align:center}
 .cta-main:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(255,178,26,.30)}
 .cta-wrap{margin-top:18px}
 .micro{margin-top:10px;color:#9da5c8;font-size:12.5px}
@@ -111,7 +127,6 @@ button,a{touch-action:manipulation}
 .bridge p{margin-top:9px;color:#c6cbe2}
 
 /* SYSTEM */
-.system-head{display:flex;justify-content:space-between;gap:20px;align-items:end;flex-wrap:wrap}
 .system-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
 .flow{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff;box-shadow:0 8px 25px rgba(17,21,47,.04)}
 .flow .n{font:800 13px/1 var(--display);color:#b87900}.flow h3{margin-top:7px;font-size:1.3rem}.flow p{margin-top:6px;color:var(--muted);font-size:14px}
@@ -123,15 +138,14 @@ button,a{touch-action:manipulation}
 .guide .tag{display:inline-block;padding:4px 9px;border-radius:999px;background:#f0f2fa;color:#555d7d;font-size:11px;font-weight:800}
 .guide h3{margin-top:8px;font-size:1.3rem}.guide .one{margin-top:7px;color:var(--muted);font-size:14px}
 .guide ul{grid-column:1/-1;margin:0;padding:14px 0 0;border-top:1px solid var(--line);list-style:none;display:grid;gap:8px}
-.guide li{display:flex;gap:8px;font-size:14px}.guide li:before{content:"✓";color:var(--green);font-weight:900}
+.guide li{display:flex;gap:8px;font-size:14px}.guide li:before{content:"✓";color:var(--green);font-weight:900;flex:none}
 
 /* BONUS / VALUE */
 .bonus{margin-top:18px;border:1px solid #f0d18b;background:linear-gradient(135deg,#fff8e8,#fff2cf);border-radius:20px;padding:22px}
-.bonus-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.bonus h3{font-size:1.35rem}.bonus-badge{background:#fff;border:1px solid #eed08c;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800}
-.bonus ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:9px}.bonus li{display:flex;gap:9px;font-size:14px}.bonus li:before{content:"✓";color:var(--green);font-weight:900}
+.bonus-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.bonus h3{font-size:1.35rem}.bonus-badge{background:#fff;border:1px solid #eed08c;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800;white-space:nowrap}
+.bonus ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:9px}.bonus li{display:flex;gap:9px;font-size:14px}.bonus li:before{content:"✓";color:var(--green);font-weight:900;flex:none}
 .value-stack{margin-top:32px;border-radius:24px;background:var(--deep);color:#fff;padding:28px;box-shadow:var(--shadow)}
 .value-stack .eyebrow{color:var(--gold2)}.value-stack h2{margin-top:10px}.stack-row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.11);color:#d8dced}.stack-row:last-child{border:0}.stack-row b:last-child{white-space:nowrap;color:#fff}.stack-total{display:flex;justify-content:space-between;gap:12px;margin-top:10px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font:800 1.45rem var(--display)}.stack-total strong{color:var(--gold2)}
-
 
 /* REVIEWS */
 .reviews-section{padding:70px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
@@ -147,16 +161,19 @@ button,a{touch-action:manipulation}
 /* BUY */
 .buy{background:linear-gradient(135deg,#0d1230,#1a2050);color:#fff;position:relative;overflow:hidden}.buy:before{content:"";position:absolute;width:450px;height:450px;border-radius:50%;background:rgba(255,178,26,.08);right:-220px;top:-180px}
 .buy .in{position:relative;z-index:1}.buy .eyebrow{color:var(--gold2)}.buy h2{margin-top:10px}.buy .lede{color:#c1c7df}
-.buy-card{margin-top:28px;background:#fff;color:var(--ink);border-radius:24px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.buy-card{margin-top:28px;background:#fff;color:var(--ink);border-radius:24px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.22);max-width:560px;margin-left:auto;margin-right:auto}
 .buy-price{display:flex;align-items:end;gap:10px}.buy-price b{font:800 3.2rem/1 var(--display)}.buy-price s{color:var(--muted);font-size:16px}.save2{color:var(--green);font-size:13px;font-weight:800;margin-top:7px}
-.langs{display:grid;gap:10px;margin-top:20px}.lang{display:flex;justify-content:space-between;align-items:center;gap:15px;text-decoration:none;background:linear-gradient(135deg,#ffb21a,#ffd15a);color:#2a1a00;border-radius:14px;padding:14px 16px;box-shadow:0 6px 0 #b97a00;transition:.15s transform}
+.lang{display:flex;justify-content:space-between;align-items:center;gap:15px;text-decoration:none;background:linear-gradient(135deg,#ffb21a,#ffd15a);color:#2a1a00;border-radius:14px;padding:16px 18px;box-shadow:0 6px 0 #b97a00;transition:.15s transform;margin-top:20px}
 .lang:hover{transform:translateY(-1px)}.lang:active{transform:translateY(4px);box-shadow:0 2px 0 #b97a00}
-.lang .nm{font-size:1.15rem;font-weight:800}.lang .nm.hi{font-family:var(--hi)}.lang .nm.gu{font-family:var(--gu)}.lang .ed{display:block;font-size:12px;opacity:.72}.lang .go{font-weight:800;white-space:nowrap}
+.lang .nm{font-size:1.2rem;font-weight:800}.lang .ed{display:block;font-size:12px;opacity:.75}.lang .go{font-weight:800;white-space:nowrap}
+.others{margin-top:18px;text-align:center;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 12px;justify-content:center;align-items:center}
+.others a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:700;color:var(--ink);background:#f7f8fc}
+.others a:hover{border-color:var(--gold)}
 .assure{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 16px;margin-top:16px;color:var(--muted);font-size:12.5px}.assure span:before{content:"✓";color:var(--green);font-weight:900;margin-right:5px}
 
 /* HOW / FIT / FAQ */
 .steps{display:grid;gap:14px;margin-top:28px}.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:18px;border-radius:17px;background:#fff;border:1px solid var(--line)}.step-n{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font:800 1.15rem var(--display)}.step h3{font-size:1.08rem}.step p{margin-top:4px;color:var(--muted);font-size:14px}
-.fit{display:grid;gap:14px;margin-top:28px}.fit-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px}.fit-card h3{font-size:1.2rem}.fit-card ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:9px}.fit-card li{font-size:14px}.fit-card.yes li:before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}.fit-card.no li:before{content:"×";color:#8b90a7;font-weight:900;margin-right:8px}
+.fit{display:grid;gap:14px;margin-top:28px}.fit-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px}.fit-card h3{font-size:1.2rem}.fit-card ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:9px}.fit-card li{font-size:14px;display:flex;gap:8px}.fit-card.yes li:before{content:"✓";color:var(--green);font-weight:900;flex:none}.fit-card.no li:before{content:"×";color:#8b90a7;font-weight:900;flex:none}
 .faq{display:grid;gap:10px;margin-top:28px}.faq details{background:#fff;border:1px solid var(--line);border-radius:14px}.faq summary{cursor:pointer;list-style:none;padding:17px 48px 17px 18px;font-weight:800;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:18px;top:13px;font-size:24px;color:var(--muted);font-weight:400}.faq details[open] summary:after{content:"−"}.ans{padding:0 18px 18px;color:var(--muted);font-size:14px}
 
 /* FINAL CTA */
@@ -175,25 +192,23 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
  .hero{padding-top:25px}.hero-grid{grid-template-columns:1.02fr .98fr;gap:50px}.hero-art{min-height:510px}
  .value-grid{grid-template-columns:repeat(4,1fr)}.pain-grid{grid-template-columns:1fr .9fr}.problem-card{margin-top:0}
  .guides{grid-template-columns:1fr 1fr}.guide{padding:20px}.guide img{width:110px}.guide{grid-template-columns:110px 1fr}
- .bonus{grid-column:1/-1}.fit{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.step{display:block}.step-n{margin-bottom:13px}
- .buy-card{max-width:620px;margin-left:auto;margin-right:auto;padding:30px}.langs{grid-template-columns:repeat(3,1fr)}.lang{display:grid;justify-content:stretch}
+ .fit{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.step{display:block}.step-n{margin-bottom:13px}
+ .buy-card{padding:30px}
 }
 @media(min-width:980px){
  .hero h1{max-width:700px}.hero-art{min-height:540px}.fan{height:480px}.fan img{width:28%}.fan .a{transform:translate(-145px,28px) rotate(-12deg)}.fan .b{transform:translate(-78px,10px) rotate(-6deg)}.fan .c{transform:translate(78px,10px) rotate(6deg)}.fan .d{transform:translate(145px,28px) rotate(12deg)}
 }
 @media(max-width:520px){
  .hero{padding-bottom:48px}.hero:after{bottom:-150px}.hero-art{min-height:330px}.fan{height:330px}.orbit{width:285px;height:285px}.fan .a{transform:translate(-76px,18px) rotate(-11deg)}.fan .b{transform:translate(-41px,6px) rotate(-5deg)}.fan .c{transform:translate(41px,6px) rotate(5deg)}.fan .d{transform:translate(76px,18px) rotate(11deg)}
- .system-flow{grid-template-columns:1fr}.offer .now{font-size:2.9rem}.topbar span{display:none}
+ .system-flow{grid-template-columns:1fr}.offer .now{font-size:2.9rem}.topbar .secure{display:none}
+ .lang-sw button{padding:9px 12px}
+}
+@media(max-width:700px){
+ .reviews-section{padding:54px 0}
+ .review-scroll{padding-top:22px}
+ .review-card{flex-basis:86vw;min-height:235px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta-main,.lang{transition:none}}
-
-@media (max-width:700px){
-  .reviews-section{padding:54px 0}
-  .review-scroll{padding-top:22px}
-  .review-card{flex-basis:86vw;min-height:235px}
-  .review-hint{display:block}
-}
-
 </style>
 </head>
 <body>
@@ -206,19 +221,26 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
   <div class="in">
     <div class="topbar">
       <strong>Business Gyan</strong>
-      <span class="secure">✓ Instant digital PDF access</span>
+      <div class="top-right">
+        <span class="secure" data-i18n="sec"></span>
+        <div class="lang-sw" role="group" aria-label="Language">
+          <button type="button" data-l="en" aria-pressed="false">EN</button>
+          <button type="button" data-l="hi" aria-pressed="true">हिं</button>
+          <button type="button" data-l="gu" aria-pressed="false">ગુ</button>
+        </div>
+      </div>
     </div>
     <div class="hero-grid">
       <div class="hero-copy">
-        <div class="eyebrow">The Dream Life &amp; Manifestation Bundle</div>
-        <h1>Dreams sab dekhte hain.<br><em>Plan karke follow</em> kitne karte hain?</h1>
-        <p class="hero-sub"><strong>5 practical digital guides + printable workbooks</strong> to help you define your dream life, plan your goals, visualize your future, practise gratitude and take daily action.</p>
+        <div class="eyebrow" data-i18n="eb0"></div>
+        <h1 data-i18n="h1"></h1>
+        <p class="hero-sub" data-i18n="hsub"></p>
         <div class="pills">
-          <span class="pill">5 Digital Guides</span><span class="pill">30-Day Challenge</span><span class="pill">Printable Worksheets</span><span class="pill">3 Languages</span>
+          <span class="pill" data-i18n="pl1"></span><span class="pill" data-i18n="pl2"></span><span class="pill" data-i18n="pl3"></span><span class="pill" data-i18n="pl4"></span>
         </div>
-        <div class="offer"><span class="now">₹299</span><s>₹999</s><span class="save">SAVE ₹700</span></div>
-        <div class="cta-wrap"><a class="cta-main" href="#buy">START YOUR DREAM LIFE JOURNEY <svg width="19" height="19"><use href="#arrow"/></svg></a></div>
-        <div class="micro">Self-paced digital product • No coaching or live classes • Results depend on consistent use</div>
+        <div class="offer"><span class="now">₹299</span><s>₹999</s><span class="save" data-i18n="save"></span></div>
+        <div class="cta-wrap"><a class="cta-main" href="#buy"><span data-i18n="cta"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a></div>
+        <div class="micro" data-i18n="micro"></div>
       </div>
       <div class="hero-art" aria-label="Five guides included in the bundle">
         <div class="orbit"></div>
@@ -232,110 +254,110 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
       </div>
     </div>
     <div class="hero-bottom">
-      <span>✓ Hindi</span><span>✓ Gujarati</span><span>✓ English</span><span>✓ UPI / Cards / Net Banking</span>
+      <span>✓ Hindi</span><span>✓ Gujarati</span><span>✓ English</span><span data-i18n="hb4"></span>
     </div>
   </div>
 </header>
 
 <section class="value-strip">
   <div class="in value-grid">
-    <div class="value-item"><span class="value-num">5</span><small>Digital guides<br>&amp; workbooks</small></div>
-    <div class="value-item"><span class="value-num">90</span><small>Days of<br>dream-life planning</small></div>
-    <div class="value-item"><span class="value-num">100</span><small>Gratitude<br>journal prompts</small></div>
-    <div class="value-item"><span class="value-num">3</span><small>Languages<br>to choose from</small></div>
+    <div class="value-item"><span class="value-num">5</span><small data-i18n="v1"></small></div>
+    <div class="value-item"><span class="value-num">90</span><small data-i18n="v2"></small></div>
+    <div class="value-item"><span class="value-num">100</span><small data-i18n="v3"></small></div>
+    <div class="value-item"><span class="value-num">3</span><small data-i18n="v4"></small></div>
   </div>
 </section>
 
 <section class="section pain">
   <div class="in pain-grid">
     <div>
-      <div class="eyebrow">The real problem</div>
-      <h2 style="margin-top:12px">Goal likhna easy hai. Uske saath consistently chalna difficult hai.</h2>
-      <p class="lede">Aapke dreams problem nahi hain. Problem aksar clear direction, practical planning aur daily follow-through ki hoti hai.</p>
+      <div class="eyebrow" data-i18n="pe"></div>
+      <h2 style="margin-top:12px" data-i18n="ph"></h2>
+      <p class="lede" data-i18n="pl"></p>
     </div>
     <div>
       <div class="problem-card">
-        <div class="problem"><span class="icon">×</span><span>Goals likhte hain… phir kuch din baad notebook side mein reh jaati hai.</span></div>
-        <div class="problem"><span class="icon">×</span><span>Manifestation start karte hain, lekin routine break ho jaata hai.</span></div>
-        <div class="problem"><span class="icon">×</span><span>Dreams bahut hain, lekin next step clear nahi hota.</span></div>
-        <div class="problem"><span class="icon">×</span><span>Motivation kuch din rehti hai, consistency nahi.</span></div>
+        <div class="problem"><span class="icon">×</span><span data-i18n="pr1"></span></div>
+        <div class="problem"><span class="icon">×</span><span data-i18n="pr2"></span></div>
+        <div class="problem"><span class="icon">×</span><span data-i18n="pr3"></span></div>
+        <div class="problem"><span class="icon">×</span><span data-i18n="pr4"></span></div>
       </div>
     </div>
   </div>
   <div class="in">
-    <div class="bridge"><div class="big">Dream → Plan → Action</div><p>Isi flow ko ek jagah laane ke liye ye bundle design kiya gaya hai — planning, mindset, visualization, gratitude aur 30-day action ek practical system mein.</p></div>
+    <div class="bridge"><div class="big">Dream → Plan → Action</div><p data-i18n="bb"></p></div>
   </div>
 </section>
 
 <section class="section" style="padding-top:20px">
   <div class="in">
     <div class="center">
-      <div class="eyebrow">A simple system</div>
-      <h2 style="margin-top:10px">Sirf “manifest” nahi. Pehle clear karo, phir plan karo, phir action lo.</h2>
+      <div class="eyebrow" data-i18n="se"></div>
+      <h2 style="margin-top:10px" data-i18n="sh"></h2>
     </div>
     <div class="system-flow">
-      <div class="flow"><div class="n">01 — CLARITY</div><h3>Know what you want</h3><p>Dream Life Planner aur Vision Board se apni direction clear karein.</p></div>
-      <div class="flow"><div class="n">02 — MINDSET</div><h3>Practise the mindset</h3><p>Manifestation techniques aur gratitude practices ko routine mein laayein.</p></div>
-      <div class="flow"><div class="n">03 — ACTION</div><h3>Show up for 30 days</h3><p>30-Day Challenge, trackers aur worksheets se consistency build karein.</p></div>
+      <div class="flow"><div class="n" data-i18n="f1n"></div><h3 data-i18n="f1h"></h3><p data-i18n="f1p"></p></div>
+      <div class="flow"><div class="n" data-i18n="f2n"></div><h3 data-i18n="f2h"></h3><p data-i18n="f2p"></p></div>
+      <div class="flow"><div class="n" data-i18n="f3n"></div><h3 data-i18n="f3h"></h3><p data-i18n="f3p"></p></div>
     </div>
   </div>
 </section>
 
 <section class="section" id="guides" style="padding-top:30px">
   <div class="in">
-    <div class="eyebrow">Inside your bundle</div>
-    <h2 style="margin-top:10px">5 guides. One complete Dream Life system.</h2>
-    <p class="lede">Har guide ka role alag hai — together they move you from a vague wish to a clearer plan and daily practice.</p>
+    <div class="eyebrow" data-i18n="ge"></div>
+    <h2 style="margin-top:10px" data-i18n="gh"></h2>
+    <p class="lede" data-i18n="gl"></p>
 
     <div class="guides">
       <article class="guide">
         <img src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745" loading="lazy">
-        <div><span class="tag">VALUE ₹299</span><h3>Dream Life Planner</h3><p class="one">Turn your dreams into goals, plans and daily action.</p></div>
-        <ul><li>Dream life vision, values and strengths</li><li>Goal planning worksheets</li><li>Money, career, health, family and travel sections</li><li>Monthly and weekly planning pages</li><li>30-day action plan + 90-day dream life plan</li><li>Dream life scorecard, habit tracker and life reset worksheet</li></ul>
+        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g1h"></h3><p class="one" data-i18n="g1o"></p></div>
+        <ul><li data-i18n="g1a"></li><li data-i18n="g1b"></li><li data-i18n="g1c"></li><li data-i18n="g1d"></li><li data-i18n="g1e"></li><li data-i18n="g1f"></li></ul>
       </article>
 
       <article class="guide">
         <img src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745" loading="lazy">
-        <div><span class="tag">VALUE ₹299</span><h3>15 Powerful Manifestation Techniques</h3><p class="one">Practical techniques for manifestation, goal setting and positive thinking.</p></div>
-        <ul><li>369 and scripting methods</li><li>Visualization and future-self visualization</li><li>Affirmations, 55×5 and whisper method</li><li>Gratitude practice and vision board</li><li>7-day routine and 30-day challenge</li><li>Journal prompts + printable tracker</li></ul>
+        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g2h"></h3><p class="one" data-i18n="g2o"></p></div>
+        <ul><li data-i18n="g2a"></li><li data-i18n="g2b"></li><li data-i18n="g2c"></li><li data-i18n="g2d"></li><li data-i18n="g2e"></li><li data-i18n="g2f"></li></ul>
       </article>
 
       <article class="guide">
         <img src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745" loading="lazy">
-        <div><span class="tag">VALUE ₹299</span><h3>Digital Vision Board Guide</h3><p class="one">Create a visual plan for the life you want, on screen or on paper.</p></div>
-        <ul><li>How to define your dream life</li><li>What to put on a board by life category</li><li>Physical and digital boards compared</li><li>Step-by-step board creation in Canva</li><li>AI image prompts for vision boards</li><li>Daily routine + 30-day vision board challenge</li></ul>
+        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g3h"></h3><p class="one" data-i18n="g3o"></p></div>
+        <ul><li data-i18n="g3a"></li><li data-i18n="g3b"></li><li data-i18n="g3c"></li><li data-i18n="g3d"></li><li data-i18n="g3e"></li><li data-i18n="g3f"></li></ul>
       </article>
 
       <article class="guide">
         <img src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745" loading="lazy">
-        <div><span class="tag">VALUE ₹299</span><h3>The Gratitude Power Guide</h3><p class="one">Build a positive mindset through one simple daily practice.</p></div>
-        <ul><li>Morning and night gratitude routines</li><li>Gratitude journal and exercises</li><li>Money, health, family and relationship gratitude</li><li>21-day challenge + 30-day tracker</li><li>100 gratitude journal prompts</li><li>Printable gratitude worksheets</li></ul>
+        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g4h"></h3><p class="one" data-i18n="g4o"></p></div>
+        <ul><li data-i18n="g4a"></li><li data-i18n="g4b"></li><li data-i18n="g4c"></li><li data-i18n="g4d"></li><li data-i18n="g4e"></li><li data-i18n="g4f"></li></ul>
       </article>
 
       <article class="guide">
-        <img src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="765" loading="lazy">
-        <div><span class="tag">VALUE ₹299</span><h3>30-Day Manifestation Challenge</h3><p class="one">30 days. One goal. Consistent action.</p></div>
-        <ul><li>A daily practice for each of the 30 days</li><li>Journal prompts and visualization exercises</li><li>Gratitude activities + manifestation techniques</li><li>Daily tracking pages</li></ul>
+        <img src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="745" loading="lazy">
+        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g5h"></h3><p class="one" data-i18n="g5o"></p></div>
+        <ul><li data-i18n="g5a"></li><li data-i18n="g5b"></li><li data-i18n="g5c"></li><li data-i18n="g5d"></li></ul>
       </article>
     </div>
 
     <div class="bonus">
-      <div class="bonus-top"><h3>🎁 Plus 4 included bonus resources</h3><span class="bonus-badge">INCLUDED</span></div>
+      <div class="bonus-top"><h3 data-i18n="bh"></h3><span class="bonus-badge" data-i18n="bbadge"></span></div>
       <ul>
-        <li><span><b>Ready-to-use journal prompts</b> for reflection and planning</span></li>
-        <li><span><b>Daily gratitude worksheets</b> you can print</span></li>
-        <li><span><b>Manifestation &amp; vision trackers</b> to stay consistent</span></li>
-        <li><span><b>Printable worksheets</b> to use digitally or on paper</span></li>
+        <li data-i18n="b1"></li>
+        <li data-i18n="b2"></li>
+        <li data-i18n="b3"></li>
+        <li data-i18n="b4"></li>
       </ul>
     </div>
 
     <div class="value-stack">
-      <div class="eyebrow">What you are getting</div>
-      <h2>5 guides + 4 bonus resources for ₹299</h2>
-      <div class="stack-row"><span>5 guides at ₹299 each</span><b>₹1,495</b></div>
-      <div class="stack-row"><span>Bundle list price</span><b>₹999</b></div>
-      <div class="stack-row"><span>Today’s bundle price</span><b>₹299</b></div>
-      <div class="stack-total"><span>You pay</span><strong>₹299</strong></div>
+      <div class="eyebrow" data-i18n="ve"></div>
+      <h2 data-i18n="vh"></h2>
+      <div class="stack-row"><span data-i18n="vr1"></span><b>₹1,495</b></div>
+      <div class="stack-row"><span data-i18n="vr2"></span><b>₹999</b></div>
+      <div class="stack-row"><span data-i18n="vr3"></span><b>₹299</b></div>
+      <div class="stack-total"><span data-i18n="vtot"></span><strong>₹299</strong></div>
     </div>
   </div>
 </section>
@@ -343,40 +365,40 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
 <section class="section buy" id="buy">
   <div class="in">
     <div class="center">
-      <div class="eyebrow">Ready to start?</div>
-      <h2>Choose your language &amp; get instant access.</h2>
-      <p class="lede">Pick the language you read most comfortably. Your digital files are available after payment.</p>
+      <div class="eyebrow" data-i18n="buyE"></div>
+      <h2 data-i18n="buyH"></h2>
+      <p class="lede" data-i18n="buyL"></p>
     </div>
     <div class="buy-card">
       <div class="buy-price"><b>₹299</b><s>₹999</s></div>
-      <div class="save2">✓ Save ₹700 on the bundle list price</div>
-      <div class="langs">
-        <a class="lang" href="https://superprofile.bio/vp/dream_life?checkout=true" target="_blank" rel="noopener"><span><span class="nm hi">हिन्दी</span><span class="ed">Hindi edition</span></span><span class="go">BUY NOW →</span></a>
-        <a class="lang" href="https://superprofile.bio/vp/the-dream-life-guj?checkout=true" target="_blank" rel="noopener"><span><span class="nm gu">ગુજરાતી</span><span class="ed">Gujarati edition</span></span><span class="go">BUY NOW →</span></a>
-        <a class="lang" href="https://superprofile.bio/vp/the-dream-life-english?checkout=true" target="_blank" rel="noopener"><span><span class="nm">English</span><span class="ed">English edition</span></span><span class="go">BUY NOW →</span></a>
-      </div>
-      <div class="assure"><span>UPI, cards &amp; net banking</span><span>Instant digital access</span><span>Phone, tablet or print</span></div>
+      <div class="save2" data-i18n="buySave"></div>
+      <a class="lang js-buy" id="buyMain" href="https://superprofile.bio/vp/dream_life?checkout=true" target="_blank" rel="noopener">
+        <span><span class="nm" id="buyName">हिन्दी</span><span class="ed" data-i18n="buyEd"></span></span>
+        <span class="go" data-i18n="buyBtn"></span>
+      </a>
+      <div class="others" id="others"></div>
+      <div class="assure"><span data-i18n="as1"></span><span data-i18n="as2"></span><span data-i18n="as3"></span></div>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="in">
-    <div class="center"><div class="eyebrow">Start in minutes</div><h2>From payment to Day 1 — simple.</h2></div>
+    <div class="center"><div class="eyebrow" data-i18n="he"></div><h2 data-i18n="hh"></h2></div>
     <div class="steps">
-      <div class="step"><div class="step-n">1</div><div><h3>Choose your language &amp; pay</h3><p>Use UPI, card or net banking on the checkout page.</p></div></div>
-      <div class="step"><div class="step-n">2</div><div><h3>Get your digital PDFs</h3><p>Access the guides and worksheets after payment, on your device.</p></div></div>
-      <div class="step"><div class="step-n">3</div><div><h3>Start Day 1</h3><p>Fill the planner, choose a technique and begin the 30-day challenge.</p></div></div>
+      <div class="step"><div class="step-n">1</div><div><h3 data-i18n="s1h"></h3><p data-i18n="s1p"></p></div></div>
+      <div class="step"><div class="step-n">2</div><div><h3 data-i18n="s2h"></h3><p data-i18n="s2p"></p></div></div>
+      <div class="step"><div class="step-n">3</div><div><h3 data-i18n="s3h"></h3><p data-i18n="s3p"></p></div></div>
     </div>
   </div>
 </section>
 
 <section class="section" style="padding-top:10px">
   <div class="in">
-    <div class="center"><div class="eyebrow">Buy karne se pehle</div><h2>Know What You’re Buying — Clear Dekho.</h2><p class="lede">Simple words mein: ye ek digital self-guided bundle hai — aapko PDFs milte hain, aur aap apni speed se use karte ho.</p></div>
+    <div class="center"><div class="eyebrow" data-i18n="fe"></div><h2 data-i18n="fh"></h2><p class="lede" data-i18n="fl"></p></div>
     <div class="fit">
-      <div class="fit-card yes"><h3>✓ Ye bundle aapke liye hai agar...</h3><ul><li>aap manifestation ko simple aur structured way mein practise karna chahte hain</li><li>goals set karte hain, but consistency maintain karna difficult hota hai</li><li>journaling, planning aur printable worksheets pasand hain</li><li>Hindi, Gujarati ya English mein content chahte hain</li></ul></div>
-      <div class="fit-card no"><h3>Not for you agar...</h3><ul><li>aap live coaching, live classes ya 1-to-1 support expect kar rahe hain</li><li>bina action liye guaranteed result chahte hain</li><li>aapko physical/printed book home delivery chahiye</li></ul></div>
+      <div class="fit-card yes"><h3 data-i18n="fyh"></h3><ul><li data-i18n="fy1"></li><li data-i18n="fy2"></li><li data-i18n="fy3"></li><li data-i18n="fy4"></li></ul></div>
+      <div class="fit-card no"><h3 data-i18n="fnh"></h3><ul><li data-i18n="fn1"></li><li data-i18n="fn2"></li><li data-i18n="fn3"></li></ul></div>
     </div>
   </div>
 </section>
@@ -384,60 +406,32 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
 <section class="reviews-section">
   <div class="in">
     <div class="center">
-      <div class="eyebrow">Reader Feedback</div>
-      <h2>Simple, Practical & Easy To Follow.</h2>
+      <div class="eyebrow" data-i18n="re"></div>
+      <h2 data-i18n="rh"></h2>
     </div>
     <div class="review-scroll" aria-label="Customer review carousel">
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Planner ka format kaafi simple hai. Goals ko likhne ke baad next steps bhi clear ho gaye. <b>Very easy to follow.</b>”</p>
-        <div class="reviewer"><strong>Priya S.</strong><span>Dream Life Planner</span></div>
-      </article>
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Mujhe especially 30-day challenge pasand aaya. Daily ek small task milta hai, isliye consistency maintain karna easier laga.”</p>
-        <div class="reviewer"><strong>Neha R.</strong><span>30-Day Challenge</span></div>
-      </article>
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Vision board guide was my favourite. <b>Step-by-step explanation</b> ki wajah se mujhe samajh aaya ki apne goals ko visual kaise banana hai.”</p>
-        <div class="reviewer"><strong>Riya M.</strong><span>Vision Board Guide</span></div>
-      </article>
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Pehle manifestation ke baare mein kaafi random cheezein padhta tha. Ye bundle ek proper structure deta hai — <b>Dream → Plan → Action.</b>”</p>
-        <div class="reviewer"><strong>Rahul K.</strong><span>Manifestation Techniques</span></div>
-      </article>
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Gratitude guide aur printable worksheets daily routine mein easily fit ho gaye. <b>Content practical laga, sirf theory nahi.</b>”</p>
-        <div class="reviewer"><strong>Meena P.</strong><span>Gratitude Power Guide</span></div>
-      </article>
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Hindi content hone ki wajah se use karna comfortable tha. <b>One bundle mein itna organised material</b> milna useful laga.”</p>
-        <div class="reviewer"><strong>Amit J.</strong><span>Hindi Bundle</span></div>
-      </article>
-      <article class="review-card">
-        <div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“I wanted something I could actually sit down and work through. The worksheets made the process feel more actionable and less overwhelming.”</p>
-        <div class="reviewer"><strong>Kavita P.</strong><span>Complete Bundle</span></div>
-      </article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r1t"></p><div class="reviewer"><strong data-i18n="r1n"></strong><span data-i18n="r1p"></span></div></article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r2t"></p><div class="reviewer"><strong data-i18n="r2n"></strong><span data-i18n="r2p"></span></div></article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r3t"></p><div class="reviewer"><strong data-i18n="r3n"></strong><span data-i18n="r3p"></span></div></article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r4t"></p><div class="reviewer"><strong data-i18n="r4n"></strong><span data-i18n="r4p"></span></div></article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r5t"></p><div class="reviewer"><strong data-i18n="r5n"></strong><span data-i18n="r5p"></span></div></article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r6t"></p><div class="reviewer"><strong data-i18n="r6n"></strong><span data-i18n="r6p"></span></div></article>
+      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r7t"></p><div class="reviewer"><strong data-i18n="r7n"></strong><span data-i18n="r7p"></span></div></article>
     </div>
-    <div class="review-hint">← Swipe / scroll to see all reviews →</div>
+    <div class="review-hint" data-i18n="rhint"></div>
   </div>
 </section>
 
 <section class="section" style="padding-top:10px">
   <div class="in">
-    <div class="center"><div class="eyebrow">Questions</div><h2>Quick answers before you buy.</h2></div>
+    <div class="center"><div class="eyebrow" data-i18n="qe"></div><h2 data-i18n="qh"></h2></div>
     <div class="faq">
-      <details open><summary>How do I receive the files?</summary><div class="ans">After payment you get access to the digital PDF guides on the purchase page. The files can be downloaded and used on your device.</div></details>
-      <details><summary>Which language should I choose?</summary><div class="ans">Choose Hindi, Gujarati or English — whichever you read most comfortably. Each language has its own checkout page at the same ₹299 price.</div></details>
-      <details><summary>Can I print the worksheets?</summary><div class="ans">Yes. The worksheets and trackers can be used digitally or printed at home for your own use.</div></details>
-      <details><summary>Do I need Canva or an AI tool?</summary><div class="ans">No. The Vision Board Guide explains Canva and AI-image options, and also covers physical vision boards.</div></details>
-      <details><summary>Will this guarantee results?</summary><div class="ans">No. These are self-paced educational and self-development resources. The outcome depends on how consistently you use the material; no specific result is promised.</div></details>
-      <details><summary>I have a problem with my order. Who do I contact?</summary><div class="ans">Email the support address below and include the email used for your purchase so the order can be identified.</div></details>
+      <details open><summary data-i18n="q1"></summary><div class="ans" data-i18n="a1"></div></details>
+      <details><summary data-i18n="q2"></summary><div class="ans" data-i18n="a2"></div></details>
+      <details><summary data-i18n="q3"></summary><div class="ans" data-i18n="a3"></div></details>
+      <details><summary data-i18n="q4"></summary><div class="ans" data-i18n="a4"></div></details>
+      <details><summary data-i18n="q5"></summary><div class="ans" data-i18n="a5"></div></details>
+      <details><summary data-i18n="q6"></summary><div class="ans" data-i18n="a6"></div></details>
     </div>
   </div>
 </section>
@@ -445,10 +439,10 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
 <section class="final-cta">
   <div class="in">
     <div class="final-box">
-      <div class="eyebrow" style="color:var(--gold2);justify-content:center">Your next 30 days can have a plan</div>
-      <h2>Stop keeping your dream only in your head.</h2>
-      <p>Define it. Plan it. Visualize it. Practise it. Take action — one day at a time.</p>
-      <a class="cta-main" href="#buy">GET THE BUNDLE FOR ₹299 <svg width="19" height="19"><use href="#arrow"/></svg></a>
+      <div class="eyebrow" style="color:var(--gold2);justify-content:center" data-i18n="ce"></div>
+      <h2 data-i18n="ch"></h2>
+      <p data-i18n="cp"></p>
+      <a class="cta-main" href="#buy"><span data-i18n="cc"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a>
     </div>
   </div>
 </section>
@@ -456,16 +450,368 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
 <footer>
   <div class="in">
     <div class="footer-brand">Business Gyan</div>
-    <div class="contact">Support: <strong>businessgyangujarat@gmail.com</strong></div>
-    </p><p class="fine">Digital PDF products for personal use. This content is for education and self-development and is not financial, medical or professional advice. Results vary from person to person.</p>
+    <div class="contact"><span data-i18n="fsup"></span> <strong>businessgyangujarat@gmail.com</strong></div>
+    <p class="fine" data-i18n="ffine"></p>
   </div>
 </footer>
 
 <div class="sticky" id="sticky">
   <div class="sticky-row">
     <div class="sticky-price"><b>₹299</b><s>₹999</s></div>
-    <a class="cta-main" href="#buy">Choose Language &amp; Buy</a>
+    <a class="cta-main" href="#buy" data-i18n="stick"></a>
   </div>
 </div>
+
+<script>
+(function(){
+var T={};
+
+/* ============================== ENGLISH ============================== */
+T.en={
+title:"The Dream Life & Manifestation Bundle — ₹299",
+desc:"The Dream Life & Manifestation Bundle — 5 digital guides, printable workbooks and a 30-day challenge. Hindi, Gujarati or English. Instant PDF access for ₹299.",
+sec:"✓ Instant digital PDF access",
+eb0:"The Dream Life &amp; Manifestation Bundle",
+h1:"Everyone dreams.<br><em>How many plan it and follow through?</em>",
+hsub:"<strong>5 practical digital guides + printable workbooks</strong> to help you define your dream life, plan your goals, visualize your future, practise gratitude and take daily action.",
+pl1:"5 Digital Guides",pl2:"30-Day Challenge",pl3:"Printable Worksheets",pl4:"3 Languages",
+save:"SAVE ₹700",
+cta:"START YOUR DREAM LIFE JOURNEY",
+micro:"Self-paced digital product • No coaching or live classes • Results depend on consistent use",
+hb4:"✓ UPI / Cards / Net Banking",
+v1:"Digital guides<br>&amp; workbooks",v2:"Days of<br>dream-life planning",v3:"Gratitude<br>journal prompts",v4:"Languages<br>to choose from",
+pe:"The real problem",
+ph:"Writing goals is easy. Following through consistently is hard.",
+pl:"Your dreams are not the problem. The problem is usually unclear direction, practical planning and daily follow-through.",
+pr1:"You write your goals… then a few days later the notebook is set aside.",
+pr2:"You start manifesting, but the routine breaks.",
+pr3:"You have many dreams, but the next step isn't clear.",
+pr4:"Motivation lasts a few days, consistency doesn't.",
+bb:"This bundle is designed to bring that flow into one place — planning, mindset, visualization, gratitude and 30-day action in one practical system.",
+se:"A simple system",
+sh:"Not just “manifesting”. First get clear, then plan, then take action.",
+f1n:"01 — CLARITY",f1h:"Know what you want",f1p:"Get clear on your direction with the Dream Life Planner and Vision Board.",
+f2n:"02 — MINDSET",f2h:"Practise the mindset",f2p:"Bring manifestation techniques and gratitude practices into your routine.",
+f3n:"03 — ACTION",f3h:"Show up for 30 days",f3p:"Build consistency with the 30-Day Challenge, trackers and worksheets.",
+ge:"Inside your bundle",
+gh:"5 guides. One complete Dream Life system.",
+gl:"Each guide has its own role — together they move you from a vague wish to a clearer plan and daily practice.",
+vt:"VALUE ₹299",
+g1h:"Dream Life Planner",g1o:"Turn your dreams into goals, plans and daily action.",
+g1a:"Dream life vision, values and strengths",g1b:"Goal planning worksheets",g1c:"Money, career, health, family and travel sections",g1d:"Monthly and weekly planning pages",g1e:"30-day action plan + 90-day dream life plan",g1f:"Dream life scorecard, habit tracker and life reset worksheet",
+g2h:"15 Powerful Manifestation Techniques",g2o:"Practical techniques for manifestation, goal setting and positive thinking.",
+g2a:"369 and scripting methods",g2b:"Visualization and future-self visualization",g2c:"Affirmations, 55×5 and whisper method",g2d:"Gratitude practice and vision board",g2e:"7-day routine and 30-day challenge",g2f:"Journal prompts + printable tracker",
+g3h:"Digital Vision Board Guide",g3o:"Create a visual plan for the life you want, on screen or on paper.",
+g3a:"How to define your dream life",g3b:"What to put on a board by life category",g3c:"Physical and digital boards compared",g3d:"Step-by-step board creation in Canva",g3e:"AI image prompts for vision boards",g3f:"Daily routine + 30-day vision board challenge",
+g4h:"The Gratitude Power Guide",g4o:"Build a positive mindset through one simple daily practice.",
+g4a:"Morning and night gratitude routines",g4b:"Gratitude journal and exercises",g4c:"Money, health, family and relationship gratitude",g4d:"21-day challenge + 30-day tracker",g4e:"100 gratitude journal prompts",g4f:"Printable gratitude worksheets",
+g5h:"30-Day Manifestation Challenge",g5o:"30 days. One goal. Consistent action.",
+g5a:"A daily practice for each of the 30 days",g5b:"Journal prompts and visualization exercises",g5c:"Gratitude activities + manifestation techniques",g5d:"Daily tracking pages",
+bh:"🎁 Plus 4 included bonus resources",bbadge:"INCLUDED",
+b1:"<span><b>Ready-to-use journal prompts</b> for reflection and planning</span>",
+b2:"<span><b>Daily gratitude worksheets</b> you can print</span>",
+b3:"<span><b>Manifestation &amp; vision trackers</b> to stay consistent</span>",
+b4:"<span><b>Printable worksheets</b> to use digitally or on paper</span>",
+ve:"What you are getting",vh:"5 guides + 4 bonus resources for ₹299",
+vr1:"5 guides at ₹299 each",vr2:"Bundle list price",vr3:"Today’s bundle price",vtot:"You pay",
+re:"Reader Feedback",rh:"Simple, Practical &amp; Easy To Follow.",
+r1t:"“The planner format is very simple. After writing my goals, the next steps became clear too. <b>Very easy to follow.</b>”",r1n:"Priya S.",r1p:"Dream Life Planner",
+r2t:"“I especially liked the 30-day challenge. You get one small task daily, so staying consistent felt easier.”",r2n:"Neha R.",r2p:"30-Day Challenge",
+r3t:"“The vision board guide was my favourite. Thanks to the <b>step-by-step explanation</b>, I understood how to make my goals visual.”",r3n:"Riya M.",r3p:"Vision Board Guide",
+r4t:"“I used to read a lot of random things about manifestation. This bundle gives a proper structure — <b>Dream → Plan → Action.</b>”",r4n:"Rahul K.",r4p:"Manifestation Techniques",
+r5t:"“The gratitude guide and printable worksheets fit easily into my daily routine. <b>The content felt practical, not just theory.</b>”",r5n:"Meena P.",r5p:"Gratitude Power Guide",
+r6t:"“Having Hindi content made it comfortable to use. <b>Getting so much organised material in one bundle</b> was useful.”",r6n:"Amit J.",r6p:"Hindi Bundle",
+r7t:"“I wanted something I could actually sit down and work through. The worksheets made the process feel more actionable and less overwhelming.”",r7n:"Kavita P.",r7p:"Complete Bundle",
+rhint:"← Swipe / scroll to see all reviews →",
+buyE:"Ready to start?",buyH:"Get instant access to your bundle.",
+buyL:"Your digital files are available after payment. You can read in the language you are most comfortable with.",
+buySave:"✓ Save ₹700 on the bundle list price",
+buyEd:"English edition",buyBtn:"BUY NOW →",buyOther:"Prefer another language?",
+as1:"UPI, cards &amp; net banking",as2:"Instant digital access",as3:"Phone, tablet or print",
+he:"Start in minutes",hh:"From payment to Day 1 — simple.",
+s1h:"Choose your language &amp; pay",s1p:"Use UPI, card or net banking on the checkout page.",
+s2h:"Get your digital PDFs",s2p:"Access the guides and worksheets after payment, on your device.",
+s3h:"Start Day 1",s3p:"Fill the planner, choose a technique and begin the 30-day challenge.",
+fe:"Before you buy",fh:"Know what you’re buying — clearly.",
+fl:"In simple words: this is a digital self-guided bundle — you receive PDFs and use them at your own pace.",
+fyh:"✓ This bundle is for you if…",
+fy1:"you want to practise manifestation in a simple, structured way",
+fy2:"you set goals but find it hard to stay consistent",
+fy3:"you like journaling, planning and printable worksheets",
+fy4:"you want content in Hindi, Gujarati or English",
+fnh:"Not for you if…",
+fn1:"you expect live coaching, live classes or 1-to-1 support",
+fn2:"you want guaranteed results without taking action",
+fn3:"you need a physical/printed book delivered to your home",
+qe:"Questions",qh:"Quick answers before you buy.",
+q1:"How do I receive the files?",a1:"After payment you get access to the digital PDF guides on the purchase page. The files can be downloaded and used on your device.",
+q2:"Which language should I choose?",a2:"Choose Hindi, Gujarati or English — whichever you read most comfortably. Each language has its own checkout page at the same ₹299 price.",
+q3:"Can I print the worksheets?",a3:"Yes. The worksheets and trackers can be used digitally or printed at home for your own use.",
+q4:"Do I need Canva or an AI tool?",a4:"No. The Vision Board Guide explains Canva and AI-image options, and also covers physical vision boards.",
+q5:"Will this guarantee results?",a5:"No. These are self-paced educational and self-development resources. The outcome depends on how consistently you use the material; no specific result is promised.",
+q6:"I have a problem with my order. Who do I contact?",a6:"Email the support address below and include the email used for your purchase so the order can be identified.",
+ce:"Your next 30 days can have a plan",ch:"Stop keeping your dream only in your head.",
+cp:"Define it. Plan it. Visualize it. Practise it. Take action — one day at a time.",
+cc:"GET THE BUNDLE FOR ₹299",
+fsup:"Support:",
+ffine:"Digital PDF products for personal use. This content is for education and self-development and is not financial, medical or professional advice. Results vary from person to person.",
+stick:"Buy Now"
+};
+
+/* ============================== HINDI ============================== */
+T.hi={
+title:"द ड्रीम लाइफ & मैनिफेस्टेशन बंडल — ₹299",
+desc:"द ड्रीम लाइफ & मैनिफेस्टेशन बंडल — 5 डिजिटल गाइड, प्रिंट करने लायक वर्कबुक और 30-दिन का चैलेंज। हिन्दी, गुजराती या अंग्रेज़ी में। तुरंत PDF एक्सेस, सिर्फ़ ₹299।",
+sec:"✓ तुरंत डिजिटल PDF एक्सेस",
+eb0:"द ड्रीम लाइफ &amp; मैनिफेस्टेशन बंडल",
+h1:"सपने सब देखते हैं।<br><em>प्लान बनाकर फ़ॉलो कितने करते हैं?</em>",
+hsub:"<strong>5 प्रैक्टिकल डिजिटल गाइड + प्रिंट करने लायक वर्कबुक</strong>, जो आपको अपनी ड्रीम लाइफ तय करने, गोल प्लान करने, अपना भविष्य विज़ुअलाइज़ करने, ग्रैटिट्यूड प्रैक्टिस करने और रोज़ एक्शन लेने में मदद करें।",
+pl1:"5 डिजिटल गाइड",pl2:"30-दिन का चैलेंज",pl3:"प्रिंटेबल वर्कशीट",pl4:"3 भाषाएँ",
+save:"₹700 की बचत",
+cta:"अपनी ड्रीम लाइफ का सफ़र शुरू करें",
+micro:"अपनी रफ़्तार से चलने वाला डिजिटल प्रोडक्ट • कोई कोचिंग या लाइव क्लास नहीं • नतीजे नियमित उपयोग पर निर्भर",
+hb4:"✓ UPI / कार्ड / नेट बैंकिंग",
+v1:"डिजिटल गाइड<br>और वर्कबुक",v2:"दिन की<br>ड्रीम-लाइफ प्लानिंग",v3:"ग्रैटिट्यूड<br>जर्नल प्रॉम्प्ट",v4:"भाषाओं में<br>से चुनें",
+pe:"असली समस्या",
+ph:"गोल लिखना आसान है। उसके साथ लगातार चलना मुश्किल है।",
+pl:"आपके सपने समस्या नहीं हैं। समस्या अक्सर साफ़ दिशा, प्रैक्टिकल प्लानिंग और रोज़ के फ़ॉलो-थ्रू की होती है।",
+pr1:"गोल लिखते हैं… फिर कुछ दिन बाद नोटबुक एक तरफ़ रह जाती है।",
+pr2:"मैनिफेस्टेशन शुरू करते हैं, लेकिन रूटीन टूट जाता है।",
+pr3:"सपने बहुत हैं, लेकिन अगला कदम साफ़ नहीं होता।",
+pr4:"मोटिवेशन कुछ दिन रहती है, कंसिस्टेंसी नहीं।",
+bb:"इसी फ़्लो को एक जगह लाने के लिए यह बंडल बनाया गया है — प्लानिंग, माइंडसेट, विज़ुअलाइज़ेशन, ग्रैटिट्यूड और 30-दिन का एक्शन, एक प्रैक्टिकल सिस्टम में।",
+se:"एक सरल सिस्टम",
+sh:"सिर्फ़ “मैनिफेस्ट” नहीं। पहले क्लियर हों, फिर प्लान करें, फिर एक्शन लें।",
+f1n:"01 — स्पष्टता",f1h:"जानें आप क्या चाहते हैं",f1p:"ड्रीम लाइफ प्लानर और विज़न बोर्ड से अपनी दिशा साफ़ करें।",
+f2n:"02 — माइंडसेट",f2h:"सही माइंडसेट की प्रैक्टिस करें",f2p:"मैनिफेस्टेशन तकनीक और ग्रैटिट्यूड प्रैक्टिस को अपने रूटीन में लाएँ।",
+f3n:"03 — एक्शन",f3h:"30 दिन तक डटे रहें",f3p:"30-दिन के चैलेंज, ट्रैकर और वर्कशीट से कंसिस्टेंसी बनाएँ।",
+ge:"आपके बंडल में क्या है",
+gh:"5 गाइड। एक पूरा ड्रीम लाइफ सिस्टम।",
+gl:"हर गाइड की अपनी भूमिका है — साथ मिलकर ये आपको एक धुँधली इच्छा से साफ़ प्लान और रोज़ की प्रैक्टिस तक ले जाते हैं।",
+vt:"वैल्यू ₹299",
+g1h:"ड्रीम लाइफ प्लानर",g1o:"अपने सपनों को गोल, प्लान और रोज़ के एक्शन में बदलें।",
+g1a:"ड्रीम लाइफ विज़न, वैल्यूज़ और स्ट्रेंथ्स",g1b:"गोल प्लानिंग वर्कशीट",g1c:"पैसा, करियर, सेहत, परिवार और यात्रा के सेक्शन",g1d:"मंथली और वीकली प्लानिंग पेज",g1e:"30-दिन का एक्शन प्लान + 90-दिन का ड्रीम लाइफ प्लान",g1f:"ड्रीम लाइफ स्कोरकार्ड, हैबिट ट्रैकर और लाइफ रीसेट वर्कशीट",
+g2h:"15 पावरफ़ुल मैनिफेस्टेशन तकनीकें",g2o:"मैनिफेस्टेशन, गोल सेटिंग और पॉज़िटिव थिंकिंग की प्रैक्टिकल तकनीकें।",
+g2a:"369 और स्क्रिप्टिंग मेथड",g2b:"विज़ुअलाइज़ेशन और फ़्यूचर-सेल्फ़ विज़ुअलाइज़ेशन",g2c:"अफ़र्मेशन, 55×5 और व्हिस्पर मेथड",g2d:"ग्रैटिट्यूड प्रैक्टिस और विज़न बोर्ड",g2e:"7-दिन का रूटीन और 30-दिन का चैलेंज",g2f:"जर्नल प्रॉम्प्ट + प्रिंटेबल ट्रैकर",
+g3h:"डिजिटल विज़न बोर्ड गाइड",g3o:"जो ज़िंदगी आप चाहते हैं, उसका विज़ुअल प्लान बनाएँ — स्क्रीन पर या काग़ज़ पर।",
+g3a:"अपनी ड्रीम लाइफ कैसे तय करें",g3b:"लाइफ की हर कैटेगरी के हिसाब से बोर्ड पर क्या लगाएँ",g3c:"फ़िज़िकल और डिजिटल बोर्ड की तुलना",g3d:"Canva में स्टेप-बाय-स्टेप बोर्ड बनाना",g3e:"विज़न बोर्ड के लिए AI इमेज प्रॉम्प्ट",g3f:"डेली रूटीन + 30-दिन का विज़न बोर्ड चैलेंज",
+g4h:"द ग्रैटिट्यूड पावर गाइड",g4o:"एक सरल रोज़ की प्रैक्टिस से पॉज़िटिव माइंडसेट बनाएँ।",
+g4a:"सुबह और रात के ग्रैटिट्यूड रूटीन",g4b:"ग्रैटिट्यूड जर्नल और एक्सरसाइज़",g4c:"पैसा, सेहत, परिवार और रिश्तों के लिए आभार",g4d:"21-दिन का चैलेंज + 30-दिन का ट्रैकर",g4e:"100 ग्रैटिट्यूड जर्नल प्रॉम्प्ट",g4f:"प्रिंटेबल ग्रैटिट्यूड वर्कशीट",
+g5h:"30-दिन का मैनिफेस्टेशन चैलेंज",g5o:"30 दिन। एक गोल। लगातार एक्शन।",
+g5a:"30 में से हर दिन की एक डेली प्रैक्टिस",g5b:"जर्नल प्रॉम्प्ट और विज़ुअलाइज़ेशन एक्सरसाइज़",g5c:"ग्रैटिट्यूड एक्टिविटी + मैनिफेस्टेशन तकनीकें",g5d:"डेली ट्रैकिंग पेज",
+bh:"🎁 साथ में 4 बोनस रिसोर्स शामिल",bbadge:"शामिल",
+b1:"<span><b>तैयार जर्नल प्रॉम्प्ट</b> — सोचने और प्लान करने के लिए</span>",
+b2:"<span><b>डेली ग्रैटिट्यूड वर्कशीट</b> जिन्हें आप प्रिंट कर सकते हैं</span>",
+b3:"<span><b>मैनिफेस्टेशन और विज़न ट्रैकर</b> — कंसिस्टेंट रहने के लिए</span>",
+b4:"<span><b>प्रिंटेबल वर्कशीट</b> — डिजिटल या काग़ज़ पर इस्तेमाल करें</span>",
+ve:"आपको क्या मिल रहा है",vh:"5 गाइड + 4 बोनस रिसोर्स, सिर्फ़ ₹299 में",
+vr1:"5 गाइड, ₹299 प्रति गाइड",vr2:"बंडल की लिस्ट कीमत",vr3:"आज की बंडल कीमत",vtot:"आप देंगे",
+re:"पाठकों की राय",rh:"सरल, प्रैक्टिकल और फ़ॉलो करने में आसान।",
+r1t:"“प्लानर का फ़ॉर्मैट काफ़ी सरल है। गोल लिखने के बाद अगले कदम भी साफ़ हो गए। <b>फ़ॉलो करना बहुत आसान है।</b>”",r1n:"प्रिया एस.",r1p:"ड्रीम लाइफ प्लानर",
+r2t:"“मुझे ख़ासकर 30-दिन का चैलेंज पसंद आया। रोज़ एक छोटा टास्क मिलता है, इसलिए कंसिस्टेंट रहना आसान लगा।”",r2n:"नेहा आर.",r2p:"30-दिन का चैलेंज",
+r3t:"“विज़न बोर्ड गाइड मेरी फ़ेवरेट रही। <b>स्टेप-बाय-स्टेप समझाने</b> की वजह से समझ आया कि अपने गोल को विज़ुअल कैसे बनाना है।”",r3n:"रिया एम.",r3p:"विज़न बोर्ड गाइड",
+r4t:"“पहले मैं मैनिफेस्टेशन के बारे में काफ़ी बिखरी हुई चीज़ें पढ़ता था। यह बंडल एक सही स्ट्रक्चर देता है — <b>Dream → Plan → Action।</b>”",r4n:"राहुल के.",r4p:"मैनिफेस्टेशन तकनीकें",
+r5t:"“ग्रैटिट्यूड गाइड और प्रिंटेबल वर्कशीट रोज़ के रूटीन में आसानी से फ़िट हो गईं। <b>कंटेंट प्रैक्टिकल लगा, सिर्फ़ थ्योरी नहीं।</b>”",r5n:"मीना पी.",r5p:"ग्रैटिट्यूड पावर गाइड",
+r6t:"“हिन्दी में कंटेंट होने की वजह से इस्तेमाल करना आसान रहा। <b>एक ही बंडल में इतना व्यवस्थित मटीरियल</b> मिलना काम का लगा।”",r6n:"अमित जे.",r6p:"हिन्दी बंडल",
+r7t:"“मुझे कुछ ऐसा चाहिए था जिसे मैं बैठकर पूरा कर सकूँ। वर्कशीट ने पूरी प्रक्रिया को ज़्यादा एक्शन-फ़्रेंडली और कम भारी बना दिया।”",r7n:"कविता पी.",r7p:"कम्प्लीट बंडल",
+rhint:"← सभी रिव्यू देखने के लिए स्वाइप / स्क्रॉल करें →",
+buyE:"शुरू करने के लिए तैयार?",buyH:"अपने बंडल का तुरंत एक्सेस पाएँ।",
+buyL:"पेमेंट के बाद आपकी डिजिटल फ़ाइलें उपलब्ध हो जाती हैं। आप जिस भाषा में सबसे सहज हों, उसमें पढ़ें।",
+buySave:"✓ बंडल की लिस्ट कीमत पर ₹700 बचाएँ",
+buyEd:"हिन्दी संस्करण",buyBtn:"अभी खरीदें →",buyOther:"दूसरी भाषा चाहिए?",
+as1:"UPI, कार्ड और नेट बैंकिंग",as2:"तुरंत डिजिटल एक्सेस",as3:"फ़ोन, टैबलेट या प्रिंट",
+he:"मिनटों में शुरू करें",hh:"पेमेंट से Day 1 तक — सरल।",
+s1h:"अपनी भाषा चुनें और पेमेंट करें",s1p:"चेकआउट पेज पर UPI, कार्ड या नेट बैंकिंग इस्तेमाल करें।",
+s2h:"अपनी डिजिटल PDF पाएँ",s2p:"पेमेंट के बाद अपने डिवाइस पर गाइड और वर्कशीट एक्सेस करें।",
+s3h:"Day 1 शुरू करें",s3p:"प्लानर भरें, एक तकनीक चुनें और 30-दिन का चैलेंज शुरू करें।",
+fe:"खरीदने से पहले",fh:"आप क्या खरीद रहे हैं — साफ़ देखें।",
+fl:"सरल शब्दों में: यह एक डिजिटल सेल्फ़-गाइडेड बंडल है — आपको PDF मिलती हैं, और आप अपनी रफ़्तार से उन्हें इस्तेमाल करते हैं।",
+fyh:"✓ यह बंडल आपके लिए है अगर…",
+fy1:"आप मैनिफेस्टेशन को सरल और स्ट्रक्चर्ड तरीक़े से प्रैक्टिस करना चाहते हैं",
+fy2:"आप गोल सेट करते हैं, लेकिन कंसिस्टेंसी बनाए रखना मुश्किल लगता है",
+fy3:"आपको जर्नलिंग, प्लानिंग और प्रिंटेबल वर्कशीट पसंद हैं",
+fy4:"आप हिन्दी, गुजराती या अंग्रेज़ी में कंटेंट चाहते हैं",
+fnh:"आपके लिए नहीं है अगर…",
+fn1:"आप लाइव कोचिंग, लाइव क्लास या 1-टू-1 सपोर्ट की उम्मीद कर रहे हैं",
+fn2:"आप बिना एक्शन लिए गारंटीड रिज़ल्ट चाहते हैं",
+fn3:"आपको घर पर फ़िज़िकल/प्रिंटेड किताब की डिलीवरी चाहिए",
+qe:"सवाल",qh:"खरीदने से पहले छोटे जवाब।",
+q1:"मुझे फ़ाइलें कैसे मिलेंगी?",a1:"पेमेंट के बाद आपको परचेज़ पेज पर डिजिटल PDF गाइड का एक्सेस मिलता है। फ़ाइलें डाउनलोड करके अपने डिवाइस पर इस्तेमाल की जा सकती हैं।",
+q2:"मुझे कौन सी भाषा चुननी चाहिए?",a2:"हिन्दी, गुजराती या अंग्रेज़ी चुनें — जिसमें आप सबसे आराम से पढ़ पाते हों। हर भाषा का अपना चेकआउट पेज है और कीमत वही ₹299 है।",
+q3:"क्या मैं वर्कशीट प्रिंट कर सकता/सकती हूँ?",a3:"हाँ। वर्कशीट और ट्रैकर को डिजिटल इस्तेमाल किया जा सकता है, या अपने निजी उपयोग के लिए घर पर प्रिंट किया जा सकता है।",
+q4:"क्या मुझे Canva या किसी AI टूल की ज़रूरत है?",a4:"नहीं। विज़न बोर्ड गाइड में Canva और AI-इमेज के विकल्प समझाए गए हैं, और फ़िज़िकल विज़न बोर्ड भी कवर किए गए हैं।",
+q5:"क्या इससे रिज़ल्ट की गारंटी है?",a5:"नहीं। ये अपनी रफ़्तार से चलने वाले एजुकेशनल और सेल्फ़-डेवलपमेंट रिसोर्स हैं। नतीजा इस पर निर्भर करता है कि आप सामग्री का कितनी नियमितता से उपयोग करते हैं; किसी ख़ास रिज़ल्ट का वादा नहीं किया जाता।",
+q6:"मेरे ऑर्डर में समस्या है। किससे संपर्क करूँ?",a6:"नीचे दिए सपोर्ट ईमेल पर लिखें और ख़रीदारी में इस्तेमाल किया गया ईमेल भी बताएँ, ताकि ऑर्डर पहचाना जा सके।",
+ce:"आपके अगले 30 दिन का एक प्लान हो सकता है",ch:"अपने सपने को सिर्फ़ दिमाग़ में रखना बंद करें।",
+cp:"तय करें। प्लान करें। विज़ुअलाइज़ करें। प्रैक्टिस करें। एक्शन लें — एक-एक दिन करके।",
+cc:"₹299 में बंडल पाएँ",
+fsup:"सपोर्ट:",
+ffine:"निजी उपयोग के लिए डिजिटल PDF प्रोडक्ट। यह कंटेंट शिक्षा और सेल्फ़-डेवलपमेंट के लिए है और वित्तीय, चिकित्सकीय या प्रोफ़ेशनल सलाह नहीं है। नतीजे हर व्यक्ति में अलग-अलग होते हैं।",
+stick:"अभी खरीदें"
+};
+
+/* ============================== GUJARATI ============================== */
+T.gu={
+title:"ધ ડ્રીમ લાઇફ & મેનિફેસ્ટેશન બંડલ — ₹299",
+desc:"ધ ડ્રીમ લાઇફ & મેનિફેસ્ટેશન બંડલ — 5 ડિજિટલ ગાઇડ, પ્રિન્ટ કરી શકાય તેવી વર્કબુક અને 30-દિવસનો ચેલેન્જ. હિન્દી, ગુજરાતી કે અંગ્રેજીમાં. તરત PDF એક્સેસ, માત્ર ₹299.",
+sec:"✓ તરત ડિજિટલ PDF એક્સેસ",
+eb0:"ધ ડ્રીમ લાઇફ &amp; મેનિફેસ્ટેશન બંડલ",
+h1:"સપના બધા જુએ છે.<br><em>પ્લાન બનાવીને ફોલો કેટલા કરે છે?</em>",
+hsub:"<strong>5 પ્રેક્ટિકલ ડિજિટલ ગાઇડ + પ્રિન્ટ કરી શકાય તેવી વર્કબુક</strong>, જે તમને તમારી ડ્રીમ લાઇફ નક્કી કરવામાં, ગોલ પ્લાન કરવામાં, ભવિષ્યને વિઝ્યુલાઇઝ કરવામાં, ગ્રેટિટ્યૂડ પ્રેક્ટિસ કરવામાં અને રોજ એક્શન લેવામાં મદદ કરે.",
+pl1:"5 ડિજિટલ ગાઇડ",pl2:"30-દિવસનો ચેલેન્જ",pl3:"પ્રિન્ટેબલ વર્કશીટ",pl4:"3 ભાષાઓ",
+save:"₹700 બચાવો",
+cta:"તમારી ડ્રીમ લાઇફની સફર શરૂ કરો",
+micro:"તમારી ગતિએ ચાલતું ડિજિટલ પ્રોડક્ટ • કોઈ કોચિંગ કે લાઇવ ક્લાસ નથી • પરિણામ નિયમિત ઉપયોગ પર આધારિત",
+hb4:"✓ UPI / કાર્ડ / નેટ બેંકિંગ",
+v1:"ડિજિટલ ગાઇડ<br>અને વર્કબુક",v2:"દિવસની<br>ડ્રીમ-લાઇફ પ્લાનિંગ",v3:"ગ્રેટિટ્યૂડ<br>જર્નલ પ્રોમ્પ્ટ",v4:"ભાષાઓમાંથી<br>પસંદ કરો",
+pe:"અસલી સમસ્યા",
+ph:"ગોલ લખવા સહેલા છે. તેની સાથે સતત ચાલવું અઘરું છે.",
+pl:"તમારા સપના સમસ્યા નથી. સમસ્યા ઘણીવાર સ્પષ્ટ દિશા, પ્રેક્ટિકલ પ્લાનિંગ અને રોજના ફોલો-થ્રૂની હોય છે.",
+pr1:"ગોલ લખો છો… પછી થોડા દિવસ પછી નોટબુક બાજુ પર રહી જાય છે.",
+pr2:"મેનિફેસ્ટેશન શરૂ કરો છો, પણ રૂટિન તૂટી જાય છે.",
+pr3:"સપના ઘણા છે, પણ આગળનું પગલું સ્પષ્ટ નથી હોતું.",
+pr4:"મોટિવેશન થોડા દિવસ રહે છે, કન્સિસ્ટન્સી નહીં.",
+bb:"આ જ ફ્લોને એક જગ્યાએ લાવવા માટે આ બંડલ બનાવવામાં આવ્યું છે — પ્લાનિંગ, માઇન્ડસેટ, વિઝ્યુલાઇઝેશન, ગ્રેટિટ્યૂડ અને 30-દિવસનું એક્શન, એક પ્રેક્ટિકલ સિસ્ટમમાં.",
+se:"એક સરળ સિસ્ટમ",
+sh:"માત્ર “મેનિફેસ્ટ” નહીં. પહેલા સ્પષ્ટ થાઓ, પછી પ્લાન કરો, પછી એક્શન લો.",
+f1n:"01 — સ્પષ્ટતા",f1h:"જાણો તમે શું ઇચ્છો છો",f1p:"ડ્રીમ લાઇફ પ્લાનર અને વિઝન બોર્ડથી તમારી દિશા સ્પષ્ટ કરો.",
+f2n:"02 — માઇન્ડસેટ",f2h:"સાચા માઇન્ડસેટની પ્રેક્ટિસ કરો",f2p:"મેનિફેસ્ટેશન ટેકનિક અને ગ્રેટિટ્યૂડ પ્રેક્ટિસને તમારા રૂટિનમાં લાવો.",
+f3n:"03 — એક્શન",f3h:"30 દિવસ સુધી ટકી રહો",f3p:"30-દિવસના ચેલેન્જ, ટ્રેકર અને વર્કશીટથી કન્સિસ્ટન્સી બનાવો.",
+ge:"તમારા બંડલમાં શું છે",
+gh:"5 ગાઇડ. એક સંપૂર્ણ ડ્રીમ લાઇફ સિસ્ટમ.",
+gl:"દરેક ગાઇડની પોતાની ભૂમિકા છે — સાથે મળીને તે તમને ઝાંખી ઇચ્છાથી સ્પષ્ટ પ્લાન અને રોજની પ્રેક્ટિસ સુધી લઈ જાય છે.",
+vt:"વેલ્યુ ₹299",
+g1h:"ડ્રીમ લાઇફ પ્લાનર",g1o:"તમારા સપનાને ગોલ, પ્લાન અને રોજના એક્શનમાં ફેરવો.",
+g1a:"ડ્રીમ લાઇફ વિઝન, વેલ્યુઝ અને સ્ટ્રેન્થ્સ",g1b:"ગોલ પ્લાનિંગ વર્કશીટ",g1c:"પૈસા, કરિયર, સ્વાસ્થ્ય, પરિવાર અને પ્રવાસના સેક્શન",g1d:"મંથલી અને વીકલી પ્લાનિંગ પેજ",g1e:"30-દિવસનો એક્શન પ્લાન + 90-દિવસનો ડ્રીમ લાઇફ પ્લાન",g1f:"ડ્રીમ લાઇફ સ્કોરકાર્ડ, હેબિટ ટ્રેકર અને લાઇફ રીસેટ વર્કશીટ",
+g2h:"15 પાવરફુલ મેનિફેસ્ટેશન ટેકનિક",g2o:"મેનિફેસ્ટેશન, ગોલ સેટિંગ અને પોઝિટિવ થિંકિંગ માટેની પ્રેક્ટિકલ ટેકનિક.",
+g2a:"369 અને સ્ક્રિપ્ટિંગ મેથડ",g2b:"વિઝ્યુલાઇઝેશન અને ફ્યુચર-સેલ્ફ વિઝ્યુલાઇઝેશન",g2c:"અફર્મેશન, 55×5 અને વ્હિસ્પર મેથડ",g2d:"ગ્રેટિટ્યૂડ પ્રેક્ટિસ અને વિઝન બોર્ડ",g2e:"7-દિવસનું રૂટિન અને 30-દિવસનો ચેલેન્જ",g2f:"જર્નલ પ્રોમ્પ્ટ + પ્રિન્ટેબલ ટ્રેકર",
+g3h:"ડિજિટલ વિઝન બોર્ડ ગાઇડ",g3o:"તમે જે જીવન ઇચ્છો છો તેનો વિઝ્યુઅલ પ્લાન બનાવો — સ્ક્રીન પર કે કાગળ પર.",
+g3a:"તમારી ડ્રીમ લાઇફ કેવી રીતે નક્કી કરવી",g3b:"લાઇફની દરેક કેટેગરી મુજબ બોર્ડ પર શું મૂકવું",g3c:"ફિઝિકલ અને ડિજિટલ બોર્ડની સરખામણી",g3d:"Canva માં સ્ટેપ-બાય-સ્ટેપ બોર્ડ બનાવવું",g3e:"વિઝન બોર્ડ માટે AI ઇમેજ પ્રોમ્પ્ટ",g3f:"ડેઇલી રૂટિન + 30-દિવસનો વિઝન બોર્ડ ચેલેન્જ",
+g4h:"ધ ગ્રેટિટ્યૂડ પાવર ગાઇડ",g4o:"એક સરળ રોજની પ્રેક્ટિસથી પોઝિટિવ માઇન્ડસેટ બનાવો.",
+g4a:"સવાર અને રાતના ગ્રેટિટ્યૂડ રૂટિન",g4b:"ગ્રેટિટ્યૂડ જર્નલ અને એક્સરસાઇઝ",g4c:"પૈસા, સ્વાસ્થ્ય, પરિવાર અને સંબંધો માટે આભાર",g4d:"21-દિવસનો ચેલેન્જ + 30-દિવસનું ટ્રેકર",g4e:"100 ગ્રેટિટ્યૂડ જર્નલ પ્રોમ્પ્ટ",g4f:"પ્રિન્ટેબલ ગ્રેટિટ્યૂડ વર્કશીટ",
+g5h:"30-દિવસનો મેનિફેસ્ટેશન ચેલેન્જ",g5o:"30 દિવસ. એક ગોલ. સતત એક્શન.",
+g5a:"30 દિવસમાંથી દરેક દિવસની એક ડેઇલી પ્રેક્ટિસ",g5b:"જર્નલ પ્રોમ્પ્ટ અને વિઝ્યુલાઇઝેશન એક્સરસાઇઝ",g5c:"ગ્રેટિટ્યૂડ એક્ટિવિટી + મેનિફેસ્ટેશન ટેકનિક",g5d:"ડેઇલી ટ્રેકિંગ પેજ",
+bh:"🎁 સાથે 4 બોનસ રિસોર્સ શામેલ",bbadge:"શામેલ",
+b1:"<span><b>તૈયાર જર્નલ પ્રોમ્પ્ટ</b> — વિચારવા અને પ્લાન કરવા માટે</span>",
+b2:"<span><b>ડેઇલી ગ્રેટિટ્યૂડ વર્કશીટ</b> જે તમે પ્રિન્ટ કરી શકો</span>",
+b3:"<span><b>મેનિફેસ્ટેશન અને વિઝન ટ્રેકર</b> — કન્સિસ્ટન્ટ રહેવા માટે</span>",
+b4:"<span><b>પ્રિન્ટેબલ વર્કશીટ</b> — ડિજિટલ કે કાગળ પર વાપરો</span>",
+ve:"તમને શું મળી રહ્યું છે",vh:"5 ગાઇડ + 4 બોનસ રિસોર્સ, માત્ર ₹299 માં",
+vr1:"5 ગાઇડ, દરેક ₹299",vr2:"બંડલની લિસ્ટ કિંમત",vr3:"આજની બંડલ કિંમત",vtot:"તમે ચૂકવશો",
+re:"વાચકોનો પ્રતિભાવ",rh:"સરળ, પ્રેક્ટિકલ અને ફોલો કરવામાં આસાન.",
+r1t:"“પ્લાનરનું ફોર્મેટ ઘણું સરળ છે. ગોલ લખ્યા પછી આગળના પગલાં પણ સ્પષ્ટ થઈ ગયા. <b>ફોલો કરવું ખૂબ આસાન છે.</b>”",r1n:"પ્રિયા એસ.",r1p:"ડ્રીમ લાઇફ પ્લાનર",
+r2t:"“મને ખાસ કરીને 30-દિવસનો ચેલેન્જ ગમ્યો. રોજ એક નાનું ટાસ્ક મળે છે, એટલે કન્સિસ્ટન્ટ રહેવું સહેલું લાગ્યું.”",r2n:"નેહા આર.",r2p:"30-દિવસનો ચેલેન્જ",
+r3t:"“વિઝન બોર્ડ ગાઇડ મારી ફેવરિટ રહી. <b>સ્ટેપ-બાય-સ્ટેપ સમજૂતી</b>ને કારણે સમજાયું કે ગોલને વિઝ્યુઅલ કેવી રીતે બનાવવા.”",r3n:"રિયા એમ.",r3p:"વિઝન બોર્ડ ગાઇડ",
+r4t:"“પહેલા હું મેનિફેસ્ટેશન વિશે ઘણી વિખરાયેલી વસ્તુઓ વાંચતો. આ બંડલ યોગ્ય સ્ટ્રક્ચર આપે છે — <b>Dream → Plan → Action.</b>”",r4n:"રાહુલ કે.",r4p:"મેનિફેસ્ટેશન ટેકનિક",
+r5t:"“ગ્રેટિટ્યૂડ ગાઇડ અને પ્રિન્ટેબલ વર્કશીટ રોજના રૂટિનમાં સહેલાઈથી ગોઠવાઈ ગઈ. <b>કન્ટેન્ટ પ્રેક્ટિકલ લાગ્યું, માત્ર થિયરી નહીં.</b>”",r5n:"મીના પી.",r5p:"ગ્રેટિટ્યૂડ પાવર ગાઇડ",
+r6t:"“હિન્દી કન્ટેન્ટ હોવાથી વાપરવું સરળ રહ્યું. <b>એક જ બંડલમાં આટલું વ્યવસ્થિત મટિરિયલ</b> મળવું ઉપયોગી લાગ્યું.”",r6n:"અમિત જે.",r6p:"હિન્દી બંડલ",
+r7t:"“મને એવું કંઈક જોઈતું હતું જે હું બેસીને પૂરું કરી શકું. વર્કશીટે આખી પ્રક્રિયાને વધુ એક્શન-ફ્રેન્ડલી અને ઓછી ભારે બનાવી.”",r7n:"કવિતા પી.",r7p:"કમ્પ્લીટ બંડલ",
+rhint:"← બધા રિવ્યૂ જોવા સ્વાઇપ / સ્ક્રોલ કરો →",
+buyE:"શરૂ કરવા તૈયાર?",buyH:"તમારા બંડલનો તરત એક્સેસ મેળવો.",
+buyL:"પેમેન્ટ પછી તમારી ડિજિટલ ફાઇલો ઉપલબ્ધ થાય છે. તમને જે ભાષામાં સૌથી સરળ લાગે તેમાં વાંચો.",
+buySave:"✓ બંડલની લિસ્ટ કિંમત પર ₹700 બચાવો",
+buyEd:"ગુજરાતી આવૃત્તિ",buyBtn:"હમણાં ખરીદો →",buyOther:"બીજી ભાષા જોઈએ છે?",
+as1:"UPI, કાર્ડ અને નેટ બેંકિંગ",as2:"તરત ડિજિટલ એક્સેસ",as3:"ફોન, ટેબ્લેટ કે પ્રિન્ટ",
+he:"મિનિટોમાં શરૂ કરો",hh:"પેમેન્ટથી Day 1 સુધી — સરળ.",
+s1h:"તમારી ભાષા પસંદ કરો અને પેમેન્ટ કરો",s1p:"ચેકઆઉટ પેજ પર UPI, કાર્ડ કે નેટ બેંકિંગ વાપરો.",
+s2h:"તમારી ડિજિટલ PDF મેળવો",s2p:"પેમેન્ટ પછી તમારા ડિવાઇસ પર ગાઇડ અને વર્કશીટ એક્સેસ કરો.",
+s3h:"Day 1 શરૂ કરો",s3p:"પ્લાનર ભરો, એક ટેકનિક પસંદ કરો અને 30-દિવસનો ચેલેન્જ શરૂ કરો.",
+fe:"ખરીદતા પહેલા",fh:"તમે શું ખરીદી રહ્યા છો — સ્પષ્ટ જુઓ.",
+fl:"સરળ શબ્દોમાં: આ એક ડિજિટલ સેલ્ફ-ગાઇડેડ બંડલ છે — તમને PDF મળે છે, અને તમે તમારી ગતિએ વાપરો છો.",
+fyh:"✓ આ બંડલ તમારા માટે છે જો…",
+fy1:"તમે મેનિફેસ્ટેશનને સરળ અને સ્ટ્રક્ચર્ડ રીતે પ્રેક્ટિસ કરવા માંગો છો",
+fy2:"તમે ગોલ સેટ કરો છો, પણ કન્સિસ્ટન્સી જાળવવી અઘરી લાગે છે",
+fy3:"તમને જર્નલિંગ, પ્લાનિંગ અને પ્રિન્ટેબલ વર્કશીટ ગમે છે",
+fy4:"તમે હિન્દી, ગુજરાતી કે અંગ્રેજીમાં કન્ટેન્ટ ઇચ્છો છો",
+fnh:"તમારા માટે નથી જો…",
+fn1:"તમે લાઇવ કોચિંગ, લાઇવ ક્લાસ કે 1-ટુ-1 સપોર્ટની અપેક્ષા રાખો છો",
+fn2:"તમે એક્શન લીધા વગર ગેરંટીડ રિઝલ્ટ ઇચ્છો છો",
+fn3:"તમને ઘરે ફિઝિકલ/પ્રિન્ટેડ બુકની ડિલિવરી જોઈએ છે",
+qe:"પ્રશ્નો",qh:"ખરીદતા પહેલા ટૂંકા જવાબ.",
+q1:"મને ફાઇલો કેવી રીતે મળશે?",a1:"પેમેન્ટ પછી તમને પરચેઝ પેજ પર ડિજિટલ PDF ગાઇડનો એક્સેસ મળે છે. ફાઇલો ડાઉનલોડ કરીને તમારા ડિવાઇસ પર વાપરી શકાય છે.",
+q2:"મારે કઈ ભાષા પસંદ કરવી જોઈએ?",a2:"હિન્દી, ગુજરાતી કે અંગ્રેજી પસંદ કરો — જેમાં તમને સૌથી સરળતાથી વાંચી શકાય. દરેક ભાષાનું પોતાનું ચેકઆઉટ પેજ છે અને કિંમત એ જ ₹299 છે.",
+q3:"શું હું વર્કશીટ પ્રિન્ટ કરી શકું?",a3:"હા. વર્કશીટ અને ટ્રેકર ડિજિટલ વાપરી શકાય છે, અથવા તમારા અંગત ઉપયોગ માટે ઘરે પ્રિન્ટ કરી શકાય છે.",
+q4:"શું મને Canva કે કોઈ AI ટૂલની જરૂર છે?",a4:"ના. વિઝન બોર્ડ ગાઇડમાં Canva અને AI-ઇમેજના વિકલ્પો સમજાવ્યા છે, અને ફિઝિકલ વિઝન બોર્ડ પણ આવરી લેવાયા છે.",
+q5:"શું આનાથી રિઝલ્ટની ગેરંટી મળે છે?",a5:"ના. આ પોતાની ગતિએ ચાલતા એજ્યુકેશનલ અને સેલ્ફ-ડેવલપમેન્ટ રિસોર્સ છે. પરિણામ તમે સામગ્રીનો કેટલી નિયમિતતાથી ઉપયોગ કરો છો તેના પર આધારિત છે; કોઈ ચોક્કસ પરિણામનો વાયદો કરવામાં આવતો નથી.",
+q6:"મારા ઓર્ડરમાં સમસ્યા છે. કોનો સંપર્ક કરું?",a6:"નીચે આપેલા સપોર્ટ ઇમેઇલ પર લખો અને ખરીદીમાં વાપરેલો ઇમેઇલ પણ જણાવો, જેથી ઓર્ડર ઓળખી શકાય.",
+ce:"તમારા આગામી 30 દિવસનો એક પ્લાન હોઈ શકે",ch:"તમારા સપનાને માત્ર મનમાં રાખવાનું બંધ કરો.",
+cp:"નક્કી કરો. પ્લાન કરો. વિઝ્યુલાઇઝ કરો. પ્રેક્ટિસ કરો. એક્શન લો — એક એક દિવસ કરીને.",
+cc:"₹299 માં બંડલ મેળવો",
+fsup:"સપોર્ટ:",
+ffine:"અંગત ઉપયોગ માટે ડિજિટલ PDF પ્રોડક્ટ. આ કન્ટેન્ટ શિક્ષણ અને સેલ્ફ-ડેવલપમેન્ટ માટે છે અને નાણાકીય, તબીબી કે પ્રોફેશનલ સલાહ નથી. પરિણામ વ્યક્તિએ વ્યક્તિએ અલગ હોય છે.",
+stick:"હમણાં ખરીદો"
+};
+
+var LINKS={
+  hi:"https://superprofile.bio/vp/dream_life?checkout=true",
+  gu:"https://superprofile.bio/vp/the-dream-life-guj?checkout=true",
+  en:"https://superprofile.bio/vp/the-dream-life-english?checkout=true"
+};
+var NAMES={hi:"हिन्दी",gu:"ગુજરાતી",en:"English"};
+var ORDER=["en","hi","gu"];
+var DEFAULT="hi";
+
+function pick(){
+  var q=null;
+  try{q=new URLSearchParams(location.search).get("lang");}catch(e){}
+  if(q&&T[q])return q;
+  try{var s=localStorage.getItem("bg_lang");if(s&&T[s])return s;}catch(e){}
+  return DEFAULT;
+}
+
+function setLang(l,fromUser){
+  if(!T[l])l=DEFAULT;
+  var d=T[l],en=T.en;
+  document.documentElement.lang=l;
+  var nodes=document.querySelectorAll("[data-i18n]");
+  for(var i=0;i<nodes.length;i++){
+    var k=nodes[i].getAttribute("data-i18n");
+    var v=(d[k]!==undefined)?d[k]:en[k];
+    if(v!==undefined)nodes[i].innerHTML=v;
+  }
+  document.title=d.title;
+  var md=document.querySelector('meta[name="description"]');if(md)md.setAttribute("content",d.desc);
+  var ot=document.querySelector('meta[property="og:title"]');if(ot)ot.setAttribute("content",d.title);
+
+  /* switcher state */
+  var btns=document.querySelectorAll(".lang-sw button");
+  for(var j=0;j<btns.length;j++){
+    btns[j].setAttribute("aria-pressed",btns[j].getAttribute("data-l")===l?"true":"false");
+  }
+
+  /* buy button for the selected language + links to other editions */
+  var main=document.getElementById("buyMain");
+  main.href=LINKS[l];
+  document.getElementById("buyName").textContent=NAMES[l];
+  var box=document.getElementById("others");
+  box.innerHTML="";
+  var lab=document.createElement("span");lab.textContent=d.buyOther;box.appendChild(lab);
+  ORDER.forEach(function(o){
+    if(o===l)return;
+    var a=document.createElement("a");
+    a.href=LINKS[o];a.target="_blank";a.rel="noopener";a.className="js-buy";
+    a.textContent=NAMES[o];
+    box.appendChild(a);
+  });
+
+  try{localStorage.setItem("bg_lang",l);}catch(e){}
+  if(fromUser){
+    try{history.replaceState(null,"",location.pathname+"?lang="+l+location.hash);}catch(e){}
+    if(typeof fbq==="function")fbq("trackCustom","LanguageSelected",{language:l});
+  }
+}
+
+document.addEventListener("click",function(e){
+  var b=e.target.closest&&e.target.closest(".lang-sw button");
+  if(b){setLang(b.getAttribute("data-l"),true);return;}
+  var buy=e.target.closest&&e.target.closest(".js-buy");
+  if(buy&&typeof fbq==="function"){
+    fbq("track","InitiateCheckout",{value:299,currency:"INR",content_name:"Dream Life Bundle ("+document.documentElement.lang+")"});
+  }
+});
+
+setLang(pick(),false);
+})();
+</script>
 </body>
 </html>
