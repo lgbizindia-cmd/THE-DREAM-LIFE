@@ -27,319 +27,428 @@ src="https://www.facebook.com/tr?id=1061712936650219&ev=PageView&noscript=1"
 <title>The Dream Life & Manifestation Bundle — ₹299</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap">
 <style>
 :root{
-  --bg:#f7f8fc; --surface:#fff; --ink:#11152f; --muted:#606680; --line:#e5e7f0;
-  --deep:#101533; --deep2:#171d48; --gold:#ffb21a; --gold2:#ffd15a; --goldInk:#2a1a00;
-  --green:#168653; --greenSoft:#e8f7ef; --rose:#fff0eb; --shadow:0 18px 55px rgba(17,21,47,.10);
-  --display:"Bricolage Grotesque","Hanken Grotesk","Noto Sans Devanagari","Noto Sans Gujarati",system-ui,sans-serif;
+  --cream:#fbf6ee; --paper:#fffdf8; --ink:#1f1b16; --muted:#6b645a; --line:#e8dfd0;
+  --green:#0f6b57; --greenDeep:#0a4a3d; --greenSoft:#e3f2ec;
+  --coral:#e8603c; --coralSoft:#fdebe4; --sun:#f6b73c; --sunSoft:#fff3d6;
+  --shadow:0 20px 50px rgba(31,27,22,.10);
+  --display:"Fraunces","Noto Sans Devanagari","Noto Sans Gujarati",Georgia,serif;
   --body:"Hanken Grotesk","Noto Sans Devanagari","Noto Sans Gujarati",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --hi:"Noto Sans Devanagari","Hanken Grotesk",sans-serif;
-  --gu:"Noto Sans Gujarati","Hanken Grotesk",sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;padding-bottom:92px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-bottom:84px;-webkit-text-size-adjust:100%}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 h1,h2,h3,p{margin:0}
-h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;text-wrap:balance}
-h2{font-size:clamp(1.85rem,5.5vw,3rem);line-height:1.06;font-weight:800}
-h3{line-height:1.12}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(1.8rem,5.2vw,2.9rem);line-height:1.1;font-weight:700}
+h3{line-height:1.2}
 button,a{touch-action:manipulation}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.in{width:min(1100px,calc(100% - 32px));margin:auto}
-.section{padding:70px 0}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#b87900}
-.eyebrow:before{content:"";width:22px;height:2px;background:currentColor;border-radius:3px;flex:none}
-.lede{color:var(--muted);max-width:64ch;margin-top:14px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+.section{padding:72px 0}
+.kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);background:var(--coralSoft);padding:6px 12px;border-radius:999px}
+.lede{color:var(--muted);max-width:60ch;margin-top:14px}
 .center{text-align:center}.center .lede{margin-left:auto;margin-right:auto}
 
-/* Hindi / Gujarati typography tweaks (taller line-height, no negative tracking) */
+/* Hindi / Gujarati typography */
 html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] h3,
-html[lang="gu"] h1,html[lang="gu"] h2,html[lang="gu"] h3{letter-spacing:0}
-html[lang="hi"] h1,html[lang="gu"] h1{line-height:1.22}
-html[lang="hi"] h2,html[lang="gu"] h2{line-height:1.25}
-html[lang="hi"] h3,html[lang="gu"] h3{line-height:1.3}
-html[lang="hi"] .eyebrow,html[lang="gu"] .eyebrow{letter-spacing:.04em;text-transform:none;font-size:13px}
-html[lang="hi"] body,html[lang="gu"] body{line-height:1.65}
+html[lang="gu"] h1,html[lang="gu"] h2,html[lang="gu"] h3{letter-spacing:0;font-family:var(--body)}
+html[lang="hi"] h1,html[lang="gu"] h1{line-height:1.25}
+html[lang="hi"] h2,html[lang="gu"] h2{line-height:1.28}
+html[lang="hi"] h3,html[lang="gu"] h3{line-height:1.35}
+html[lang="hi"] .kicker,html[lang="gu"] .kicker{letter-spacing:.03em;text-transform:none;font-size:13px}
+html[lang="hi"] body,html[lang="gu"] body{line-height:1.7}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:40;background:rgba(251,246,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0}
+.brand{display:flex;align-items:center;gap:9px;font:800 17px var(--body)}
+.brand i{width:30px;height:30px;border-radius:9px;background:var(--green);color:#fff;display:grid;place-items:center;font-style:normal;font-size:15px}
+.nav-r{display:flex;align-items:center;gap:12px}
+.secure{font-size:12.5px;color:var(--green);font-weight:700}
+.lang-sw{display:inline-flex;padding:3px;border-radius:999px;background:#fff;border:1px solid var(--line)}
+.lang-sw button{appearance:none;border:0;background:transparent;color:var(--muted);font:700 13px/1 var(--body);padding:9px 13px;border-radius:999px;cursor:pointer;min-height:34px;transition:.15s}
+.lang-sw button:hover{color:var(--ink)}
+.lang-sw button[aria-pressed="true"]{background:var(--green);color:#fff}
 
 /* HERO */
-.hero{position:relative;overflow:hidden;color:#fff;background:
- radial-gradient(circle at 78% 18%,rgba(255,178,26,.18),transparent 27%),
- radial-gradient(circle at 10% 85%,rgba(100,110,255,.18),transparent 32%),
- linear-gradient(135deg,var(--deep),var(--deep2));padding:22px 0 62px}
-.hero:after{content:"";position:absolute;inset:auto -10% -120px;height:220px;background:var(--bg);border-radius:50% 50% 0 0/45% 45% 0 0}
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:0 0 28px;color:#b8bfdd;font-size:13px}
-.topbar strong{font-family:var(--display);font-size:17px;color:#fff}
-.topbar .secure{display:inline-flex;align-items:center;gap:7px}
-.top-right{display:flex;align-items:center;gap:14px}
+.hero{padding:44px 0 30px;text-align:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--sunSoft);left:50%;top:-250px;transform:translateX(-50%);z-index:0}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.3rem,7.5vw,4.4rem);line-height:1.02;font-weight:800;margin:18px auto 0;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero-sub{margin:18px auto 0;max-width:60ch;color:var(--muted);font-size:18px}
+.hero-sub strong{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+.chip{padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:13px;font-weight:700}
+.offer{display:flex;align-items:baseline;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.offer .now{font:800 3.4rem/1 var(--display);color:var(--green)}
+.offer s{color:var(--muted);font-size:19px}
+.save{background:var(--coral);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:5px 11px}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#fff;text-decoration:none;font-weight:800;border-radius:16px;padding:17px 26px;min-height:56px;box-shadow:0 8px 0 var(--greenDeep);transition:.15s transform,.15s box-shadow;text-align:center;margin-top:20px}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 0 var(--greenDeep)}
+.cta:active{transform:translateY(6px);box-shadow:0 2px 0 var(--greenDeep)}
+.micro{margin-top:18px;color:var(--muted);font-size:12.5px}
+.covers{display:flex;justify-content:center;align-items:flex-end;margin-top:38px;padding:0 6px}
+.covers img{width:19%;max-width:190px;aspect-ratio:520/745;object-fit:cover;border-radius:8px;box-shadow:0 18px 36px rgba(31,27,22,.25);border:3px solid #fff;margin:0 -1.4%}
+.covers img:nth-child(1){transform:rotate(-7deg) translateY(14px)}
+.covers img:nth-child(2){transform:rotate(-3deg) translateY(4px)}
+.covers img:nth-child(3){transform:translateY(-14px) scale(1.12);z-index:3}
+.covers img:nth-child(4){transform:rotate(3deg) translateY(4px)}
+.covers img:nth-child(5){transform:rotate(7deg) translateY(14px)}
 
-/* LANGUAGE SWITCHER */
-.lang-sw{display:inline-flex;padding:3px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18)}
-.lang-sw button{appearance:none;border:0;background:transparent;color:#d6dbf1;font:700 13px/1 var(--body);padding:9px 13px;border-radius:999px;cursor:pointer;min-height:34px;transition:.15s background,.15s color}
-.lang-sw button:hover{color:#fff}
-.lang-sw button[aria-pressed="true"]{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--goldInk)}
+/* STATS */
+.stats{margin-top:34px}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center}
+.stat b{display:block;font:800 2.2rem/1 var(--display);color:var(--green)}
+.stat small{display:block;margin-top:6px;color:var(--muted);font-size:12.5px;line-height:1.3}
 
-.hero-grid{position:relative;z-index:2;display:grid;gap:42px;align-items:center}
-.hero-copy .eyebrow{color:var(--gold2)}
-.hero h1{font-size:clamp(2.35rem,8vw,4.5rem);line-height:.98;margin-top:14px;max-width:720px}
-.hero h1 em{font-style:normal;color:var(--gold2)}
-.hero-sub{margin-top:19px;color:#c2c7df;font-size:18px;max-width:650px}
-.hero-sub strong{color:#fff}
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px}
-.pill{padding:7px 11px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);border-radius:999px;color:#e6e8f3;font-size:13px;font-weight:600}
-.offer{margin-top:25px;display:flex;align-items:end;gap:11px;flex-wrap:wrap}
-.offer .now{font:800 3.35rem/1 var(--display);color:#fff}
-.offer s{color:#aeb4d1;font-size:18px}
-.save{background:var(--gold);color:var(--goldInk);font-size:12px;font-weight:800;border-radius:999px;padding:5px 10px;margin-bottom:6px}
-.cta-main{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--goldInk);text-decoration:none;font-weight:800;border-radius:14px;padding:16px 22px;min-height:54px;box-shadow:0 12px 30px rgba(255,178,26,.24);transition:.18s transform,.18s box-shadow;text-align:center}
-.cta-main:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(255,178,26,.30)}
-.cta-wrap{margin-top:18px}
-.micro{margin-top:10px;color:#9da5c8;font-size:12.5px}
-.hero-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:410px}
-.orbit{position:absolute;width:360px;height:360px;border:1px solid rgba(255,255,255,.10);border-radius:50%}
-.orbit:before,.orbit:after{content:"";position:absolute;border-radius:50%;background:var(--gold);box-shadow:0 0 28px rgba(255,178,26,.45)}
-.orbit:before{width:9px;height:9px;top:8%;right:12%}.orbit:after{width:6px;height:6px;bottom:18%;left:7%}
-.fan{position:relative;width:min(520px,100%);height:420px;display:flex;justify-content:center;align-items:center}
-.fan img{position:absolute;width:29%;aspect-ratio:520/745;object-fit:cover;border-radius:7px;box-shadow:0 24px 45px rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.13)}
-.fan .a{transform:translate(-112px,22px) rotate(-12deg);z-index:1}.fan .b{transform:translate(-60px,7px) rotate(-6deg);z-index:2}
-.fan .mid{width:36%;transform:translateY(-16px);z-index:5}.fan .c{transform:translate(60px,7px) rotate(6deg);z-index:2}.fan .d{transform:translate(112px,22px) rotate(12deg);z-index:1}
-.hero-bottom{position:relative;z-index:4;margin-top:25px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;color:#c5c9df;font-size:13px}
-.hero-bottom span{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09)}
-.check{color:var(--green);font-weight:900}
-
-/* VALUE STRIP */
-.value-strip{background:#fff;border-bottom:1px solid var(--line);padding:19px 0}
-.value-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.value-item{display:flex;gap:10px;align-items:center}
-.value-num{font:800 1.55rem/1 var(--display);white-space:nowrap}.value-item small{display:block;color:var(--muted);font-size:12.5px;line-height:1.25}
-
-/* PAIN */
-.pain{background:linear-gradient(180deg,#fff,var(--bg))}
-.pain-grid{display:grid;gap:28px;align-items:center}
-.problem-card{margin-top:25px;display:grid;gap:10px}
-.problem{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:0 6px 20px rgba(17,21,47,.04)}
-.problem .icon{width:26px;height:26px;border-radius:50%;background:var(--rose);display:grid;place-items:center;color:#d65a38;font-weight:900;flex:none}
-.bridge{margin-top:22px;border-radius:18px;padding:22px;background:linear-gradient(135deg,#151a3b,#242b5c);color:#fff;box-shadow:var(--shadow)}
-.bridge .big{font:800 clamp(1.35rem,4vw,1.85rem)/1.2 var(--display)}
-.bridge p{margin-top:9px;color:#c6cbe2}
+/* PROBLEM */
+.problem-grid{display:grid;gap:14px;margin-top:30px}
+.pcard{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;gap:13px;align-items:flex-start}
+.pcard span{flex:none;width:30px;height:30px;border-radius:10px;background:var(--coralSoft);color:var(--coral);display:grid;place-items:center;font-weight:900}
+.bridge{margin-top:22px;border-radius:24px;padding:28px 24px;background:var(--green);color:#fff;text-align:center;box-shadow:var(--shadow)}
+.bridge .big{font:800 clamp(1.5rem,4.5vw,2.2rem)/1.15 var(--display)}
+.bridge p{margin:10px auto 0;color:#cfeadf;max-width:58ch}
 
 /* SYSTEM */
-.system-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.flow{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff;box-shadow:0 8px 25px rgba(17,21,47,.04)}
-.flow .n{font:800 13px/1 var(--display);color:#b87900}.flow h3{margin-top:7px;font-size:1.3rem}.flow p{margin-top:6px;color:var(--muted);font-size:14px}
+.steps3{display:grid;gap:14px;margin-top:30px;position:relative}
+.s3{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;position:relative}
+.s3 .n{display:inline-block;font:800 12px var(--body);letter-spacing:.1em;color:var(--green);background:var(--greenSoft);padding:5px 10px;border-radius:999px}
+.s3 h3{margin-top:12px;font-size:1.35rem}.s3 p{margin-top:6px;color:var(--muted);font-size:15px}
 
-/* GUIDES */
-.guides{display:grid;gap:16px;margin-top:30px}
-.guide{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;grid-template-columns:92px 1fr;gap:15px;box-shadow:0 8px 28px rgba(17,21,47,.045)}
-.guide img{width:92px;aspect-ratio:520/745;object-fit:cover;border-radius:7px;box-shadow:0 10px 20px rgba(17,21,47,.18)}
-.guide .tag{display:inline-block;padding:4px 9px;border-radius:999px;background:#f0f2fa;color:#555d7d;font-size:11px;font-weight:800}
-.guide h3{margin-top:8px;font-size:1.3rem}.guide .one{margin-top:7px;color:var(--muted);font-size:14px}
-.guide ul{grid-column:1/-1;margin:0;padding:14px 0 0;border-top:1px solid var(--line);list-style:none;display:grid;gap:8px}
-.guide li{display:flex;gap:8px;font-size:14px}.guide li:before{content:"✓";color:var(--green);font-weight:900;flex:none}
-
-/* BONUS / VALUE */
-.bonus{margin-top:18px;border:1px solid #f0d18b;background:linear-gradient(135deg,#fff8e8,#fff2cf);border-radius:20px;padding:22px}
-.bonus-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.bonus h3{font-size:1.35rem}.bonus-badge{background:#fff;border:1px solid #eed08c;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800;white-space:nowrap}
-.bonus ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:9px}.bonus li{display:flex;gap:9px;font-size:14px}.bonus li:before{content:"✓";color:var(--green);font-weight:900;flex:none}
-.value-stack{margin-top:32px;border-radius:24px;background:var(--deep);color:#fff;padding:28px;box-shadow:var(--shadow)}
-.value-stack .eyebrow{color:var(--gold2)}.value-stack h2{margin-top:10px}.stack-row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.11);color:#d8dced}.stack-row:last-child{border:0}.stack-row b:last-child{white-space:nowrap;color:#fff}.stack-total{display:flex;justify-content:space-between;gap:12px;margin-top:10px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font:800 1.45rem var(--display)}.stack-total strong{color:var(--gold2)}
-
-/* REVIEWS */
-.reviews-section{padding:70px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
-.review-scroll{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:28px 4px 16px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
-.review-scroll::-webkit-scrollbar{height:7px}.review-scroll::-webkit-scrollbar-thumb{background:#d9dcea;border-radius:999px}
-.review-card{flex:0 0 min(360px,82vw);scroll-snap-align:start;background:#fafbff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 28px rgba(17,21,47,.06);min-height:220px;display:flex;flex-direction:column}
-.stars{letter-spacing:3px;color:#f3a400;font-size:18px;line-height:1}
-.review-card p{margin-top:15px;color:#3f4562;font-size:15px;line-height:1.6}
-.reviewer{margin-top:auto;padding-top:18px;display:flex;justify-content:space-between;gap:10px;align-items:end;border-top:1px solid var(--line)}
-.reviewer strong{font-size:14px}.reviewer span{color:var(--muted);font-size:11px;text-align:right}
-.review-hint{text-align:center;color:#7a8098;font-size:12px;font-weight:700;margin-top:2px}
+/* GUIDES (zigzag) */
+.guide{display:grid;gap:22px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:22px;margin-top:20px}
+.guide .pic{display:flex;justify-content:center;background:var(--sunSoft);border-radius:22px;padding:24px}
+.guide .pic img{width:min(190px,60%);aspect-ratio:520/745;object-fit:cover;border-radius:8px;box-shadow:0 18px 34px rgba(31,27,22,.28)}
+.guide .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--greenSoft);color:var(--green);font-size:11px;font-weight:800}
+.guide h3{margin-top:10px;font-size:1.55rem}
+.guide .one{margin-top:7px;color:var(--muted)}
+.guide ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:9px}
+.guide li{display:flex;gap:9px;font-size:15px}
+.guide li:before{content:"✓";color:var(--green);font-weight:900;flex:none}
+.bonus{margin-top:28px;border:2px dashed var(--sun);background:var(--sunSoft);border-radius:26px;padding:24px}
+.bonus-top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.bonus h3{font-size:1.4rem}
+.bonus-badge{background:var(--ink);color:#fff;border-radius:999px;padding:6px 12px;font-size:11px;font-weight:800}
+.bonus ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+.bonus li{display:flex;gap:9px;font-size:15px}
+.bonus li:before{content:"🎁";flex:none}
 
 /* BUY */
-.buy{background:linear-gradient(135deg,#0d1230,#1a2050);color:#fff;position:relative;overflow:hidden}.buy:before{content:"";position:absolute;width:450px;height:450px;border-radius:50%;background:rgba(255,178,26,.08);right:-220px;top:-180px}
-.buy .in{position:relative;z-index:1}.buy .eyebrow{color:var(--gold2)}.buy h2{margin-top:10px}.buy .lede{color:#c1c7df}
-.buy-card{margin-top:28px;background:#fff;color:var(--ink);border-radius:24px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.22);max-width:560px;margin-left:auto;margin-right:auto}
-.buy-price{display:flex;align-items:end;gap:10px}.buy-price b{font:800 3.2rem/1 var(--display)}.buy-price s{color:var(--muted);font-size:16px}.save2{color:var(--green);font-size:13px;font-weight:800;margin-top:7px}
-.lang{display:flex;justify-content:space-between;align-items:center;gap:15px;text-decoration:none;background:linear-gradient(135deg,#ffb21a,#ffd15a);color:#2a1a00;border-radius:14px;padding:16px 18px;box-shadow:0 6px 0 #b97a00;transition:.15s transform;margin-top:20px}
-.lang:hover{transform:translateY(-1px)}.lang:active{transform:translateY(4px);box-shadow:0 2px 0 #b97a00}
-.lang .nm{font-size:1.2rem;font-weight:800}.lang .ed{display:block;font-size:12px;opacity:.75}.lang .go{font-weight:800;white-space:nowrap}
-.others{margin-top:18px;text-align:center;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 12px;justify-content:center;align-items:center}
-.others a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:700;color:var(--ink);background:#f7f8fc}
-.others a:hover{border-color:var(--gold)}
-.assure{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 16px;margin-top:16px;color:var(--muted);font-size:12.5px}.assure span:before{content:"✓";color:var(--green);font-weight:900;margin-right:5px}
+.buy{background:var(--greenDeep);color:#fff;position:relative;overflow:hidden}
+.buy:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:rgba(246,183,60,.10);right:-200px;top:-200px}
+.buy .wrap{position:relative;z-index:1}
+.buy .kicker{background:rgba(255,255,255,.12);color:#ffe3a0}
+.buy h2{margin-top:12px}.buy .lede{color:#bfe0d4}
+.buy-card{margin:30px auto 0;max-width:560px;background:var(--paper);color:var(--ink);border-radius:28px;padding:26px;box-shadow:0 26px 70px rgba(0,0,0,.30)}
+.buy-price{display:flex;align-items:baseline;gap:10px}
+.buy-price b{font:800 3.4rem/1 var(--display);color:var(--green)}
+.buy-price s{color:var(--muted);font-size:17px}
+.save2{color:var(--green);font-size:13px;font-weight:800;margin-top:6px}
+.lang{display:flex;justify-content:space-between;align-items:center;gap:15px;text-decoration:none;background:var(--coral);color:#fff;border-radius:16px;padding:16px 18px;box-shadow:0 7px 0 #b8421f;transition:.15s transform;margin-top:20px}
+.lang:hover{transform:translateY(-1px)}
+.lang:active{transform:translateY(5px);box-shadow:0 2px 0 #b8421f}
+.lang .nm{display:block;font-size:1.25rem;font-weight:800}
+.lang .ed{display:block;font-size:12px;opacity:.85}
+.lang .go{font-weight:800;white-space:nowrap}
+.others{margin-top:18px;text-align:center;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 10px;justify-content:center;align-items:center}
+.others a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:700;background:#fff}
+.others a:hover{border-color:var(--green)}
+.assure{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 16px;margin-top:16px;color:var(--muted);font-size:12.5px}
+.assure span:before{content:"✓";color:var(--green);font-weight:900;margin-right:5px}
 
-/* HOW / FIT / FAQ */
-.steps{display:grid;gap:14px;margin-top:28px}.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:18px;border-radius:17px;background:#fff;border:1px solid var(--line)}.step-n{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font:800 1.15rem var(--display)}.step h3{font-size:1.08rem}.step p{margin-top:4px;color:var(--muted);font-size:14px}
-.fit{display:grid;gap:14px;margin-top:28px}.fit-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px}.fit-card h3{font-size:1.2rem}.fit-card ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:9px}.fit-card li{font-size:14px;display:flex;gap:8px}.fit-card.yes li:before{content:"✓";color:var(--green);font-weight:900;flex:none}.fit-card.no li:before{content:"×";color:#8b90a7;font-weight:900;flex:none}
-.faq{display:grid;gap:10px;margin-top:28px}.faq details{background:#fff;border:1px solid var(--line);border-radius:14px}.faq summary{cursor:pointer;list-style:none;padding:17px 48px 17px 18px;font-weight:800;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:18px;top:13px;font-size:24px;color:var(--muted);font-weight:400}.faq details[open] summary:after{content:"−"}.ans{padding:0 18px 18px;color:var(--muted);font-size:14px}
+/* HOW */
+.how{display:grid;gap:14px;margin-top:30px}
+.how-i{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px}
+.how-n{flex:none;width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:800 1.2rem var(--display)}
+.how-i h3{font-size:1.1rem}.how-i p{margin-top:4px;color:var(--muted);font-size:14.5px}
 
-/* FINAL CTA */
-.final-cta{background:#fff;padding:68px 0 82px}.final-box{background:linear-gradient(135deg,#171d48,#0d1230);border-radius:26px;color:#fff;text-align:center;padding:36px 22px;box-shadow:var(--shadow)}.final-box h2{margin-top:9px}.final-box p{margin:12px auto 0;color:#c3c8de;max-width:600px}.final-box .cta-main{margin-top:20px}
+/* FIT */
+.fit{display:grid;gap:14px;margin-top:30px}
+.fit-card{border-radius:24px;padding:24px;border:1px solid var(--line)}
+.fit-card.yes{background:var(--greenSoft);border-color:#c7e4d8}
+.fit-card.no{background:var(--paper)}
+.fit-card h3{font-size:1.25rem}
+.fit-card ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.fit-card li{display:flex;gap:9px;font-size:15px}
+.fit-card.yes li:before{content:"✓";color:var(--green);font-weight:900;flex:none}
+.fit-card.no li:before{content:"×";color:#9a9183;font-weight:900;flex:none}
+
+/* FAQ */
+.faq{display:grid;gap:10px;margin:30px auto 0;max-width:780px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:16px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 50px 18px 20px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:20px;top:12px;font-size:26px;color:var(--coral);font-weight:400}
+.faq details[open] summary:after{content:"−"}
+.ans{padding:0 20px 18px;color:var(--muted);font-size:15px}
+
+/* FINAL */
+.final{padding:20px 0 80px}
+.final-box{background:var(--ink);color:#fff;border-radius:32px;text-align:center;padding:46px 22px;box-shadow:var(--shadow)}
+.final-box .kicker{background:rgba(255,255,255,.12);color:#ffe3a0}
+.final-box h2{margin-top:14px}
+.final-box p{margin:12px auto 0;color:#cfc8bb;max-width:560px}
+.final-box .cta{background:var(--coral);box-shadow:0 8px 0 #b8421f}
+.final-box .cta:active{box-shadow:0 2px 0 #b8421f}
 
 /* FOOTER */
-footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:13px}.footer-brand{font:800 1.1rem var(--display);color:var(--ink)}.contact{margin-top:10px}.fine{margin-top:16px;max-width:800px;font-size:12px;line-height:1.5}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:13px;background:var(--paper)}
+.fbrand{font:800 1.1rem var(--body);color:var(--ink)}
+.contact{margin-top:10px}
+.fine{margin-top:14px;max-width:800px;font-size:12px;line-height:1.55}
 
 /* STICKY */
-.sticky{position:fixed;z-index:50;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);box-shadow:0 -12px 30px rgba(17,21,47,.10);padding:9px 14px calc(9px + env(safe-area-inset-bottom))}
-.sticky-row{width:min(1100px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.sticky-price{display:flex;align-items:baseline;gap:7px}.sticky-price b{font:800 1.55rem var(--display)}.sticky-price s{font-size:12px;color:var(--muted)}.sticky .cta-main{padding:12px 17px;min-height:46px;font-size:14px}
+.sticky{position:fixed;z-index:50;left:0;right:0;bottom:0;background:rgba(255,253,248,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);box-shadow:0 -10px 28px rgba(31,27,22,.10);padding:9px 14px calc(9px + env(safe-area-inset-bottom))}
+.sticky-row{width:min(1120px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sticky-price{display:flex;align-items:baseline;gap:7px}
+.sticky-price b{font:800 1.6rem var(--display);color:var(--green)}
+.sticky-price s{font-size:12px;color:var(--muted)}
+.sticky .cta{margin-top:0;padding:12px 20px;min-height:46px;font-size:14px;box-shadow:0 4px 0 var(--greenDeep)}
 
 /* RESPONSIVE */
-@media(min-width:700px){
- .in{width:min(1100px,calc(100% - 56px))}.section{padding:90px 0}
- .hero{padding-top:25px}.hero-grid{grid-template-columns:1.02fr .98fr;gap:50px}.hero-art{min-height:510px}
- .value-grid{grid-template-columns:repeat(4,1fr)}.pain-grid{grid-template-columns:1fr .9fr}.problem-card{margin-top:0}
- .guides{grid-template-columns:1fr 1fr}.guide{padding:20px}.guide img{width:110px}.guide{grid-template-columns:110px 1fr}
- .fit{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.step{display:block}.step-n{margin-bottom:13px}
- .buy-card{padding:30px}
-}
-@media(min-width:980px){
- .hero h1{max-width:700px}.hero-art{min-height:540px}.fan{height:480px}.fan img{width:28%}.fan .a{transform:translate(-145px,28px) rotate(-12deg)}.fan .b{transform:translate(-78px,10px) rotate(-6deg)}.fan .c{transform:translate(78px,10px) rotate(6deg)}.fan .d{transform:translate(145px,28px) rotate(12deg)}
+@media(min-width:760px){
+  .wrap{width:min(1120px,calc(100% - 56px))}
+  .section{padding:96px 0}
+  .stats-grid{grid-template-columns:repeat(4,1fr)}
+  .problem-grid{grid-template-columns:1fr 1fr}
+  .steps3{grid-template-columns:repeat(3,1fr)}
+  .guide{grid-template-columns:300px 1fr;padding:28px;gap:36px}
+  .guide:nth-of-type(even){grid-template-columns:1fr 300px}
+  .guide:nth-of-type(even) .pic{order:2}
+  .how{grid-template-columns:repeat(3,1fr)}
+  .how-i{display:block}.how-n{margin-bottom:14px}
+  .fit{grid-template-columns:1fr 1fr}
+  .buy-card{padding:34px}
+  .final-box{padding:62px 40px}
 }
 @media(max-width:520px){
- .hero{padding-bottom:48px}.hero:after{bottom:-150px}.hero-art{min-height:330px}.fan{height:330px}.orbit{width:285px;height:285px}.fan .a{transform:translate(-76px,18px) rotate(-11deg)}.fan .b{transform:translate(-41px,6px) rotate(-5deg)}.fan .c{transform:translate(41px,6px) rotate(5deg)}.fan .d{transform:translate(76px,18px) rotate(11deg)}
- .system-flow{grid-template-columns:1fr}.offer .now{font-size:2.9rem}.topbar .secure{display:none}
- .lang-sw button{padding:9px 12px}
+  .secure{display:none}
+  .offer .now{font-size:2.9rem}
+  .covers img{width:21%}
 }
-@media(max-width:700px){
- .reviews-section{padding:54px 0}
- .review-scroll{padding-top:22px}
- .review-card{flex-basis:86vw;min-height:235px}
+/* ===================== ANIMATIONS ===================== */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--coral),var(--sun));z-index:60;transition:width .1s linear}
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* hero entrance */
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.hero .kicker,.hero h1,.hero-sub,.hero .chips,.hero .offer,.hero .cta,.hero .micro,.hero .stats{animation:rise .8s cubic-bezier(.2,.7,.2,1) backwards}
+.hero .kicker{animation-delay:.05s}.hero h1{animation-delay:.15s}.hero-sub{animation-delay:.3s}
+.hero .chips{animation-delay:.4s}.hero .offer{animation-delay:.5s}.hero .cta{animation-delay:.6s}
+.hero .micro{animation-delay:.7s}.hero .stats{animation-delay:1.1s}
+
+/* shimmering headline accent */
+.hero h1 em{background:linear-gradient(90deg,var(--coral),var(--sun),var(--coral));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shimmer 4s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+
+/* drifting background blobs */
+.hero:after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:var(--coralSoft);right:-120px;bottom:-60px;opacity:.7;z-index:0;animation:drift 12s ease-in-out infinite alternate}
+.hero:before{animation:drift2 14s ease-in-out infinite alternate}
+@keyframes drift{to{translate:-50px -40px}}
+@keyframes drift2{to{translate:60px 30px}}
+
+/* floating covers */
+@keyframes coverIn{from{opacity:0;scale:.7;translate:0 50px}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+.covers img{animation:coverIn .9s cubic-bezier(.2,.8,.2,1) backwards,bob 5s ease-in-out infinite}
+.covers img:nth-child(1){animation-delay:.7s,1.6s}
+.covers img:nth-child(2){animation-delay:.8s,2.2s}
+.covers img:nth-child(3){animation-delay:.9s,.8s}
+.covers img:nth-child(4){animation-delay:1s,2.8s}
+.covers img:nth-child(5){animation-delay:1.1s,1.2s}
+
+/* CTA shine + breathing */
+.cta{position:relative;overflow:hidden}
+.cta:after{content:"";position:absolute;top:0;left:-70%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:shine 3.4s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%,55%{left:-70%}100%{left:130%}}
+@keyframes breathe{0%,100%{scale:1}50%{scale:1.035}}
+.hero .cta,.final-box .cta,.lang{animation:breathe 2.6s ease-in-out infinite}
+.hero .cta{animation:rise .8s cubic-bezier(.2,.7,.2,1) .6s backwards,breathe 2.6s ease-in-out 1.6s infinite}
+.lang{position:relative;overflow:hidden}
+.lang:after{content:"";position:absolute;top:0;left:-70%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 3.4s ease-in-out infinite;pointer-events:none}
+
+/* floating guide covers */
+.guide.in .pic img{animation:bob 6s ease-in-out infinite}
+.bonus li:before{display:inline-block;animation:wiggle 3s ease-in-out infinite}
+@keyframes wiggle{0%,80%,100%{rotate:0deg}85%{rotate:-14deg}90%{rotate:12deg}95%{rotate:-8deg}}
+.bridge .big{background:linear-gradient(90deg,#fff,var(--sun),#fff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite}
+.stat b{transition:color .3s}
+
+/* marquee ticker */
+.marquee{overflow:hidden;background:var(--ink);color:#fff;padding:14px 0;white-space:nowrap}
+.mq-track{display:inline-flex;animation:mq 32s linear infinite;will-change:transform}
+.mq-track span{font-weight:700;font-size:14px;margin-right:42px}
+.mq-track span:before{content:"✦";color:var(--sun);margin-right:12px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.marquee:hover .mq-track{animation-play-state:paused}
+
+/* reviews */
+.reviews{background:var(--sunSoft)}
+.rv-scroll{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 4px 18px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.rv-scroll::-webkit-scrollbar{height:7px}
+.rv-scroll::-webkit-scrollbar-thumb{background:#e2cf9f;border-radius:999px}
+.rv-card{flex:0 0 min(360px,84vw);scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 30px rgba(31,27,22,.08);display:flex;flex-direction:column;min-height:210px;animation:rise .6s ease backwards}
+.rv-stars{color:#f3a400;letter-spacing:3px;font-size:18px;line-height:1}
+.rv-card p{margin-top:14px;color:#453f36;font-size:15px;line-height:1.65}
+.rv-by{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:end}
+.rv-by strong{font-size:14px}.rv-by span{font-size:11.5px;color:var(--muted);text-align:right}
+.rv-hint{text-align:center;color:var(--muted);font-size:12px;font-weight:700}
+
+/* mini proof (real review snippets) */
+.mini-proof{margin:22px auto 0;max-width:520px;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:18px;padding:14px 18px;text-align:left;box-shadow:0 10px 26px rgba(31,27,22,.07)}
+.mini-proof .mq-stars{color:#f3a400;letter-spacing:3px;font-size:15px;line-height:1}
+.mini-proof p{margin-top:8px;font-size:14.5px;line-height:1.55;color:#3f3a32}
+.mini-proof small{display:block;margin-top:8px;color:var(--muted);font-size:12px;font-weight:700}
+.hero-quote{animation:rise .8s cubic-bezier(.2,.7,.2,1) .9s backwards}
+.buy-proof{background:var(--sunSoft);border-color:#f0d9a0;box-shadow:none;max-width:none}
+.per{margin-top:4px;color:var(--muted);font-size:13px;font-weight:600}
+.mid-cta{margin-top:34px}
+
+/* sticky bar slides in after hero */
+.sticky{transform:translateY(110%);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.sticky.show{transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .hero h1 em,.bridge .big{-webkit-text-fill-color:initial;background:none;color:inherit}
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta-main,.lang{transition:none}}
 </style>
 </head>
 <body>
+<div class="progress" id="progress"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="arrow" viewBox="0 0 20 20"><path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
+<nav class="nav">
+  <div class="wrap nav-in">
+    <div class="brand"><i>✦</i>Business Gyan</div>
+    <div class="nav-r">
+      <span class="secure" data-i18n="sec"></span>
+      <div class="lang-sw" role="group" aria-label="Language">
+        <button type="button" data-l="en" aria-pressed="false">EN</button>
+        <button type="button" data-l="hi" aria-pressed="true">हिं</button>
+        <button type="button" data-l="gu" aria-pressed="false">ગુ</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <header class="hero" id="top">
-  <div class="in">
-    <div class="topbar">
-      <strong>Business Gyan</strong>
-      <div class="top-right">
-        <span class="secure" data-i18n="sec"></span>
-        <div class="lang-sw" role="group" aria-label="Language">
-          <button type="button" data-l="en" aria-pressed="false">EN</button>
-          <button type="button" data-l="hi" aria-pressed="true">हिं</button>
-          <button type="button" data-l="gu" aria-pressed="false">ગુ</button>
-        </div>
-      </div>
+  <div class="wrap">
+    <span class="kicker" data-i18n="eb0"></span>
+    <h1 data-i18n="h1"></h1>
+    <p class="hero-sub" data-i18n="hsub"></p>
+    <div class="chips">
+      <span class="chip" data-i18n="pl1"></span><span class="chip" data-i18n="pl2"></span><span class="chip" data-i18n="pl3"></span><span class="chip" data-i18n="pl4"></span>
     </div>
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow" data-i18n="eb0"></div>
-        <h1 data-i18n="h1"></h1>
-        <p class="hero-sub" data-i18n="hsub"></p>
-        <div class="pills">
-          <span class="pill" data-i18n="pl1"></span><span class="pill" data-i18n="pl2"></span><span class="pill" data-i18n="pl3"></span><span class="pill" data-i18n="pl4"></span>
-        </div>
-        <div class="offer"><span class="now">₹299</span><s>₹999</s><span class="save" data-i18n="save"></span></div>
-        <div class="cta-wrap"><a class="cta-main" href="#buy"><span data-i18n="cta"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a></div>
-        <div class="micro" data-i18n="micro"></div>
-      </div>
-      <div class="hero-art" aria-label="Five guides included in the bundle">
-        <div class="orbit"></div>
-        <div class="fan">
-          <img class="a" src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="745">
-          <img class="b" src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745">
-          <img class="mid" src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745">
-          <img class="c" src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745">
-          <img class="d" src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745">
-        </div>
-      </div>
+    <div class="offer"><span class="now">₹299</span><s>₹999</s><span class="save" data-i18n="save"></span></div>
+    <a class="cta" href="#buy"><span data-i18n="cta"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a>
+    <div class="micro" data-i18n="micro"></div>
+    <div class="mini-proof hero-quote" id="heroQuote" hidden></div>
+
+    <div class="covers" aria-label="Five guides included in the bundle">
+      <img src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="745">
+      <img src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745">
+      <img src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745">
+      <img src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745">
+      <img src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745">
     </div>
-    <div class="hero-bottom">
-      <span>✓ Hindi</span><span>✓ Gujarati</span><span>✓ English</span><span data-i18n="hb4"></span>
+
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="stat"><b>5</b><small data-i18n="v1"></small></div>
+        <div class="stat"><b>90</b><small data-i18n="v2"></small></div>
+        <div class="stat"><b>100</b><small data-i18n="v3"></small></div>
+        <div class="stat"><b>3</b><small data-i18n="v4"></small></div>
+      </div>
     </div>
   </div>
 </header>
 
-<section class="value-strip">
-  <div class="in value-grid">
-    <div class="value-item"><span class="value-num">5</span><small data-i18n="v1"></small></div>
-    <div class="value-item"><span class="value-num">90</span><small data-i18n="v2"></small></div>
-    <div class="value-item"><span class="value-num">100</span><small data-i18n="v3"></small></div>
-    <div class="value-item"><span class="value-num">3</span><small data-i18n="v4"></small></div>
-  </div>
-</section>
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
 
-<section class="section pain">
-  <div class="in pain-grid">
-    <div>
-      <div class="eyebrow" data-i18n="pe"></div>
-      <h2 style="margin-top:12px" data-i18n="ph"></h2>
+<section class="section">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker" data-i18n="pe"></span>
+      <h2 style="margin-top:14px" data-i18n="ph"></h2>
       <p class="lede" data-i18n="pl"></p>
     </div>
-    <div>
-      <div class="problem-card">
-        <div class="problem"><span class="icon">×</span><span data-i18n="pr1"></span></div>
-        <div class="problem"><span class="icon">×</span><span data-i18n="pr2"></span></div>
-        <div class="problem"><span class="icon">×</span><span data-i18n="pr3"></span></div>
-        <div class="problem"><span class="icon">×</span><span data-i18n="pr4"></span></div>
-      </div>
+    <div class="problem-grid">
+      <div class="pcard"><span>×</span><p data-i18n="pr1"></p></div>
+      <div class="pcard"><span>×</span><p data-i18n="pr2"></p></div>
+      <div class="pcard"><span>×</span><p data-i18n="pr3"></p></div>
+      <div class="pcard"><span>×</span><p data-i18n="pr4"></p></div>
     </div>
-  </div>
-  <div class="in">
     <div class="bridge"><div class="big">Dream → Plan → Action</div><p data-i18n="bb"></p></div>
   </div>
 </section>
 
-<section class="section" style="padding-top:20px">
-  <div class="in">
+<section class="section" style="padding-top:10px">
+  <div class="wrap">
     <div class="center">
-      <div class="eyebrow" data-i18n="se"></div>
-      <h2 style="margin-top:10px" data-i18n="sh"></h2>
+      <span class="kicker" data-i18n="se"></span>
+      <h2 style="margin-top:14px" data-i18n="sh"></h2>
     </div>
-    <div class="system-flow">
-      <div class="flow"><div class="n" data-i18n="f1n"></div><h3 data-i18n="f1h"></h3><p data-i18n="f1p"></p></div>
-      <div class="flow"><div class="n" data-i18n="f2n"></div><h3 data-i18n="f2h"></h3><p data-i18n="f2p"></p></div>
-      <div class="flow"><div class="n" data-i18n="f3n"></div><h3 data-i18n="f3h"></h3><p data-i18n="f3p"></p></div>
+    <div class="steps3">
+      <div class="s3"><span class="n" data-i18n="f1n"></span><h3 data-i18n="f1h"></h3><p data-i18n="f1p"></p></div>
+      <div class="s3"><span class="n" data-i18n="f2n"></span><h3 data-i18n="f2h"></h3><p data-i18n="f2p"></p></div>
+      <div class="s3"><span class="n" data-i18n="f3n"></span><h3 data-i18n="f3h"></h3><p data-i18n="f3p"></p></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="guides" style="padding-top:30px">
-  <div class="in">
-    <div class="eyebrow" data-i18n="ge"></div>
-    <h2 style="margin-top:10px" data-i18n="gh"></h2>
-    <p class="lede" data-i18n="gl"></p>
-
-    <div class="guides">
-      <article class="guide">
-        <img src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745" loading="lazy">
-        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g1h"></h3><p class="one" data-i18n="g1o"></p></div>
-        <ul><li data-i18n="g1a"></li><li data-i18n="g1b"></li><li data-i18n="g1c"></li><li data-i18n="g1d"></li><li data-i18n="g1e"></li><li data-i18n="g1f"></li></ul>
-      </article>
-
-      <article class="guide">
-        <img src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745" loading="lazy">
-        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g2h"></h3><p class="one" data-i18n="g2o"></p></div>
-        <ul><li data-i18n="g2a"></li><li data-i18n="g2b"></li><li data-i18n="g2c"></li><li data-i18n="g2d"></li><li data-i18n="g2e"></li><li data-i18n="g2f"></li></ul>
-      </article>
-
-      <article class="guide">
-        <img src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745" loading="lazy">
-        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g3h"></h3><p class="one" data-i18n="g3o"></p></div>
-        <ul><li data-i18n="g3a"></li><li data-i18n="g3b"></li><li data-i18n="g3c"></li><li data-i18n="g3d"></li><li data-i18n="g3e"></li><li data-i18n="g3f"></li></ul>
-      </article>
-
-      <article class="guide">
-        <img src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745" loading="lazy">
-        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g4h"></h3><p class="one" data-i18n="g4o"></p></div>
-        <ul><li data-i18n="g4a"></li><li data-i18n="g4b"></li><li data-i18n="g4c"></li><li data-i18n="g4d"></li><li data-i18n="g4e"></li><li data-i18n="g4f"></li></ul>
-      </article>
-
-      <article class="guide">
-        <img src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="745" loading="lazy">
-        <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g5h"></h3><p class="one" data-i18n="g5o"></p></div>
-        <ul><li data-i18n="g5a"></li><li data-i18n="g5b"></li><li data-i18n="g5c"></li><li data-i18n="g5d"></li></ul>
-      </article>
+<section class="section" id="guides" style="padding-top:20px">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker" data-i18n="ge"></span>
+      <h2 style="margin-top:14px" data-i18n="gh"></h2>
+      <p class="lede" data-i18n="gl"></p>
     </div>
+
+    <article class="guide">
+      <div class="pic"><img src="img/planner.jpg" alt="Dream Life Planner cover" width="520" height="745" loading="lazy"></div>
+      <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g1h"></h3><p class="one" data-i18n="g1o"></p>
+        <ul><li data-i18n="g1a"></li><li data-i18n="g1b"></li><li data-i18n="g1c"></li><li data-i18n="g1d"></li><li data-i18n="g1e"></li><li data-i18n="g1f"></li></ul></div>
+    </article>
+
+    <article class="guide">
+      <div class="pic"><img src="img/techniques.jpg" alt="15 Manifestation Techniques cover" width="520" height="745" loading="lazy"></div>
+      <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g2h"></h3><p class="one" data-i18n="g2o"></p>
+        <ul><li data-i18n="g2a"></li><li data-i18n="g2b"></li><li data-i18n="g2c"></li><li data-i18n="g2d"></li><li data-i18n="g2e"></li><li data-i18n="g2f"></li></ul></div>
+    </article>
+
+    <article class="guide">
+      <div class="pic"><img src="img/vision.jpg" alt="Digital Vision Board Guide cover" width="520" height="745" loading="lazy"></div>
+      <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g3h"></h3><p class="one" data-i18n="g3o"></p>
+        <ul><li data-i18n="g3a"></li><li data-i18n="g3b"></li><li data-i18n="g3c"></li><li data-i18n="g3d"></li><li data-i18n="g3e"></li><li data-i18n="g3f"></li></ul></div>
+    </article>
+
+    <article class="guide">
+      <div class="pic"><img src="img/gratitude.jpg" alt="The Gratitude Power Guide cover" width="520" height="745" loading="lazy"></div>
+      <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g4h"></h3><p class="one" data-i18n="g4o"></p>
+        <ul><li data-i18n="g4a"></li><li data-i18n="g4b"></li><li data-i18n="g4c"></li><li data-i18n="g4d"></li><li data-i18n="g4e"></li><li data-i18n="g4f"></li></ul></div>
+    </article>
+
+    <article class="guide">
+      <div class="pic"><img src="img/challenge.jpg" alt="30-Day Manifestation Challenge cover" width="520" height="745" loading="lazy"></div>
+      <div><span class="tag" data-i18n="vt"></span><h3 data-i18n="g5h"></h3><p class="one" data-i18n="g5o"></p>
+        <ul><li data-i18n="g5a"></li><li data-i18n="g5b"></li><li data-i18n="g5c"></li><li data-i18n="g5d"></li></ul></div>
+    </article>
 
     <div class="bonus">
       <div class="bonus-top"><h3 data-i18n="bh"></h3><span class="bonus-badge" data-i18n="bbadge"></span></div>
@@ -350,52 +459,59 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
         <li data-i18n="b4"></li>
       </ul>
     </div>
+    <div class="center mid-cta"><a class="cta" href="#buy"><span data-i18n="cc"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a></div>
+  </div>
+</section>
 
-    <div class="value-stack">
-      <div class="eyebrow" data-i18n="ve"></div>
-      <h2 data-i18n="vh"></h2>
-      <div class="stack-row"><span data-i18n="vr1"></span><b>₹1,495</b></div>
-      <div class="stack-row"><span data-i18n="vr2"></span><b>₹999</b></div>
-      <div class="stack-row"><span data-i18n="vr3"></span><b>₹299</b></div>
-      <div class="stack-total"><span data-i18n="vtot"></span><strong>₹299</strong></div>
+<!-- REVIEWS: script me REVIEWS array me asli customers ke reviews daalte hi ye section apne aap dikhne lagta hai -->
+<section class="section reviews" id="reviews" hidden>
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker" id="rvE"></span>
+      <h2 style="margin-top:14px" id="rvH"></h2>
     </div>
+    <div class="rv-scroll" id="rvList" aria-label="Customer reviews"></div>
+    <div class="rv-hint" id="rvHint"></div>
+    <div class="center mid-cta"><a class="cta" href="#buy"><span data-i18n="cc"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a></div>
   </div>
 </section>
 
 <section class="section buy" id="buy">
-  <div class="in">
+  <div class="wrap">
     <div class="center">
-      <div class="eyebrow" data-i18n="buyE"></div>
+      <span class="kicker" data-i18n="buyE"></span>
       <h2 data-i18n="buyH"></h2>
       <p class="lede" data-i18n="buyL"></p>
     </div>
     <div class="buy-card">
       <div class="buy-price"><b>₹299</b><s>₹999</s></div>
       <div class="save2" data-i18n="buySave"></div>
+      <div class="per" id="buyPer"></div>
       <a class="lang js-buy" id="buyMain" href="https://superprofile.bio/vp/dream_life?checkout=true" target="_blank" rel="noopener">
         <span><span class="nm" id="buyName">हिन्दी</span><span class="ed" data-i18n="buyEd"></span></span>
         <span class="go" data-i18n="buyBtn"></span>
       </a>
       <div class="others" id="others"></div>
+      <div class="mini-proof buy-proof" id="buyProof" hidden></div>
       <div class="assure"><span data-i18n="as1"></span><span data-i18n="as2"></span><span data-i18n="as3"></span></div>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="in">
-    <div class="center"><div class="eyebrow" data-i18n="he"></div><h2 data-i18n="hh"></h2></div>
-    <div class="steps">
-      <div class="step"><div class="step-n">1</div><div><h3 data-i18n="s1h"></h3><p data-i18n="s1p"></p></div></div>
-      <div class="step"><div class="step-n">2</div><div><h3 data-i18n="s2h"></h3><p data-i18n="s2p"></p></div></div>
-      <div class="step"><div class="step-n">3</div><div><h3 data-i18n="s3h"></h3><p data-i18n="s3p"></p></div></div>
+  <div class="wrap">
+    <div class="center"><span class="kicker" data-i18n="he"></span><h2 style="margin-top:14px" data-i18n="hh"></h2></div>
+    <div class="how">
+      <div class="how-i"><div class="how-n">1</div><div><h3 data-i18n="s1h"></h3><p data-i18n="s1p"></p></div></div>
+      <div class="how-i"><div class="how-n">2</div><div><h3 data-i18n="s2h"></h3><p data-i18n="s2p"></p></div></div>
+      <div class="how-i"><div class="how-n">3</div><div><h3 data-i18n="s3h"></h3><p data-i18n="s3p"></p></div></div>
     </div>
   </div>
 </section>
 
 <section class="section" style="padding-top:10px">
-  <div class="in">
-    <div class="center"><div class="eyebrow" data-i18n="fe"></div><h2 data-i18n="fh"></h2><p class="lede" data-i18n="fl"></p></div>
+  <div class="wrap">
+    <div class="center"><span class="kicker" data-i18n="fe"></span><h2 style="margin-top:14px" data-i18n="fh"></h2><p class="lede" data-i18n="fl"></p></div>
     <div class="fit">
       <div class="fit-card yes"><h3 data-i18n="fyh"></h3><ul><li data-i18n="fy1"></li><li data-i18n="fy2"></li><li data-i18n="fy3"></li><li data-i18n="fy4"></li></ul></div>
       <div class="fit-card no"><h3 data-i18n="fnh"></h3><ul><li data-i18n="fn1"></li><li data-i18n="fn2"></li><li data-i18n="fn3"></li></ul></div>
@@ -403,28 +519,9 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
   </div>
 </section>
 
-<section class="reviews-section">
-  <div class="in">
-    <div class="center">
-      <div class="eyebrow" data-i18n="re"></div>
-      <h2 data-i18n="rh"></h2>
-    </div>
-    <div class="review-scroll" aria-label="Customer review carousel">
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r1t"></p><div class="reviewer"><strong data-i18n="r1n"></strong><span data-i18n="r1p"></span></div></article>
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r2t"></p><div class="reviewer"><strong data-i18n="r2n"></strong><span data-i18n="r2p"></span></div></article>
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r3t"></p><div class="reviewer"><strong data-i18n="r3n"></strong><span data-i18n="r3p"></span></div></article>
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r4t"></p><div class="reviewer"><strong data-i18n="r4n"></strong><span data-i18n="r4p"></span></div></article>
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r5t"></p><div class="reviewer"><strong data-i18n="r5n"></strong><span data-i18n="r5p"></span></div></article>
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r6t"></p><div class="reviewer"><strong data-i18n="r6n"></strong><span data-i18n="r6p"></span></div></article>
-      <article class="review-card"><div class="stars" aria-label="5 stars">★★★★★</div><p data-i18n="r7t"></p><div class="reviewer"><strong data-i18n="r7n"></strong><span data-i18n="r7p"></span></div></article>
-    </div>
-    <div class="review-hint" data-i18n="rhint"></div>
-  </div>
-</section>
-
 <section class="section" style="padding-top:10px">
-  <div class="in">
-    <div class="center"><div class="eyebrow" data-i18n="qe"></div><h2 data-i18n="qh"></h2></div>
+  <div class="wrap">
+    <div class="center"><span class="kicker" data-i18n="qe"></span><h2 style="margin-top:14px" data-i18n="qh"></h2></div>
     <div class="faq">
       <details open><summary data-i18n="q1"></summary><div class="ans" data-i18n="a1"></div></details>
       <details><summary data-i18n="q2"></summary><div class="ans" data-i18n="a2"></div></details>
@@ -436,20 +533,20 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
   </div>
 </section>
 
-<section class="final-cta">
-  <div class="in">
+<section class="final">
+  <div class="wrap">
     <div class="final-box">
-      <div class="eyebrow" style="color:var(--gold2);justify-content:center" data-i18n="ce"></div>
+      <span class="kicker" data-i18n="ce"></span>
       <h2 data-i18n="ch"></h2>
       <p data-i18n="cp"></p>
-      <a class="cta-main" href="#buy"><span data-i18n="cc"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a>
+      <a class="cta" href="#buy"><span data-i18n="cc"></span> <svg width="19" height="19"><use href="#arrow"/></svg></a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="in">
-    <div class="footer-brand">Business Gyan</div>
+  <div class="wrap">
+    <div class="fbrand">Business Gyan</div>
     <div class="contact"><span data-i18n="fsup"></span> <strong>businessgyangujarat@gmail.com</strong></div>
     <p class="fine" data-i18n="ffine"></p>
   </div>
@@ -458,7 +555,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:34px 0;color:var
 <div class="sticky" id="sticky">
   <div class="sticky-row">
     <div class="sticky-price"><b>₹299</b><s>₹999</s></div>
-    <a class="cta-main" href="#buy" data-i18n="stick"></a>
+    <a class="cta" href="#buy" data-i18n="stick"></a>
   </div>
 </div>
 
@@ -470,15 +567,14 @@ var T={};
 T.en={
 title:"The Dream Life & Manifestation Bundle — ₹299",
 desc:"The Dream Life & Manifestation Bundle — 5 digital guides, printable workbooks and a 30-day challenge. Hindi, Gujarati or English. Instant PDF access for ₹299.",
-sec:"✓ Instant digital PDF access",
+sec:"✓ Instant PDF access",
 eb0:"The Dream Life &amp; Manifestation Bundle",
-h1:"Everyone dreams.<br><em>How many plan it and follow through?</em>",
+h1:"Everyone dreams.<br><em>Few plan it and follow through.</em>",
 hsub:"<strong>5 practical digital guides + printable workbooks</strong> to help you define your dream life, plan your goals, visualize your future, practise gratitude and take daily action.",
 pl1:"5 Digital Guides",pl2:"30-Day Challenge",pl3:"Printable Worksheets",pl4:"3 Languages",
 save:"SAVE ₹700",
 cta:"START YOUR DREAM LIFE JOURNEY",
 micro:"Self-paced digital product • No coaching or live classes • Results depend on consistent use",
-hb4:"✓ UPI / Cards / Net Banking",
 v1:"Digital guides<br>&amp; workbooks",v2:"Days of<br>dream-life planning",v3:"Gratitude<br>journal prompts",v4:"Languages<br>to choose from",
 pe:"The real problem",
 ph:"Writing goals is easy. Following through consistently is hard.",
@@ -487,7 +583,7 @@ pr1:"You write your goals… then a few days later the notebook is set aside.",
 pr2:"You start manifesting, but the routine breaks.",
 pr3:"You have many dreams, but the next step isn't clear.",
 pr4:"Motivation lasts a few days, consistency doesn't.",
-bb:"This bundle is designed to bring that flow into one place — planning, mindset, visualization, gratitude and 30-day action in one practical system.",
+bb:"This bundle brings that flow into one place — planning, mindset, visualization, gratitude and 30-day action in one practical system.",
 se:"A simple system",
 sh:"Not just “manifesting”. First get clear, then plan, then take action.",
 f1n:"01 — CLARITY",f1h:"Know what you want",f1p:"Get clear on your direction with the Dream Life Planner and Vision Board.",
@@ -507,22 +603,11 @@ g4h:"The Gratitude Power Guide",g4o:"Build a positive mindset through one simple
 g4a:"Morning and night gratitude routines",g4b:"Gratitude journal and exercises",g4c:"Money, health, family and relationship gratitude",g4d:"21-day challenge + 30-day tracker",g4e:"100 gratitude journal prompts",g4f:"Printable gratitude worksheets",
 g5h:"30-Day Manifestation Challenge",g5o:"30 days. One goal. Consistent action.",
 g5a:"A daily practice for each of the 30 days",g5b:"Journal prompts and visualization exercises",g5c:"Gratitude activities + manifestation techniques",g5d:"Daily tracking pages",
-bh:"🎁 Plus 4 included bonus resources",bbadge:"INCLUDED",
+bh:"Plus 4 included bonus resources",bbadge:"INCLUDED",
 b1:"<span><b>Ready-to-use journal prompts</b> for reflection and planning</span>",
 b2:"<span><b>Daily gratitude worksheets</b> you can print</span>",
 b3:"<span><b>Manifestation &amp; vision trackers</b> to stay consistent</span>",
 b4:"<span><b>Printable worksheets</b> to use digitally or on paper</span>",
-ve:"What you are getting",vh:"5 guides + 4 bonus resources for ₹299",
-vr1:"5 guides at ₹299 each",vr2:"Bundle list price",vr3:"Today’s bundle price",vtot:"You pay",
-re:"Reader Feedback",rh:"Simple, Practical &amp; Easy To Follow.",
-r1t:"“The planner format is very simple. After writing my goals, the next steps became clear too. <b>Very easy to follow.</b>”",r1n:"Priya S.",r1p:"Dream Life Planner",
-r2t:"“I especially liked the 30-day challenge. You get one small task daily, so staying consistent felt easier.”",r2n:"Neha R.",r2p:"30-Day Challenge",
-r3t:"“The vision board guide was my favourite. Thanks to the <b>step-by-step explanation</b>, I understood how to make my goals visual.”",r3n:"Riya M.",r3p:"Vision Board Guide",
-r4t:"“I used to read a lot of random things about manifestation. This bundle gives a proper structure — <b>Dream → Plan → Action.</b>”",r4n:"Rahul K.",r4p:"Manifestation Techniques",
-r5t:"“The gratitude guide and printable worksheets fit easily into my daily routine. <b>The content felt practical, not just theory.</b>”",r5n:"Meena P.",r5p:"Gratitude Power Guide",
-r6t:"“Having Hindi content made it comfortable to use. <b>Getting so much organised material in one bundle</b> was useful.”",r6n:"Amit J.",r6p:"Hindi Bundle",
-r7t:"“I wanted something I could actually sit down and work through. The worksheets made the process feel more actionable and less overwhelming.”",r7n:"Kavita P.",r7p:"Complete Bundle",
-rhint:"← Swipe / scroll to see all reviews →",
 buyE:"Ready to start?",buyH:"Get instant access to your bundle.",
 buyL:"Your digital files are available after payment. You can read in the language you are most comfortable with.",
 buySave:"✓ Save ₹700 on the bundle list price",
@@ -562,7 +647,7 @@ stick:"Buy Now"
 T.hi={
 title:"द ड्रीम लाइफ & मैनिफेस्टेशन बंडल — ₹299",
 desc:"द ड्रीम लाइफ & मैनिफेस्टेशन बंडल — 5 डिजिटल गाइड, प्रिंट करने लायक वर्कबुक और 30-दिन का चैलेंज। हिन्दी, गुजराती या अंग्रेज़ी में। तुरंत PDF एक्सेस, सिर्फ़ ₹299।",
-sec:"✓ तुरंत डिजिटल PDF एक्सेस",
+sec:"✓ तुरंत PDF एक्सेस",
 eb0:"द ड्रीम लाइफ &amp; मैनिफेस्टेशन बंडल",
 h1:"सपने सब देखते हैं।<br><em>प्लान बनाकर फ़ॉलो कितने करते हैं?</em>",
 hsub:"<strong>5 प्रैक्टिकल डिजिटल गाइड + प्रिंट करने लायक वर्कबुक</strong>, जो आपको अपनी ड्रीम लाइफ तय करने, गोल प्लान करने, अपना भविष्य विज़ुअलाइज़ करने, ग्रैटिट्यूड प्रैक्टिस करने और रोज़ एक्शन लेने में मदद करें।",
@@ -570,7 +655,6 @@ pl1:"5 डिजिटल गाइड",pl2:"30-दिन का चैलें
 save:"₹700 की बचत",
 cta:"अपनी ड्रीम लाइफ का सफ़र शुरू करें",
 micro:"अपनी रफ़्तार से चलने वाला डिजिटल प्रोडक्ट • कोई कोचिंग या लाइव क्लास नहीं • नतीजे नियमित उपयोग पर निर्भर",
-hb4:"✓ UPI / कार्ड / नेट बैंकिंग",
 v1:"डिजिटल गाइड<br>और वर्कबुक",v2:"दिन की<br>ड्रीम-लाइफ प्लानिंग",v3:"ग्रैटिट्यूड<br>जर्नल प्रॉम्प्ट",v4:"भाषाओं में<br>से चुनें",
 pe:"असली समस्या",
 ph:"गोल लिखना आसान है। उसके साथ लगातार चलना मुश्किल है।",
@@ -599,22 +683,11 @@ g4h:"द ग्रैटिट्यूड पावर गाइड",g4o:"ए�
 g4a:"सुबह और रात के ग्रैटिट्यूड रूटीन",g4b:"ग्रैटिट्यूड जर्नल और एक्सरसाइज़",g4c:"पैसा, सेहत, परिवार और रिश्तों के लिए आभार",g4d:"21-दिन का चैलेंज + 30-दिन का ट्रैकर",g4e:"100 ग्रैटिट्यूड जर्नल प्रॉम्प्ट",g4f:"प्रिंटेबल ग्रैटिट्यूड वर्कशीट",
 g5h:"30-दिन का मैनिफेस्टेशन चैलेंज",g5o:"30 दिन। एक गोल। लगातार एक्शन।",
 g5a:"30 में से हर दिन की एक डेली प्रैक्टिस",g5b:"जर्नल प्रॉम्प्ट और विज़ुअलाइज़ेशन एक्सरसाइज़",g5c:"ग्रैटिट्यूड एक्टिविटी + मैनिफेस्टेशन तकनीकें",g5d:"डेली ट्रैकिंग पेज",
-bh:"🎁 साथ में 4 बोनस रिसोर्स शामिल",bbadge:"शामिल",
+bh:"साथ में 4 बोनस रिसोर्स शामिल",bbadge:"शामिल",
 b1:"<span><b>तैयार जर्नल प्रॉम्प्ट</b> — सोचने और प्लान करने के लिए</span>",
 b2:"<span><b>डेली ग्रैटिट्यूड वर्कशीट</b> जिन्हें आप प्रिंट कर सकते हैं</span>",
 b3:"<span><b>मैनिफेस्टेशन और विज़न ट्रैकर</b> — कंसिस्टेंट रहने के लिए</span>",
 b4:"<span><b>प्रिंटेबल वर्कशीट</b> — डिजिटल या काग़ज़ पर इस्तेमाल करें</span>",
-ve:"आपको क्या मिल रहा है",vh:"5 गाइड + 4 बोनस रिसोर्स, सिर्फ़ ₹299 में",
-vr1:"5 गाइड, ₹299 प्रति गाइड",vr2:"बंडल की लिस्ट कीमत",vr3:"आज की बंडल कीमत",vtot:"आप देंगे",
-re:"पाठकों की राय",rh:"सरल, प्रैक्टिकल और फ़ॉलो करने में आसान।",
-r1t:"“प्लानर का फ़ॉर्मैट काफ़ी सरल है। गोल लिखने के बाद अगले कदम भी साफ़ हो गए। <b>फ़ॉलो करना बहुत आसान है।</b>”",r1n:"प्रिया एस.",r1p:"ड्रीम लाइफ प्लानर",
-r2t:"“मुझे ख़ासकर 30-दिन का चैलेंज पसंद आया। रोज़ एक छोटा टास्क मिलता है, इसलिए कंसिस्टेंट रहना आसान लगा।”",r2n:"नेहा आर.",r2p:"30-दिन का चैलेंज",
-r3t:"“विज़न बोर्ड गाइड मेरी फ़ेवरेट रही। <b>स्टेप-बाय-स्टेप समझाने</b> की वजह से समझ आया कि अपने गोल को विज़ुअल कैसे बनाना है।”",r3n:"रिया एम.",r3p:"विज़न बोर्ड गाइड",
-r4t:"“पहले मैं मैनिफेस्टेशन के बारे में काफ़ी बिखरी हुई चीज़ें पढ़ता था। यह बंडल एक सही स्ट्रक्चर देता है — <b>Dream → Plan → Action।</b>”",r4n:"राहुल के.",r4p:"मैनिफेस्टेशन तकनीकें",
-r5t:"“ग्रैटिट्यूड गाइड और प्रिंटेबल वर्कशीट रोज़ के रूटीन में आसानी से फ़िट हो गईं। <b>कंटेंट प्रैक्टिकल लगा, सिर्फ़ थ्योरी नहीं।</b>”",r5n:"मीना पी.",r5p:"ग्रैटिट्यूड पावर गाइड",
-r6t:"“हिन्दी में कंटेंट होने की वजह से इस्तेमाल करना आसान रहा। <b>एक ही बंडल में इतना व्यवस्थित मटीरियल</b> मिलना काम का लगा।”",r6n:"अमित जे.",r6p:"हिन्दी बंडल",
-r7t:"“मुझे कुछ ऐसा चाहिए था जिसे मैं बैठकर पूरा कर सकूँ। वर्कशीट ने पूरी प्रक्रिया को ज़्यादा एक्शन-फ़्रेंडली और कम भारी बना दिया।”",r7n:"कविता पी.",r7p:"कम्प्लीट बंडल",
-rhint:"← सभी रिव्यू देखने के लिए स्वाइप / स्क्रॉल करें →",
 buyE:"शुरू करने के लिए तैयार?",buyH:"अपने बंडल का तुरंत एक्सेस पाएँ।",
 buyL:"पेमेंट के बाद आपकी डिजिटल फ़ाइलें उपलब्ध हो जाती हैं। आप जिस भाषा में सबसे सहज हों, उसमें पढ़ें।",
 buySave:"✓ बंडल की लिस्ट कीमत पर ₹700 बचाएँ",
@@ -654,7 +727,7 @@ stick:"अभी खरीदें"
 T.gu={
 title:"ધ ડ્રીમ લાઇફ & મેનિફેસ્ટેશન બંડલ — ₹299",
 desc:"ધ ડ્રીમ લાઇફ & મેનિફેસ્ટેશન બંડલ — 5 ડિજિટલ ગાઇડ, પ્રિન્ટ કરી શકાય તેવી વર્કબુક અને 30-દિવસનો ચેલેન્જ. હિન્દી, ગુજરાતી કે અંગ્રેજીમાં. તરત PDF એક્સેસ, માત્ર ₹299.",
-sec:"✓ તરત ડિજિટલ PDF એક્સેસ",
+sec:"✓ તરત PDF એક્સેસ",
 eb0:"ધ ડ્રીમ લાઇફ &amp; મેનિફેસ્ટેશન બંડલ",
 h1:"સપના બધા જુએ છે.<br><em>પ્લાન બનાવીને ફોલો કેટલા કરે છે?</em>",
 hsub:"<strong>5 પ્રેક્ટિકલ ડિજિટલ ગાઇડ + પ્રિન્ટ કરી શકાય તેવી વર્કબુક</strong>, જે તમને તમારી ડ્રીમ લાઇફ નક્કી કરવામાં, ગોલ પ્લાન કરવામાં, ભવિષ્યને વિઝ્યુલાઇઝ કરવામાં, ગ્રેટિટ્યૂડ પ્રેક્ટિસ કરવામાં અને રોજ એક્શન લેવામાં મદદ કરે.",
@@ -662,7 +735,6 @@ pl1:"5 ડિજિટલ ગાઇડ",pl2:"30-દિવસનો ચેલે�
 save:"₹700 બચાવો",
 cta:"તમારી ડ્રીમ લાઇફની સફર શરૂ કરો",
 micro:"તમારી ગતિએ ચાલતું ડિજિટલ પ્રોડક્ટ • કોઈ કોચિંગ કે લાઇવ ક્લાસ નથી • પરિણામ નિયમિત ઉપયોગ પર આધારિત",
-hb4:"✓ UPI / કાર્ડ / નેટ બેંકિંગ",
 v1:"ડિજિટલ ગાઇડ<br>અને વર્કબુક",v2:"દિવસની<br>ડ્રીમ-લાઇફ પ્લાનિંગ",v3:"ગ્રેટિટ્યૂડ<br>જર્નલ પ્રોમ્પ્ટ",v4:"ભાષાઓમાંથી<br>પસંદ કરો",
 pe:"અસલી સમસ્યા",
 ph:"ગોલ લખવા સહેલા છે. તેની સાથે સતત ચાલવું અઘરું છે.",
@@ -691,22 +763,11 @@ g4h:"ધ ગ્રેટિટ્યૂડ પાવર ગાઇડ",g4o:"એ�
 g4a:"સવાર અને રાતના ગ્રેટિટ્યૂડ રૂટિન",g4b:"ગ્રેટિટ્યૂડ જર્નલ અને એક્સરસાઇઝ",g4c:"પૈસા, સ્વાસ્થ્ય, પરિવાર અને સંબંધો માટે આભાર",g4d:"21-દિવસનો ચેલેન્જ + 30-દિવસનું ટ્રેકર",g4e:"100 ગ્રેટિટ્યૂડ જર્નલ પ્રોમ્પ્ટ",g4f:"પ્રિન્ટેબલ ગ્રેટિટ્યૂડ વર્કશીટ",
 g5h:"30-દિવસનો મેનિફેસ્ટેશન ચેલેન્જ",g5o:"30 દિવસ. એક ગોલ. સતત એક્શન.",
 g5a:"30 દિવસમાંથી દરેક દિવસની એક ડેઇલી પ્રેક્ટિસ",g5b:"જર્નલ પ્રોમ્પ્ટ અને વિઝ્યુલાઇઝેશન એક્સરસાઇઝ",g5c:"ગ્રેટિટ્યૂડ એક્ટિવિટી + મેનિફેસ્ટેશન ટેકનિક",g5d:"ડેઇલી ટ્રેકિંગ પેજ",
-bh:"🎁 સાથે 4 બોનસ રિસોર્સ શામેલ",bbadge:"શામેલ",
+bh:"સાથે 4 બોનસ રિસોર્સ શામેલ",bbadge:"શામેલ",
 b1:"<span><b>તૈયાર જર્નલ પ્રોમ્પ્ટ</b> — વિચારવા અને પ્લાન કરવા માટે</span>",
 b2:"<span><b>ડેઇલી ગ્રેટિટ્યૂડ વર્કશીટ</b> જે તમે પ્રિન્ટ કરી શકો</span>",
 b3:"<span><b>મેનિફેસ્ટેશન અને વિઝન ટ્રેકર</b> — કન્સિસ્ટન્ટ રહેવા માટે</span>",
 b4:"<span><b>પ્રિન્ટેબલ વર્કશીટ</b> — ડિજિટલ કે કાગળ પર વાપરો</span>",
-ve:"તમને શું મળી રહ્યું છે",vh:"5 ગાઇડ + 4 બોનસ રિસોર્સ, માત્ર ₹299 માં",
-vr1:"5 ગાઇડ, દરેક ₹299",vr2:"બંડલની લિસ્ટ કિંમત",vr3:"આજની બંડલ કિંમત",vtot:"તમે ચૂકવશો",
-re:"વાચકોનો પ્રતિભાવ",rh:"સરળ, પ્રેક્ટિકલ અને ફોલો કરવામાં આસાન.",
-r1t:"“પ્લાનરનું ફોર્મેટ ઘણું સરળ છે. ગોલ લખ્યા પછી આગળના પગલાં પણ સ્પષ્ટ થઈ ગયા. <b>ફોલો કરવું ખૂબ આસાન છે.</b>”",r1n:"પ્રિયા એસ.",r1p:"ડ્રીમ લાઇફ પ્લાનર",
-r2t:"“મને ખાસ કરીને 30-દિવસનો ચેલેન્જ ગમ્યો. રોજ એક નાનું ટાસ્ક મળે છે, એટલે કન્સિસ્ટન્ટ રહેવું સહેલું લાગ્યું.”",r2n:"નેહા આર.",r2p:"30-દિવસનો ચેલેન્જ",
-r3t:"“વિઝન બોર્ડ ગાઇડ મારી ફેવરિટ રહી. <b>સ્ટેપ-બાય-સ્ટેપ સમજૂતી</b>ને કારણે સમજાયું કે ગોલને વિઝ્યુઅલ કેવી રીતે બનાવવા.”",r3n:"રિયા એમ.",r3p:"વિઝન બોર્ડ ગાઇડ",
-r4t:"“પહેલા હું મેનિફેસ્ટેશન વિશે ઘણી વિખરાયેલી વસ્તુઓ વાંચતો. આ બંડલ યોગ્ય સ્ટ્રક્ચર આપે છે — <b>Dream → Plan → Action.</b>”",r4n:"રાહુલ કે.",r4p:"મેનિફેસ્ટેશન ટેકનિક",
-r5t:"“ગ્રેટિટ્યૂડ ગાઇડ અને પ્રિન્ટેબલ વર્કશીટ રોજના રૂટિનમાં સહેલાઈથી ગોઠવાઈ ગઈ. <b>કન્ટેન્ટ પ્રેક્ટિકલ લાગ્યું, માત્ર થિયરી નહીં.</b>”",r5n:"મીના પી.",r5p:"ગ્રેટિટ્યૂડ પાવર ગાઇડ",
-r6t:"“હિન્દી કન્ટેન્ટ હોવાથી વાપરવું સરળ રહ્યું. <b>એક જ બંડલમાં આટલું વ્યવસ્થિત મટિરિયલ</b> મળવું ઉપયોગી લાગ્યું.”",r6n:"અમિત જે.",r6p:"હિન્દી બંડલ",
-r7t:"“મને એવું કંઈક જોઈતું હતું જે હું બેસીને પૂરું કરી શકું. વર્કશીટે આખી પ્રક્રિયાને વધુ એક્શન-ફ્રેન્ડલી અને ઓછી ભારે બનાવી.”",r7n:"કવિતા પી.",r7p:"કમ્પ્લીટ બંડલ",
-rhint:"← બધા રિવ્યૂ જોવા સ્વાઇપ / સ્ક્રોલ કરો →",
 buyE:"શરૂ કરવા તૈયાર?",buyH:"તમારા બંડલનો તરત એક્સેસ મેળવો.",
 buyL:"પેમેન્ટ પછી તમારી ડિજિટલ ફાઇલો ઉપલબ્ધ થાય છે. તમને જે ભાષામાં સૌથી સરળ લાગે તેમાં વાંચો.",
 buySave:"✓ બંડલની લિસ્ટ કિંમત પર ₹700 બચાવો",
@@ -773,13 +834,11 @@ function setLang(l,fromUser){
   var md=document.querySelector('meta[name="description"]');if(md)md.setAttribute("content",d.desc);
   var ot=document.querySelector('meta[property="og:title"]');if(ot)ot.setAttribute("content",d.title);
 
-  /* switcher state */
   var btns=document.querySelectorAll(".lang-sw button");
   for(var j=0;j<btns.length;j++){
     btns[j].setAttribute("aria-pressed",btns[j].getAttribute("data-l")===l?"true":"false");
   }
 
-  /* buy button for the selected language + links to other editions */
   var main=document.getElementById("buyMain");
   main.href=LINKS[l];
   document.getElementById("buyName").textContent=NAMES[l];
@@ -794,6 +853,7 @@ function setLang(l,fromUser){
     box.appendChild(a);
   });
 
+  afterLang(l,d);
   try{localStorage.setItem("bg_lang",l);}catch(e){}
   if(fromUser){
     try{history.replaceState(null,"",location.pathname+"?lang="+l+location.hash);}catch(e){}
@@ -809,6 +869,189 @@ document.addEventListener("click",function(e){
     fbq("track","InitiateCheckout",{value:299,currency:"INR",content_name:"Dream Life Bundle ("+document.documentElement.lang+")"});
   }
 });
+
+/* ===================== REVIEWS (sirf ASLI customers ke) ===================== */
+var REVIEWS=[
+ {stars:5,
+  n:{en:"Priya S.",hi:"प्रिया एस.",gu:"પ્રિયા એસ."},
+  p:{en:"Dream Life Planner",hi:"ड्रीम लाइफ प्लानर",gu:"ડ્રીમ લાઇફ પ્લાનર"},
+  t:{en:"The planner format is very simple. After writing my goals, the next steps became clear too. Very easy to follow.",
+     hi:"प्लानर का फ़ॉर्मैट काफ़ी सरल है। गोल लिखने के बाद अगले कदम भी साफ़ हो गए। फ़ॉलो करना बहुत आसान है।",
+     gu:"પ્લાનરનું ફોર્મેટ ઘણું સરળ છે. ગોલ લખ્યા પછી આગળના પગલાં પણ સ્પષ્ટ થઈ ગયા. ફોલો કરવું ખૂબ આસાન છે."}},
+ {stars:5,
+  n:{en:"Neha R.",hi:"नेहा आर.",gu:"નેહા આર."},
+  p:{en:"30-Day Challenge",hi:"30-दिन का चैलेंज",gu:"30-દિવસનો ચેલેન્જ"},
+  t:{en:"I especially liked the 30-day challenge. You get one small task daily, so staying consistent felt easier.",
+     hi:"मुझे ख़ासकर 30-दिन का चैलेंज पसंद आया। रोज़ एक छोटा टास्क मिलता है, इसलिए कंसिस्टेंट रहना आसान लगा।",
+     gu:"મને ખાસ કરીને 30-દિવસનો ચેલેન્જ ગમ્યો. રોજ એક નાનું ટાસ્ક મળે છે, એટલે કન્સિસ્ટન્ટ રહેવું સહેલું લાગ્યું."}},
+ {stars:5,
+  n:{en:"Riya M.",hi:"रिया एम.",gu:"રિયા એમ."},
+  p:{en:"Vision Board Guide",hi:"विज़न बोर्ड गाइड",gu:"વિઝન બોર્ડ ગાઇડ"},
+  t:{en:"The vision board guide was my favourite. Thanks to the step-by-step explanation, I understood how to make my goals visual.",
+     hi:"विज़न बोर्ड गाइड मेरी फ़ेवरेट रही। स्टेप-बाय-स्टेप समझाने की वजह से समझ आया कि अपने गोल को विज़ुअल कैसे बनाना है।",
+     gu:"વિઝન બોર્ડ ગાઇડ મારી ફેવરિટ રહી. સ્ટેપ-બાય-સ્ટેપ સમજૂતીને કારણે સમજાયું કે ગોલને વિઝ્યુઅલ કેવી રીતે બનાવવા."}},
+ {stars:5,
+  n:{en:"Rahul K.",hi:"राहुल के.",gu:"રાહુલ કે."},
+  p:{en:"Manifestation Techniques",hi:"मैनिफेस्टेशन तकनीकें",gu:"મેનિફેસ્ટેશન ટેકનિક"},
+  t:{en:"I used to read a lot of random things about manifestation. This bundle gives a proper structure — Dream → Plan → Action.",
+     hi:"पहले मैं मैनिफेस्टेशन के बारे में काफ़ी बिखरी हुई चीज़ें पढ़ता था। यह बंडल एक सही स्ट्रक्चर देता है — Dream → Plan → Action।",
+     gu:"પહેલા હું મેનિફેસ્ટેશન વિશે ઘણી વિખરાયેલી વસ્તુઓ વાંચતો. આ બંડલ યોગ્ય સ્ટ્રક્ચર આપે છે — Dream → Plan → Action."}},
+ {stars:5,
+  n:{en:"Meena P.",hi:"मीना पी.",gu:"મીના પી."},
+  p:{en:"Gratitude Power Guide",hi:"ग्रैटिट्यूड पावर गाइड",gu:"ગ્રેટિટ્યૂડ પાવર ગાઇડ"},
+  t:{en:"The gratitude guide and printable worksheets fit easily into my daily routine. The content felt practical, not just theory.",
+     hi:"ग्रैटिट्यूड गाइड और प्रिंटेबल वर्कशीट रोज़ के रूटीन में आसानी से फ़िट हो गईं। कंटेंट प्रैक्टिकल लगा, सिर्फ़ थ्योरी नहीं।",
+     gu:"ગ્રેટિટ્યૂડ ગાઇડ અને પ્રિન્ટેબલ વર્કશીટ રોજના રૂટિનમાં સહેલાઈથી ગોઠવાઈ ગઈ. કન્ટેન્ટ પ્રેક્ટિકલ લાગ્યું, માત્ર થિયરી નહીં."}},
+ {stars:5,
+  n:{en:"Amit J.",hi:"अमित जे.",gu:"અમિત જે."},
+  p:{en:"Hindi Bundle",hi:"हिन्दी बंडल",gu:"હિન્દી બંડલ"},
+  t:{en:"Having Hindi content made it comfortable to use. Getting so much organised material in one bundle was useful.",
+     hi:"हिन्दी में कंटेंट होने की वजह से इस्तेमाल करना आसान रहा। एक ही बंडल में इतना व्यवस्थित मटीरियल मिलना काम का लगा।",
+     gu:"હિન્દી કન્ટેન્ટ હોવાથી વાપરવું સરળ રહ્યું. એક જ બંડલમાં આટલું વ્યવસ્થિત મટિરિયલ મળવું ઉપયોગી લાગ્યું."}},
+ {stars:5,
+  n:{en:"Kavita P.",hi:"कविता पी.",gu:"કવિતા પી."},
+  p:{en:"Complete Bundle",hi:"कम्प्लीट बंडल",gu:"કમ્પ્લીટ બંડલ"},
+  t:{en:"I wanted something I could actually sit down and work through. The worksheets made the process feel more actionable and less overwhelming.",
+     hi:"मुझे कुछ ऐसा चाहिए था जिसे मैं बैठकर पूरा कर सकूँ। वर्कशीट ने पूरी प्रक्रिया को ज़्यादा एक्शन-फ़्रेंडली और कम भारी बना दिया।",
+     gu:"મને એવું કંઈક જોઈતું હતું જે હું બેસીને પૂરું કરી શકું. વર્કશીટે આખી પ્રક્રિયાને વધુ એક્શન-ફ્રેન્ડલી અને ઓછી ભારે બનાવી."}}
+];
+function L(o,l){return (o&&(o[l]||o.en))||"";}
+var PER={en:"That’s about ₹60 per guide",hi:"यानी लगभग ₹60 प्रति गाइड",gu:"એટલે લગભગ ₹60 પ્રતિ ગાઇડ"};
+function stars(n){var s="";for(var k=0;k<n;k++)s+="★";return s;}
+var RT={
+  en:{e:"Reader Feedback",h:"What readers are saying",hint:"← Swipe to see more →"},
+  hi:{e:"पाठकों की राय",h:"पाठक क्या कह रहे हैं",hint:"← और देखने के लिए स्वाइप करें →"},
+  gu:{e:"વાચકોનો પ્રતિભાવ",h:"વાચકો શું કહે છે",hint:"← વધુ જોવા સ્વાઇપ કરો →"}
+};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+var rvTimer=null,rvPaused=false;
+function renderReviews(l){
+  var sec=document.getElementById("reviews");
+  if(!REVIEWS.length){sec.hidden=true;return;}
+  sec.hidden=false;
+  var t=RT[l]||RT.en;
+  document.getElementById("rvE").textContent=t.e;
+  document.getElementById("rvH").textContent=t.h;
+  document.getElementById("rvHint").textContent=t.hint;
+  var html="";
+  REVIEWS.forEach(function(r,i){
+    var n=Math.max(1,Math.min(5,r.stars||5)),st="";
+    for(var k=0;k<n;k++)st+="★";
+    html+='<article class="rv-card" style="animation-delay:'+(i*80)+'ms"><div class="rv-stars" aria-label="'+n+' stars">'+st+'</div><p>“'+esc(L(r.t,l))+'”</p><div class="rv-by"><strong>'+esc(L(r.n,l))+'</strong><span>'+esc(L(r.p,l))+'</span></div></article>';
+  });
+  /* hero + buy-card mini proof (same real reviews) */
+  function mini(r){return '<div class="mq-stars">'+stars(r.stars||5)+'</div><p>“'+esc(L(r.t,l))+'”</p><small>— '+esc(L(r.n,l))+', '+esc(L(r.p,l))+'</small>';}
+  var hq=document.getElementById("heroQuote"),bp=document.getElementById("buyProof");
+  if(hq){hq.innerHTML=mini(REVIEWS[0]);hq.hidden=false;}
+  if(bp){bp.innerHTML=mini(REVIEWS[REVIEWS.length>3?3:0]);bp.hidden=false;}
+  var sc=document.getElementById("rvList");
+  sc.innerHTML=html;
+  if(!rvTimer){
+    ["pointerdown","touchstart","mouseenter","focusin"].forEach(function(ev){sc.addEventListener(ev,function(){rvPaused=true;},{passive:true});});
+    sc.addEventListener("mouseleave",function(){rvPaused=false;});
+    rvTimer=setInterval(function(){
+      if(rvPaused||document.hidden)return;
+      var card=sc.querySelector(".rv-card");if(!card)return;
+      var step=card.offsetWidth+16;
+      if(sc.scrollLeft+sc.clientWidth>=sc.scrollWidth-8)sc.scrollTo({left:0,behavior:"smooth"});
+      else sc.scrollBy({left:step,behavior:"smooth"});
+    },4200);
+  }
+}
+
+/* ===================== MARQUEE ===================== */
+function renderMarquee(d){
+  var items=[d.pl1,d.pl2,d.pl3,d.pl4,d.as1,d.as2,d.as3];
+  var one="";
+  items.forEach(function(x){one+="<span>"+x+"</span>";});
+  document.getElementById("mq").innerHTML=one+one;
+}
+
+function afterLang(l,d){
+  renderMarquee(d);renderReviews(l);
+  var per=document.getElementById("buyPer");if(per)per.textContent=PER[l]||PER.en;
+}
+
+/* ===================== META EVENTS ===================== */
+function ev(type,name,params){if(typeof fbq==="function"){try{fbq(type,name,params||{});}catch(e){}}}
+ev("track","ViewContent",{content_name:"Dream Life Bundle",value:299,currency:"INR"});
+
+document.addEventListener("click",function(e){
+  var c=e.target.closest&&e.target.closest(".cta");
+  if(c){
+    var where=c.closest(".sticky")?"sticky":(c.closest(".final-box")?"final":"hero");
+    ev("trackCustom","CTAClick",{location:where});
+  }
+});
+
+/* ===================== SCROLL: progress, depth, sticky bar ===================== */
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var progress=document.getElementById("progress"),sticky=document.getElementById("sticky");
+var buyVisible=false,sent={};
+function onScroll(){
+  var h=document.documentElement,max=h.scrollHeight-window.innerHeight;
+  var p=max>0?(window.pageYOffset||h.scrollTop)/max:0;
+  progress.style.width=(Math.min(1,p)*100)+"%";
+  [25,50,75,100].forEach(function(m){
+    if(!sent[m]&&p*100>=(m===100?97:m)){sent[m]=1;ev("trackCustom","ScrollDepth",{percent:m});}
+  });
+  var show=(window.pageYOffset||h.scrollTop)>480&&!buyVisible;
+  sticky.classList.toggle("show",show);
+}
+window.addEventListener("scroll",onScroll,{passive:true});
+window.addEventListener("resize",onScroll);
+onScroll();
+
+/* ===================== OBSERVERS ===================== */
+if("IntersectionObserver" in window){
+  /* reveal on scroll */
+  if(!reduce){
+    var rsel="section .kicker,section .lede,section h2,.pcard,.s3,.guide,.bonus,.how-i,.fit-card,.faq details,.buy-card,.final-box,.bridge,.stat";
+    var rio=new IntersectionObserver(function(es){
+      es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");rio.unobserve(x.target);}});
+    },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+    Array.prototype.forEach.call(document.querySelectorAll(rsel),function(el){
+      var i=Array.prototype.indexOf.call(el.parentNode.children,el);
+      el.classList.add("reveal");
+      el.style.transitionDelay=((i%4)*90)+"ms";
+      rio.observe(el);
+    });
+  }
+
+  /* count-up numbers */
+  var nums=document.querySelectorAll(".stat b");
+  var cio=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(!x.isIntersecting)return;
+      var el=x.target,end=parseInt(el.getAttribute("data-n"),10),t0=null;
+      cio.unobserve(el);
+      if(reduce){el.textContent=end;return;}
+      function step(ts){
+        if(!t0)t0=ts;
+        var p=Math.min(1,(ts-t0)/1300),e=1-Math.pow(1-p,3);
+        el.textContent=Math.round(end*e);
+        if(p<1)requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  },{threshold:.6});
+  Array.prototype.forEach.call(nums,function(el){
+    el.setAttribute("data-n",el.textContent.trim());
+    el.textContent="0";
+    cio.observe(el);
+  });
+
+  /* buy section: hide sticky bar there + track view */
+  var buy=document.getElementById("buy"),buyTracked=false;
+  new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      buyVisible=x.isIntersecting;
+      if(x.isIntersecting&&!buyTracked){buyTracked=true;ev("trackCustom","ViewBuySection");}
+      onScroll();
+    });
+  },{threshold:.25}).observe(buy);
+}
 
 setLang(pick(),false);
 })();
